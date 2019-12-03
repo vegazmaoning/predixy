@@ -1,0 +1,2002 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Abort	./src/Proxy.cpp	/^static bool Abort = false;$/;"	v	file:
+AcceptConnection	./src/AcceptConnection.cpp	/^AcceptConnection::AcceptConnection(int fd, sockaddr* addr, socklen_t len):$/;"	f	class:AcceptConnection
+AcceptConnection	./src/AcceptConnection.h	/^class AcceptConnection :$/;"	c
+AcceptConnectionAlloc	./src/AcceptConnection.h	/^typedef AcceptConnection::Allocator AcceptConnectionAlloc;$/;"	t
+AcceptConnectionAllocCacheSize	./src/Common.h	/^    static const int AcceptConnectionAllocCacheSize = 32;$/;"	m	namespace:Const
+AcceptConnectionDeque	./src/AcceptConnection.h	/^typedef Deque<AcceptConnection> AcceptConnectionDeque;$/;"	t
+AcceptConnectionList	./src/AcceptConnection.h	/^typedef List<AcceptConnection> AcceptConnectionList;$/;"	t
+AcceptConnectionPtr	./src/Predixy.h	/^typedef SharePtr<AcceptConnection> AcceptConnectionPtr;$/;"	t
+AcceptSocket	./src/AcceptSocket.cpp	/^AcceptSocket::AcceptSocket(int fd, sockaddr* addr, socklen_t len):$/;"	f	class:AcceptSocket
+AcceptSocket	./src/AcceptSocket.h	/^class AcceptSocket : public Socket$/;"	c
+AcceptType	./src/Connection.h	/^        AcceptType = Socket::CustomType,$/;"	e	enum:Connection::ClassType
+AcceptType	./src/Socket.h	/^        AcceptType,$/;"	e	enum:Socket::ClassType
+AddedMask	./src/Multiplexor.h	/^        AddedMask = 0x8$/;"	e	enum:MultiplexorBase::EventEnum
+Addr	./src/ClusterNodesParser.h	/^        Addr,$/;"	e	enum:ClusterNodesParser::FieldType
+AddrLen	./src/ClusterNodesParser.h	/^    static const int AddrLen = 32;$/;"	m	class:ClusterNodesParser
+AddrParser	./src/SentinelServerPool.cpp	/^    AddrParser(const Segment& res):$/;"	f	class:AddrParser
+AddrParser	./src/SentinelServerPool.cpp	/^class AddrParser$/;"	c	file:
+AddrParser	./src/StandaloneServerPool.cpp	/^    AddrParser(const Segment& res):$/;"	f	class:AddrParser
+AddrParser	./src/StandaloneServerPool.cpp	/^class AddrParser$/;"	c	file:
+Admin	./src/Command.h	/^        Admin       = 1<<2,$/;"	e	enum:Command::Mode
+Alloc	./src/Alloc.h	/^class Alloc : public AllocBase$/;"	c
+AllocBase	./src/Alloc.h	/^class AllocBase$/;"	c
+Allocator	./src/AcceptConnection.h	/^    typedef Alloc<AcceptConnection, Const::AcceptConnectionAllocCacheSize> Allocator;$/;"	t	class:AcceptConnection
+Allocator	./src/Buffer.h	/^    typedef Alloc<Buffer, Const::BufferAllocCacheSize> Allocator;$/;"	t	class:Buffer
+Allocator	./src/ConnectConnection.h	/^    typedef Alloc<ConnectConnection, Const::ConnectConnectionAllocCacheSize> Allocator;$/;"	t	class:ConnectConnection
+Allocator	./src/Request.h	/^    typedef Alloc<Request, Const::RequestAllocCacheSize> Allocator;$/;"	t	class:Request
+Allocator	./src/Response.h	/^    typedef Alloc<Response, Const::ResponseAllocCacheSize> Allocator;$/;"	t	class:Response
+Append	./src/Command.h	/^        Append,$/;"	e	enum:Command::Type
+Append	./src/Handler.cpp	1227;"	d	file:
+Arg	./src/SentinelServerPool.cpp	/^        Arg,$/;"	e	enum:AddrParser::State	file:
+Arg	./src/StandaloneServerPool.cpp	/^        Arg,$/;"	e	enum:AddrParser::State	file:
+ArgBody	./src/RequestParser.h	/^        ArgBody,$/;"	e	enum:RequestParser::State
+ArgBodyLF	./src/RequestParser.h	/^        ArgBodyLF,$/;"	e	enum:RequestParser::State
+ArgError	./src/RequestParser.h	/^        ArgError,$/;"	e	enum:RequestParser::Status
+ArgLen	./src/RequestParser.h	/^        ArgLen,$/;"	e	enum:RequestParser::State
+ArgLen	./src/SentinelServerPool.cpp	/^        ArgLen,$/;"	e	enum:AddrParser::State	file:
+ArgLen	./src/StandaloneServerPool.cpp	/^        ArgLen,$/;"	e	enum:AddrParser::State	file:
+ArgLenLF	./src/RequestParser.h	/^        ArgLenLF,$/;"	e	enum:RequestParser::State
+ArgLenLF	./src/SentinelServerPool.cpp	/^        ArgLenLF,$/;"	e	enum:AddrParser::State	file:
+ArgLenLF	./src/StandaloneServerPool.cpp	/^        ArgLenLF,$/;"	e	enum:AddrParser::State	file:
+ArgNum	./src/RequestParser.h	/^        ArgNum,      \/\/ 2$/;"	e	enum:RequestParser::State
+ArgNumLF	./src/RequestParser.h	/^        ArgNumLF,    \/\/ \\r\\n$/;"	e	enum:RequestParser::State
+ArgTag	./src/RequestParser.h	/^        ArgTag,$/;"	e	enum:RequestParser::State
+ArgWrong	./src/Response.h	/^        ArgWrong,$/;"	e	enum:Response::GenericCode
+Array	./src/Reply.h	/^        Array,$/;"	e	enum:Reply::Type
+ArrayBody	./src/ResponseParser.h	/^        ArrayBody,$/;"	e	enum:ResponseParser::State
+ArrayHead	./src/ResponseParser.h	/^        ArrayHead,$/;"	e	enum:ResponseParser::State
+Asking	./src/Command.h	/^        Asking,$/;"	e	enum:Command::Type
+Asking	./src/Request.h	/^        Asking,$/;"	e	enum:Request::GenericCode
+Atol	./src/HashFunc.h	/^        Atol,$/;"	e	enum:Hash::Type
+Atomic	./src/Sync.h	15;"	d
+AtomicCAS	./src/Sync.h	18;"	d
+AtomicCAS	./src/Sync.h	28;"	d
+AtomicInt	./src/Sync.h	16;"	d
+AtomicInt	./src/Sync.h	26;"	d
+AtomicLong	./src/Sync.h	17;"	d
+AtomicLong	./src/Sync.h	27;"	d
+Auth	./src/Auth.cpp	/^Auth::Auth(const AuthConf& conf):$/;"	f	class:Auth
+Auth	./src/Auth.cpp	/^Auth::Auth(int mode):$/;"	f	class:Auth
+Auth	./src/Auth.h	/^class Auth$/;"	c
+Auth	./src/Command.h	/^        Auth,$/;"	e	enum:Command::Type
+AuthAllowAll	./src/Auth.cpp	/^Auth Authority::AuthAllowAll;$/;"	m	class:Authority	file:
+AuthAllowAll	./src/Auth.h	/^    static Auth AuthAllowAll;$/;"	m	class:Authority
+AuthConf	./src/Conf.h	/^struct AuthConf$/;"	s
+AuthDenyAll	./src/Auth.h	/^    static Auth AuthDenyAll;$/;"	m	class:Authority
+AuthMask	./src/Command.h	/^    static const int AuthMask = Read|Write|Admin;$/;"	m	class:Command
+AuthServ	./src/Command.h	/^        AuthServ,$/;"	e	enum:Command::Type
+Authority	./src/Auth.cpp	/^Authority::Authority():$/;"	f	class:Authority
+Authority	./src/Auth.h	/^class Authority$/;"	c
+AvailableCommands	./src/Command.h	/^        AvailableCommands = MaxCommands + MaxCustomCommands,$/;"	e	enum:Command::Type
+BeginScope	./src/ConfParser.h	/^        BeginScope,$/;"	e	enum:ConfParser::Status
+Bitcount	./src/Command.h	/^        Bitcount,$/;"	e	enum:Command::Type
+Bitfield	./src/Command.h	/^        Bitfield,$/;"	e	enum:Command::Type
+Bitop	./src/Command.h	/^        Bitop,$/;"	e	enum:Command::Type
+Bitpos	./src/Command.h	/^        Bitpos,$/;"	e	enum:Command::Type
+Blpop	./src/Command.h	/^        Blpop,$/;"	e	enum:Command::Type
+Body	./src/SentinelServerPool.cpp	/^        Body,$/;"	e	enum:AddrParser::State	file:
+Body	./src/StandaloneServerPool.cpp	/^        Body,$/;"	e	enum:AddrParser::State	file:
+BodyLF	./src/SentinelServerPool.cpp	/^        BodyLF,$/;"	e	enum:AddrParser::State	file:
+BodyLF	./src/StandaloneServerPool.cpp	/^        BodyLF,$/;"	e	enum:AddrParser::State	file:
+Brpop	./src/Command.h	/^        Brpop,$/;"	e	enum:Command::Type
+Brpoplpush	./src/Command.h	/^        Brpoplpush,$/;"	e	enum:Command::Type
+Buffer	./src/Buffer.cpp	/^Buffer::Buffer():$/;"	f	class:Buffer
+Buffer	./src/Buffer.cpp	/^Buffer::Buffer(const Buffer& oth):$/;"	f	class:Buffer
+Buffer	./src/Buffer.h	/^class Buffer :$/;"	c
+BufferAlloc	./src/Buffer.h	/^typedef Buffer::Allocator BufferAlloc;$/;"	t
+BufferAllocCacheSize	./src/Common.h	/^    static const int BufferAllocCacheSize = 64;$/;"	m	namespace:Const
+BufferList	./src/Buffer.h	/^typedef List<Buffer> BufferList;$/;"	t
+BufferPos	./src/Buffer.h	/^    BufferPos():$/;"	f	struct:BufferPos
+BufferPos	./src/Buffer.h	/^    BufferPos(BufferPos&& oth):$/;"	f	struct:BufferPos
+BufferPos	./src/Buffer.h	/^    BufferPos(BufferPtr b, int p):$/;"	f	struct:BufferPos
+BufferPos	./src/Buffer.h	/^    BufferPos(const BufferPos& oth):$/;"	f	struct:BufferPos
+BufferPos	./src/Buffer.h	/^struct BufferPos$/;"	s
+BufferPtr	./src/Buffer.h	/^typedef SharePtr<Buffer> BufferPtr;$/;"	t
+CFLAGS	./src/Makefile	/^CFLAGS = -std=c++11 -Wall -w $(Opts)$/;"	m
+CXX	./src/Makefile	/^CXX ?= g++$/;"	m
+Cases	./test/basic.py	/^Cases = [$/;"	v
+ClassType	./src/Connection.h	/^    enum ClassType$/;"	g	class:Connection
+ClassType	./src/Socket.h	/^    enum ClassType$/;"	g	class:Socket
+Cluster	./src/Command.h	/^        Cluster,$/;"	e	enum:Command::Type
+Cluster	./src/ServerPool.h	/^        Cluster,$/;"	e	enum:ServerPool::Type
+ClusterNodes	./src/Command.h	/^        ClusterNodes,$/;"	e	enum:Command::Type
+ClusterNodes	./src/Request.h	/^        ClusterNodes,$/;"	e	enum:Request::GenericCode
+ClusterNodesParser	./src/ClusterNodesParser.cpp	/^ClusterNodesParser::ClusterNodesParser():$/;"	f	class:ClusterNodesParser
+ClusterNodesParser	./src/ClusterNodesParser.h	/^class ClusterNodesParser$/;"	c
+ClusterServerPool	./src/ClusterServerPool.cpp	/^ClusterServerPool::ClusterServerPool(Proxy* p):$/;"	f	class:ClusterServerPool
+ClusterServerPool	./src/ClusterServerPool.h	/^class ClusterServerPool : public ServerPoolTmpl<ClusterServerPool>$/;"	c
+ClusterServerPoolConf	./src/Conf.h	/^struct ClusterServerPoolConf : public ServerPoolConf$/;"	s
+Cmd	./src/Command.h	/^        Cmd,$/;"	e	enum:Command::Type
+Cmd	./src/Response.h	/^        Cmd,$/;"	e	enum:Response::GenericCode
+CmdBody	./src/RequestParser.h	/^        CmdBody,$/;"	e	enum:RequestParser::State
+CmdBodyLF	./src/RequestParser.h	/^        CmdBodyLF,$/;"	e	enum:RequestParser::State
+CmdBodyTooLong	./src/RequestParser.h	/^        CmdBodyTooLong,$/;"	e	enum:RequestParser::State
+CmdError	./src/RequestParser.h	/^        CmdError,$/;"	e	enum:RequestParser::Status
+CmdLen	./src/RequestParser.h	/^        CmdLen,$/;"	e	enum:RequestParser::State
+CmdLenLF	./src/RequestParser.h	/^        CmdLenLF,$/;"	e	enum:RequestParser::State
+CmdMap	./src/Command.cpp	/^Command::CommandMap Command::CmdMap;$/;"	m	class:Command	file:
+CmdMap	./src/Command.h	/^    static CommandMap CmdMap;$/;"	m	class:Command
+CmdPool	./src/Command.cpp	/^Command Command::CmdPool[AvailableCommands] = {$/;"	m	class:Command	file:
+CmdPool	./src/Command.h	/^    static Command CmdPool[];$/;"	m	class:Command
+CmdTag	./src/RequestParser.h	/^        CmdTag,$/;"	e	enum:RequestParser::State
+CodeSentinel	./src/Request.h	/^        CodeSentinel$/;"	e	enum:Request::GenericCode
+CodeSentinel	./src/Response.h	/^        CodeSentinel$/;"	e	enum:Response::GenericCode
+Command	./src/Command.h	/^class Command$/;"	c
+CommandMap	./src/Command.h	/^    typedef std::unordered_map<String, const Command*, H> CommandMap;$/;"	t	class:Command
+Complete	./src/RequestParser.h	/^        Complete,$/;"	e	enum:RequestParser::Status
+Complete	./src/ResponseParser.h	/^        Complete,$/;"	e	enum:ResponseParser::Status
+Conf	./src/Conf.cpp	/^Conf::Conf():$/;"	f	class:Conf
+Conf	./src/Conf.h	/^class Conf$/;"	c
+ConfParser	./src/ConfParser.cpp	/^ConfParser::ConfParser(int maxNodeDepth):$/;"	f	class:ConfParser
+ConfParser	./src/ConfParser.h	/^class ConfParser$/;"	c
+Config	./src/Command.h	/^        Config,$/;"	e	enum:Command::Type
+ConfigEpoch	./src/ClusterNodesParser.h	/^        ConfigEpoch,$/;"	e	enum:ClusterNodesParser::FieldType
+ConfigSubCmdUnknown	./src/Response.h	/^        ConfigSubCmdUnknown,$/;"	e	enum:Response::GenericCode
+ConnectConnection	./src/ConnectConnection.cpp	/^ConnectConnection::ConnectConnection(Server* serv, bool shared):$/;"	f	class:ConnectConnection
+ConnectConnection	./src/ConnectConnection.h	/^class ConnectConnection :$/;"	c
+ConnectConnectionAlloc	./src/ConnectConnection.h	/^typedef ConnectConnection::Allocator ConnectConnectionAlloc;$/;"	t
+ConnectConnectionAllocCacheSize	./src/Common.h	/^    static const int ConnectConnectionAllocCacheSize = 4;$/;"	m	namespace:Const
+ConnectConnectionDeque	./src/ConnectConnection.h	/^typedef Deque<ConnectConnection> ConnectConnectionDeque;$/;"	t
+ConnectConnectionList	./src/ConnectConnection.h	/^typedef List<ConnectConnection> ConnectConnectionList;$/;"	t
+ConnectConnectionPool	./src/ConnectConnectionPool.cpp	/^ConnectConnectionPool::ConnectConnectionPool(Handler* h, Server* s, int dbnum):$/;"	f	class:ConnectConnectionPool
+ConnectConnectionPool	./src/ConnectConnectionPool.h	/^class ConnectConnectionPool$/;"	c
+ConnectConnectionPtr	./src/Predixy.h	/^typedef SharePtr<ConnectConnection> ConnectConnectionPtr;$/;"	t
+ConnectSocket	./src/ConnectSocket.cpp	/^ConnectSocket::ConnectSocket(const char* peer, int type, int protocol):$/;"	f	class:ConnectSocket
+ConnectSocket	./src/ConnectSocket.h	/^class ConnectSocket : public Socket$/;"	c
+ConnectStatus	./src/ConnectSocket.h	/^    enum ConnectStatus$/;"	g	class:ConnectSocket
+ConnectType	./src/Connection.h	/^        ConnectType$/;"	e	enum:Connection::ClassType
+ConnectType	./src/Socket.h	/^        ConnectType,$/;"	e	enum:Socket::ClassType
+Connected	./src/ConnectSocket.h	/^        Connected,$/;"	e	enum:ConnectSocket::ConnectStatus
+Connecting	./src/ConnectSocket.h	/^        Connecting,$/;"	e	enum:ConnectSocket::ConnectStatus
+Connection	./src/Connection.cpp	/^Connection::Connection():$/;"	f	class:Connection
+Connection	./src/Connection.h	/^class Connection$/;"	c
+Const	./src/Common.h	/^namespace Const$/;"	n
+Count	./src/SentinelServerPool.cpp	/^        Count,$/;"	e	enum:AddrParser::State	file:
+Count	./src/StandaloneServerPool.cpp	/^        Count,$/;"	e	enum:AddrParser::State	file:
+CountLF	./src/SentinelServerPool.cpp	/^        CountLF,$/;"	e	enum:AddrParser::State	file:
+CountLF	./src/StandaloneServerPool.cpp	/^        CountLF,$/;"	e	enum:AddrParser::State	file:
+Crc16	./src/HashFunc.h	/^        Crc16$/;"	e	enum:Hash::Type
+CustomCommandConf	./src/Conf.h	/^struct CustomCommandConf$/;"	s
+CustomStatus	./src/Socket.h	/^        CustomStatus = 100$/;"	e	enum:Socket::StatusCode
+CustomType	./src/Socket.h	/^        CustomType = 1024$/;"	e	enum:Socket::ClassType
+DC	./src/DC.cpp	/^DC::DC(const String& name, int size):$/;"	f	class:DC
+DC	./src/DC.h	/^class DC : public ID<DC>$/;"	c
+DCConf	./src/Conf.h	/^struct DCConf$/;"	s
+DCReadPolicy	./src/DC.h	/^struct DCReadPolicy$/;"	s
+DataCenter	./src/DC.cpp	/^DataCenter::DataCenter():$/;"	f	class:DataCenter
+DataCenter	./src/DC.h	/^class DataCenter$/;"	c
+DaySecs	./src/LogFileSink.cpp	/^static const int DaySecs = 86400;$/;"	v	file:
+Debug	./src/Logger.h	/^        Debug,$/;"	e	enum:LogLevel::Type
+Decr	./src/Command.h	/^        Decr,$/;"	e	enum:Command::Type
+Decrby	./src/Command.h	/^        Decrby,$/;"	e	enum:Command::Type
+DefException	./src/Exception.h	54;"	d
+DefaultRefreshInterval	./src/ServerPool.h	/^    static const int DefaultRefreshInterval = 1000000;$/;"	m	class:ServerPool
+DefaultServerRetryTimeout	./src/ServerPool.h	/^    static const int DefaultServerRetryTimeout = 10000000;$/;"	m	class:ServerPool
+Del	./src/Command.h	/^        Del,$/;"	e	enum:Command::Type
+DelHead	./src/Request.h	/^        DelHead,$/;"	e	enum:Request::GenericCode
+DeliverRequestFail	./src/Response.h	/^        DeliverRequestFail,$/;"	e	enum:Response::GenericCode
+Deque	./src/Deque.h	/^    Deque():$/;"	f	class:Deque
+Deque	./src/Deque.h	/^class Deque$/;"	c
+DequeNode	./src/Deque.h	/^    DequeNode()$/;"	f	class:DequeNode
+DequeNode	./src/Deque.h	/^class DequeNode$/;"	c
+DequeNodeType	./src/AcceptConnection.h	/^    typedef DequeNode<AcceptConnection, SharePtr<AcceptConnection>> DequeNodeType;$/;"	t	class:AcceptConnection
+DequeNodeType	./src/ConnectConnection.h	/^    typedef DequeNode<ConnectConnection> DequeNodeType;$/;"	t	class:ConnectConnection
+Discard	./src/Command.h	/^        Discard,$/;"	e	enum:Command::Type
+DiscardServ	./src/Command.h	/^        DiscardServ,$/;"	e	enum:Command::Type
+DiscardServ	./src/Request.h	/^        DiscardServ,$/;"	e	enum:Request::GenericCode
+Disconnected	./src/ConnectSocket.h	/^        Disconnected$/;"	e	enum:ConnectSocket::ConnectStatus
+Distribution	./src/Distribution.h	/^    Distribution(Type t = None):$/;"	f	class:Distribution
+Distribution	./src/Distribution.h	/^class Distribution$/;"	c
+Done	./src/SentinelServerPool.cpp	/^        Done$/;"	e	enum:AddrParser::Status	file:
+Done	./src/StandaloneServerPool.cpp	/^        Done$/;"	e	enum:AddrParser::Status	file:
+Dump	./src/Command.h	/^        Dump,$/;"	e	enum:Command::Type
+EV	./src/Makefile	/^		EV = epoll$/;"	m
+EV	./src/Makefile	/^		EV = kqueue$/;"	m
+EV	./src/Makefile	/^		EV = poll$/;"	m
+EV	./src/Makefile	/^EV ?= auto$/;"	m
+Echo	./src/Command.h	/^        Echo,$/;"	e	enum:Command::Type
+ElementLF	./src/ResponseParser.h	/^        ElementLF,$/;"	e	enum:ResponseParser::State
+End	./src/Socket.h	/^        End,$/;"	e	enum:Socket::StatusCode
+EndScope	./src/ConfParser.h	/^        EndScope,$/;"	e	enum:ConfParser::Status
+EnumBase	./src/Enums.h	/^    EnumBase(int t):$/;"	f	class:EnumBase
+EnumBase	./src/Enums.h	/^class EnumBase$/;"	c
+EpollMultiplexor	./src/EpollMultiplexor.cpp	/^EpollMultiplexor::EpollMultiplexor():$/;"	f	class:EpollMultiplexor
+EpollMultiplexor	./src/EpollMultiplexor.h	/^class EpollMultiplexor : public MultiplexorBase$/;"	c
+Error	./src/ClusterNodesParser.h	/^        Error,$/;"	e	enum:ClusterNodesParser::Status
+Error	./src/ConfParser.h	/^        Error$/;"	e	enum:ConfParser::Status
+Error	./src/Logger.h	/^        Error,$/;"	e	enum:LogLevel::Type
+Error	./src/Reply.h	/^        Error,$/;"	e	enum:Reply::Type
+Error	./src/RequestParser.h	/^        Error$/;"	e	enum:RequestParser::State
+Error	./src/ResponseParser.h	/^        Error$/;"	e	enum:ResponseParser::State
+Error	./src/SentinelServerPool.cpp	/^        Error,$/;"	e	enum:AddrParser::Status	file:
+Error	./src/StandaloneServerPool.cpp	/^        Error,$/;"	e	enum:AddrParser::Status	file:
+Error	./src/Subscribe.h	/^        Error,$/;"	e	enum:SubscribeParser::Status
+ErrorEvent	./src/Multiplexor.h	/^        ErrorEvent = 0x4,$/;"	e	enum:MultiplexorBase::EventEnum
+ErrorHead	./src/ResponseParser.h	/^        ErrorHead,$/;"	e	enum:ResponseParser::State
+Eval	./src/Command.h	/^        Eval,$/;"	e	enum:Command::Type
+Evalsha	./src/Command.h	/^        Evalsha,$/;"	e	enum:Command::Type
+EventEnum	./src/Multiplexor.h	/^    enum EventEnum$/;"	g	class:MultiplexorBase
+EventError	./src/Socket.h	/^        EventError,$/;"	e	enum:Socket::StatusCode
+ExceptError	./src/Socket.h	/^        ExceptError,$/;"	e	enum:Socket::StatusCode
+ExceptionBase	./src/Exception.h	/^    ExceptionBase()$/;"	f	class:ExceptionBase
+ExceptionBase	./src/Exception.h	/^    ExceptionBase(const char* file, int line, const char* fmt, ...)$/;"	f	class:ExceptionBase
+ExceptionBase	./src/Exception.h	/^    ExceptionBase(const char* fmt, ...)$/;"	f	class:ExceptionBase
+ExceptionBase	./src/Exception.h	/^class ExceptionBase : public std::exception$/;"	c
+Exec	./src/Command.h	/^        Exec,$/;"	e	enum:Command::Type
+Exists	./src/Command.h	/^        Exists,$/;"	e	enum:Command::Type
+ExistsHead	./src/Request.h	/^        ExistsHead,$/;"	e	enum:Request::GenericCode
+Expire	./src/Command.h	/^        Expire,$/;"	e	enum:Command::Type
+Expireat	./src/Command.h	/^        Expireat,$/;"	e	enum:Command::Type
+Field	./src/ClusterNodesParser.h	/^        Field,$/;"	e	enum:ClusterNodesParser::State
+FieldType	./src/ClusterNodesParser.h	/^    enum FieldType$/;"	g	class:ClusterNodesParser
+File	./src/ConfParser.cpp	/^struct File$/;"	s	file:
+FileSuffixReserveLen	./src/LogFileSink.cpp	/^static const int FileSuffixReserveLen = 20;$/;"	v	file:
+Finished	./src/ClusterNodesParser.h	/^        Finished$/;"	e	enum:ClusterNodesParser::Status
+Finished	./src/RequestParser.h	/^        Finished,$/;"	e	enum:RequestParser::State
+Finished	./src/ResponseParser.h	/^        Finished,$/;"	e	enum:ResponseParser::State
+Finished	./src/SentinelServerPool.cpp	/^        Finished$/;"	e	enum:AddrParser::State	file:
+Finished	./src/StandaloneServerPool.cpp	/^        Finished$/;"	e	enum:AddrParser::State	file:
+Fixed	./src/Enums.h	/^        Fixed,$/;"	e	enum:ServerPoolRefreshMethod::Type
+Flags	./src/ClusterNodesParser.h	/^        Flags,$/;"	e	enum:ClusterNodesParser::FieldType
+FlagsLen	./src/ClusterNodesParser.h	/^    static const int FlagsLen = 48;$/;"	m	class:ClusterNodesParser
+ForbidTransaction	./src/Response.h	/^        ForbidTransaction,$/;"	e	enum:Response::GenericCode
+Free	./src/Alloc.h	/^    thread_local static T* Free[CacheSize];$/;"	m	class:Alloc
+Free	./src/Alloc.h	/^thread_local T* Alloc<T, CacheSize>::Free[CacheSize];$/;"	m	class:Alloc
+FuncCallTimer	./src/Timer.h	100;"	d
+FuncCallTimer	./src/Timer.h	105;"	d
+GenericCode	./src/Request.h	/^    enum GenericCode$/;"	g	class:Request
+GenericCode	./src/Response.h	/^    enum GenericCode$/;"	g	class:Response
+GenericRequest	./src/Request.cpp	/^struct GenericRequest$/;"	s	file:
+GenericRequestDefs	./src/Request.cpp	/^static const GenericRequest GenericRequestDefs[] = {$/;"	v	file:
+GenericRequests	./src/Request.cpp	/^thread_local static Request* GenericRequests[Request::CodeSentinel];$/;"	v	file:
+GenericResponse	./src/Response.cpp	/^struct GenericResponse$/;"	s	file:
+GenericResponseDefs	./src/Response.cpp	/^static const GenericResponse GenericResponseDefs[] = {$/;"	v	file:
+GenericResponses	./src/Response.cpp	/^thread_local static Response* GenericResponses[Response::CodeSentinel];$/;"	v	file:
+Geoadd	./src/Command.h	/^        Geoadd,$/;"	e	enum:Command::Type
+Geodist	./src/Command.h	/^        Geodist,$/;"	e	enum:Command::Type
+Geohash	./src/Command.h	/^        Geohash,$/;"	e	enum:Command::Type
+Geopos	./src/Command.h	/^        Geopos,$/;"	e	enum:Command::Type
+Georadius	./src/Command.h	/^        Georadius,$/;"	e	enum:Command::Type
+Georadiusbymember	./src/Command.h	/^        Georadiusbymember,$/;"	e	enum:Command::Type
+Get	./src/Command.h	/^        Get,$/;"	e	enum:Command::Type
+GetServerFunc	./src/ServerPool.h	/^    typedef Server* (*GetServerFunc)(const ServerPool* p, Handler* h, Request* req, const String& key);$/;"	t	class:ServerPool
+GetVal	./src/Conf.cpp	88;"	d	file:
+Getbit	./src/Command.h	/^        Getbit,$/;"	e	enum:Command::Type
+Getrange	./src/Command.h	/^        Getrange,$/;"	e	enum:Command::Type
+Getset	./src/Command.h	/^        Getset,$/;"	e	enum:Command::Type
+H	./src/Command.h	/^    class H$/;"	c	class:Command
+HandleResponseFunc	./src/ServerPool.h	/^    typedef void (*HandleResponseFunc)(ServerPool* p, Handler* h, ConnectConnection* s, Request* req, Response* res);$/;"	t	class:ServerPool
+Handler	./src/Handler.cpp	/^Handler::Handler(Proxy* p):$/;"	f	class:Handler
+Handler	./src/Handler.h	/^class Handler : public ID<Handler>$/;"	c
+HandlerStats	./src/Stats.h	/^struct HandlerStats$/;"	s
+Hash	./src/HashFunc.h	/^    Hash(Type t = None):$/;"	f	class:Hash
+Hash	./src/HashFunc.h	/^class Hash$/;"	c
+HashTag	./src/ClusterServerPool.cpp	/^const char* ClusterServerPool::HashTag = "{}";$/;"	m	class:ClusterServerPool	file:
+HashTag	./src/ClusterServerPool.h	/^    static const char* HashTag;$/;"	m	class:ClusterServerPool
+Hdel	./src/Command.h	/^        Hdel,$/;"	e	enum:Command::Type
+Head	./src/Timer.cpp	/^TimerPoint* TimerPoint::Head = nullptr;$/;"	m	class:TimerPoint	file:
+Head	./src/Timer.h	/^    static TimerPoint* Head;$/;"	m	class:TimerPoint
+HeadLF	./src/ResponseParser.h	/^        HeadLF,$/;"	e	enum:ResponseParser::State
+Hexists	./src/Command.h	/^        Hexists,$/;"	e	enum:Command::Type
+Hget	./src/Command.h	/^        Hget,$/;"	e	enum:Command::Type
+Hgetall	./src/Command.h	/^        Hgetall,$/;"	e	enum:Command::Type
+Hincrby	./src/Command.h	/^        Hincrby,$/;"	e	enum:Command::Type
+Hincrbyfloat	./src/Command.h	/^        Hincrbyfloat,$/;"	e	enum:Command::Type
+Hkeys	./src/Command.h	/^        Hkeys,$/;"	e	enum:Command::Type
+Hlen	./src/Command.h	/^        Hlen,$/;"	e	enum:Command::Type
+Hmget	./src/Command.h	/^        Hmget,$/;"	e	enum:Command::Type
+Hmset	./src/Command.h	/^        Hmset,$/;"	e	enum:Command::Type
+Hscan	./src/Command.h	/^        Hscan,$/;"	e	enum:Command::Type
+Hset	./src/Command.h	/^        Hset,$/;"	e	enum:Command::Type
+Hsetnx	./src/Command.h	/^        Hsetnx,$/;"	e	enum:Command::Type
+Hstrlen	./src/Command.h	/^        Hstrlen,$/;"	e	enum:Command::Type
+Hvals	./src/Command.h	/^        Hvals,$/;"	e	enum:Command::Type
+ID	./src/ID.h	/^    ID():$/;"	f	class:ID
+ID	./src/ID.h	/^class ID$/;"	c
+IDUnique	./src/ID.h	/^    IDUnique(int sz = 0):$/;"	f	class:IDUnique
+IDUnique	./src/ID.h	/^class IDUnique$/;"	c
+INCFLAGS	./src/Makefile	/^INCFLAGS =$/;"	m
+IOError	./src/Socket.h	/^        IOError,$/;"	e	enum:Socket::StatusCode
+IOVec	./src/IOVec.h	/^struct IOVec$/;"	s
+Id	./src/ID.h	/^    static AtomicInt Id;$/;"	m	class:ID
+Id	./src/ID.h	/^    thread_local static long Id;$/;"	m	class:TID
+Idle	./src/ClusterNodesParser.h	/^        Idle,$/;"	e	enum:ClusterNodesParser::State
+Idle	./src/RequestParser.h	/^        Idle,        \/\/ * or inline command$/;"	e	enum:RequestParser::State
+Idle	./src/ResponseParser.h	/^        Idle,$/;"	e	enum:ResponseParser::State
+Idle	./src/SentinelServerPool.cpp	/^        Idle,$/;"	e	enum:AddrParser::State	file:
+Idle	./src/StandaloneServerPool.cpp	/^        Idle,$/;"	e	enum:AddrParser::State	file:
+Incr	./src/Command.h	/^        Incr,$/;"	e	enum:Command::Type
+Incrby	./src/Command.h	/^        Incrby,$/;"	e	enum:Command::Type
+Incrbyfloat	./src/Command.h	/^        Incrbyfloat,$/;"	e	enum:Command::Type
+Info	./src/Command.h	/^        Info,$/;"	e	enum:Command::Type
+Info	./src/Logger.h	/^        Info,$/;"	e	enum:LogLevel::Type
+InlineArg	./src/RequestParser.h	/^        InlineArg,$/;"	e	enum:RequestParser::State
+InlineArgBegin	./src/RequestParser.h	/^        InlineArgBegin,$/;"	e	enum:RequestParser::State
+InlineArgEnd	./src/RequestParser.h	/^        InlineArgEnd,$/;"	e	enum:RequestParser::State
+InlineBegin	./src/RequestParser.h	/^        InlineBegin,$/;"	e	enum:RequestParser::State
+InlineCmd	./src/RequestParser.h	/^        InlineCmd,$/;"	e	enum:RequestParser::State
+Inner	./src/Command.h	/^        Inner       = 1<<11    \/\/proxy use only$/;"	e	enum:Command::Mode
+Integer	./src/Reply.h	/^        Integer,$/;"	e	enum:Reply::Type
+IntegerHead	./src/ResponseParser.h	/^        IntegerHead,$/;"	e	enum:ResponseParser::State
+Invalid	./src/SentinelServerPool.cpp	/^        Invalid,$/;"	e	enum:AddrParser::State	file:
+Invalid	./src/StandaloneServerPool.cpp	/^        Invalid,$/;"	e	enum:AddrParser::State	file:
+InvalidDb	./src/Response.h	/^        InvalidDb,$/;"	e	enum:Response::GenericCode
+InvalidPassword	./src/Response.h	/^        InvalidPassword,$/;"	e	enum:Response::GenericCode
+InvalidScanCursor	./src/Response.h	/^        InvalidScanCursor,$/;"	e	enum:Response::GenericCode
+IterFunc	./src/ServerPool.h	/^    typedef Server* (*IterFunc)(const ServerPool* p, int& cursor);$/;"	t	class:ServerPool
+KeyAt2	./src/Command.h	/^        KeyAt2      = 1<<8,$/;"	e	enum:Command::Mode
+KeyAt3	./src/Command.h	/^        KeyAt3      = 1<<9,$/;"	e	enum:Command::Mode
+KeyBody	./src/ConfParser.h	/^        KeyBody,$/;"	e	enum:ConfParser::State
+KeyBody	./src/RequestParser.h	/^        KeyBody,$/;"	e	enum:RequestParser::State
+KeyBodyLF	./src/RequestParser.h	/^        KeyBodyLF,$/;"	e	enum:RequestParser::State
+KeyLen	./src/RequestParser.h	/^        KeyLen,$/;"	e	enum:RequestParser::State
+KeyLenLF	./src/RequestParser.h	/^        KeyLenLF,$/;"	e	enum:RequestParser::State
+KeyMask	./src/Command.h	/^    static const int KeyMask = NoKey|MultiKey|SMultiKey|MultiKeyVal|KeyAt2|KeyAt3;$/;"	m	class:Command
+KeyPrefixSet	./src/Auth.h	/^    typedef std::set<String> KeyPrefixSet;$/;"	t	class:Auth
+KeyReady	./src/ConfParser.h	/^        KeyReady,$/;"	e	enum:ConfParser::State
+KeyTag	./src/RequestParser.h	/^        KeyTag,$/;"	e	enum:RequestParser::State
+KeyVal	./src/ConfParser.h	/^        KeyVal,$/;"	e	enum:ConfParser::Status
+KqueueMultiplexor	./src/KqueueMultiplexor.cpp	/^KqueueMultiplexor::KqueueMultiplexor():$/;"	f	class:KqueueMultiplexor
+KqueueMultiplexor	./src/KqueueMultiplexor.h	/^class KqueueMultiplexor : public MultiplexorBase$/;"	c
+LDLIBCPP	./src/Makefile	/^		LDLIBCPP = -static-libstdc++$/;"	m
+LDLIBCPP	./src/Makefile	/^LDLIBCPP = -static-libstdc++$/;"	m
+LVL	./src/Makefile	/^LVL ?= -g -O3$/;"	m
+LatencyMonitor	./src/LatencyMonitor.h	/^    LatencyMonitor():$/;"	f	class:LatencyMonitor
+LatencyMonitor	./src/LatencyMonitor.h	/^class LatencyMonitor$/;"	c
+LatencyMonitorConf	./src/Conf.h	/^struct LatencyMonitorConf$/;"	s
+LatencyMonitorSet	./src/LatencyMonitor.h	/^    LatencyMonitorSet()$/;"	f	class:LatencyMonitorSet
+LatencyMonitorSet	./src/LatencyMonitor.h	/^class LatencyMonitorSet$/;"	c
+Len	./src/ClusterNodesParser.h	/^        Len,$/;"	e	enum:ClusterNodesParser::State
+LenLF	./src/ClusterNodesParser.h	/^        LenLF,$/;"	e	enum:ClusterNodesParser::State
+Lindex	./src/Command.h	/^        Lindex,$/;"	e	enum:Command::Type
+LineBody	./src/ResponseParser.h	/^        LineBody,$/;"	e	enum:ResponseParser::State
+LinkState	./src/ClusterNodesParser.h	/^        LinkState,$/;"	e	enum:ClusterNodesParser::FieldType
+Linsert	./src/Command.h	/^        Linsert,$/;"	e	enum:Command::Type
+List	./src/List.h	/^    List():$/;"	f	class:List
+List	./src/List.h	/^class List$/;"	c
+ListNode	./src/List.h	/^    ListNode()$/;"	f	class:ListNode
+ListNode	./src/List.h	/^class ListNode$/;"	c
+ListNodeType	./src/AcceptConnection.h	/^    typedef ListNode<AcceptConnection, SharePtr<AcceptConnection>> ListNodeType;$/;"	t	class:AcceptConnection
+ListNodeType	./src/ConnectConnection.h	/^    typedef ListNode<ConnectConnection> ListNodeType;$/;"	t	class:ConnectConnection
+ListNodeType	./src/Request.h	/^    typedef ListNode<Request, SharePtr<Request>, RequestListIndex::Size> ListNodeType;$/;"	t	class:Request
+ListNodeType	./src/Response.h	/^    typedef ListNode<Response, SharePtr<Response>> ListNodeType;$/;"	t	class:Response
+ListenSocket	./src/ListenSocket.cpp	/^ListenSocket::ListenSocket(const char* addr, int type, int protocol)$/;"	f	class:ListenSocket
+ListenSocket	./src/ListenSocket.h	/^class ListenSocket : public Socket$/;"	c
+ListenType	./src/Socket.h	/^        ListenType,$/;"	e	enum:Socket::ClassType
+Llen	./src/Command.h	/^        Llen,$/;"	e	enum:Command::Type
+LogCnt	./src/Logger.h	/^    thread_local static long LogCnt[LogLevel::Sentinel];$/;"	m	class:Logger
+LogFileSink	./src/LogFileSink.cpp	/^LogFileSink::LogFileSink():$/;"	f	class:LogFileSink
+LogFileSink	./src/LogFileSink.h	/^class LogFileSink$/;"	c
+LogLevel	./src/Logger.h	/^class LogLevel$/;"	c
+LogUnit	./src/Logger.cpp	/^LogUnit::LogUnit():$/;"	f	class:LogUnit
+LogUnit	./src/Logger.h	/^class LogUnit$/;"	c
+Logger	./src/Logger.cpp	/^Logger::Logger(int maxLogUnitNum):$/;"	f	class:Logger
+Logger	./src/Logger.h	/^class Logger$/;"	c
+LogicError	./src/Connection.h	/^        LogicError,$/;"	e	enum:Connection::StatusEnum
+Lpop	./src/Command.h	/^        Lpop,$/;"	e	enum:Command::Type
+Lpush	./src/Command.h	/^        Lpush,$/;"	e	enum:Command::Type
+Lpushx	./src/Command.h	/^        Lpushx,$/;"	e	enum:Command::Type
+Lrange	./src/Command.h	/^        Lrange,$/;"	e	enum:Command::Type
+Lrem	./src/Command.h	/^        Lrem,$/;"	e	enum:Command::Type
+Lset	./src/Command.h	/^        Lset,$/;"	e	enum:Command::Type
+Ltrim	./src/Command.h	/^        Ltrim,$/;"	e	enum:Command::Type
+Master	./src/ClusterNodesParser.h	/^        Master,$/;"	e	enum:ClusterNodesParser::FieldType
+Master	./src/Server.h	/^        Master,$/;"	e	enum:Server::Role
+MaxAddrLen	./src/Common.h	/^    static const int MaxAddrLen = 128;$/;"	m	namespace:Const
+MaxAllowInvalidByteCount	./src/RequestParser.h	/^    static const int MaxAllowInvalidByteCount = 1024;$/;"	m	class:RequestParser
+MaxArgs	./src/Command.h	/^    static const int MaxArgs = 100000000;$/;"	m	class:Command
+MaxArrayDepth	./src/ResponseParser.h	/^    static const int MaxArrayDepth = 8;$/;"	m	class:ResponseParser
+MaxBufFmtAppendLen	./src/Buffer.h	/^    static const int MaxBufFmtAppendLen = 8192;$/;"	m	class:Buffer
+MaxBufListNodeNum	./src/Common.h	/^    static const int MaxBufListNodeNum = 64;$/;"	m	namespace:Const
+MaxCmdLen	./src/Common.h	/^    static const int MaxCmdLen = 32;$/;"	m	namespace:Const
+MaxCommands	./src/Command.h	/^        MaxCommands,$/;"	e	enum:Command::Type
+MaxCustomCommands	./src/Command.h	/^        MaxCustomCommands = 16,$/;"	e	enum:Command::Type
+MaxDcLen	./src/Common.h	/^    static const int MaxDcLen = 32;$/;"	m	namespace:Const
+MaxEvents	./src/EpollMultiplexor.h	/^    static const int MaxEvents = 1024;$/;"	m	class:EpollMultiplexor
+MaxEvents	./src/KqueueMultiplexor.h	/^    static const int MaxEvents = 1024;$/;"	m	class:KqueueMultiplexor
+MaxIOVecLen	./src/Common.h	/^    static const int MaxIOVecLen = IOV_MAX;$/;"	m	namespace:Const
+MaxKeyLen	./src/Common.h	/^    static const int MaxKeyLen = 512;$/;"	m	namespace:Const
+MaxLogLen	./src/Logger.h	/^    static const int MaxLogLen = 1024;$/;"	m	class:LogUnit
+MaxMemory	./src/Alloc.h	/^    static long MaxMemory;$/;"	m	class:AllocBase
+MaxMemoryLower	./src/Common.h	/^    static const long MaxMemoryLower = 10 << 20; \/\/10MB$/;"	m	namespace:Const
+MaxMsgLen	./src/Exception.h	/^    static const int MaxMsgLen = 1024;$/;"	m	class:ExceptionBase
+MaxMulti	./src/Transaction.h	/^    static const int16_t MaxMulti = 4096;$/;"	m	class:Transaction
+MaxPathLen	./src/LogFileSink.h	/^    static const int MaxPathLen = 1024;$/;"	m	class:LogFileSink
+MaxRedirectLimit	./src/Request.h	/^    static const int MaxRedirectLimit = 3;$/;"	m	class:Request
+MaxSentinelNum	./src/SentinelServerPool.h	/^    static const int MaxSentinelNum = 64;$/;"	m	class:SentinelServerPool
+MaxSentinelNum	./src/StandaloneServerPool.h	/^    static const int MaxSentinelNum = 64;$/;"	m	class:StandaloneServerPool
+MaxServGroupNum	./src/Common.h	/^    static const int MaxServGroupNum = 1<<ServGroupBits;$/;"	m	namespace:Const
+MaxServInGroup	./src/Common.h	/^    static const int MaxServInGroup = 64;$/;"	m	namespace:Const
+MaxServNameLen	./src/Common.h	/^    static const int MaxServNameLen = 64;       \/\/nodeid in redis cluster; master name in sentinel$/;"	m	namespace:Const
+MaxServNum	./src/Common.h	/^    static const int MaxServNum = 2048;$/;"	m	namespace:Const
+MaxSub	./src/Subscribe.h	/^    static const int16_t MaxSub = 32000;$/;"	m	class:Subscribe
+MaxWatch	./src/Transaction.h	/^    static const int16_t MaxWatch = 4096;$/;"	m	class:Transaction
+Message	./src/Subscribe.h	/^        Message,$/;"	e	enum:SubscribeParser::Status
+Mget	./src/Command.h	/^        Mget,$/;"	e	enum:Command::Type
+MgetHead	./src/Request.h	/^        MgetHead,$/;"	e	enum:Request::GenericCode
+MinBufSize	./src/Common.h	/^    static const int MinBufSize = 1;$/;"	m	namespace:Const
+MinBufSpaceLeft	./src/Common.h	/^    static const int MinBufSpaceLeft = 1;\/\/64;$/;"	m	namespace:Const
+Mode	./src/Command.h	/^    enum Mode$/;"	g	class:Command
+Modula	./src/Distribution.h	/^        Modula,$/;"	e	enum:Distribution::Type
+Move	./src/Command.h	/^        Move,$/;"	e	enum:Command::Type
+Mset	./src/Command.h	/^        Mset,$/;"	e	enum:Command::Type
+MsetHead	./src/Request.h	/^        MsetHead,$/;"	e	enum:Request::GenericCode
+Msetnx	./src/Command.h	/^        Msetnx,$/;"	e	enum:Command::Type
+MsetnxHead	./src/Request.h	/^        MsetnxHead,$/;"	e	enum:Request::GenericCode
+Mtx	./src/Timer.cpp	/^Mutex TimerPoint::Mtx;$/;"	m	class:TimerPoint	file:
+Mtx	./src/Timer.h	/^    static Mutex Mtx;$/;"	m	class:TimerPoint
+Multi	./src/Command.h	/^        Multi,$/;"	e	enum:Command::Type
+MultiKey	./src/Command.h	/^        MultiKey    = 1<<5,$/;"	e	enum:Command::Mode
+MultiKeyVal	./src/Command.h	/^        MultiKeyVal = 1<<7,$/;"	e	enum:Command::Mode
+Multiplexor	./src/EpollMultiplexor.h	/^typedef EpollMultiplexor Multiplexor;$/;"	t
+Multiplexor	./src/KqueueMultiplexor.h	/^typedef KqueueMultiplexor Multiplexor;$/;"	t
+Multiplexor	./src/PollMultiplexor.h	/^typedef PollMultiplexor Multiplexor;$/;"	t
+MultiplexorBase	./src/Multiplexor.h	/^    MultiplexorBase() {}$/;"	f	class:MultiplexorBase
+MultiplexorBase	./src/Multiplexor.h	/^class MultiplexorBase$/;"	c
+Mutex	./src/Sync.h	/^class Mutex$/;"	c
+Mutex	./src/Sync.h	19;"	d
+NoKey	./src/Command.h	/^        NoKey       = 1<<4,$/;"	e	enum:Command::Mode
+NoPasswordSet	./src/Response.h	/^        NoPasswordSet,$/;"	e	enum:Response::GenericCode
+NoServer	./src/Response.h	/^        NoServer,$/;"	e	enum:Response::GenericCode
+NoServerConnection	./src/Response.h	/^        NoServerConnection,$/;"	e	enum:Response::GenericCode
+Node	./src/ClusterNodesParser.h	/^        Node,$/;"	e	enum:ClusterNodesParser::Status
+Node	./src/ConfParser.h	/^    struct Node$/;"	s	class:ConfParser
+Node	./src/Deque.h	/^    typedef typename N::DequeNodeType Node;$/;"	t	class:Deque
+Node	./src/List.h	/^    typedef typename N::ListNodeType Node;$/;"	t	class:List
+NodeId	./src/ClusterNodesParser.h	/^        NodeId,$/;"	e	enum:ClusterNodesParser::FieldType
+NodeIdLen	./src/ClusterNodesParser.h	/^    static const int NodeIdLen = 48;$/;"	m	class:ClusterNodesParser
+NodeLF	./src/ClusterNodesParser.h	/^        NodeLF$/;"	e	enum:ClusterNodesParser::State
+NodeStart	./src/ClusterNodesParser.h	/^        NodeStart,$/;"	e	enum:ClusterNodesParser::State
+None	./src/Command.h	/^        None = 0,$/;"	e	enum:Command::Type
+None	./src/ConfParser.h	/^        None,$/;"	e	enum:ConfParser::Status
+None	./src/Distribution.h	/^        None,$/;"	e	enum:Distribution::Type
+None	./src/Enums.h	/^        None,$/;"	e	enum:ServerPoolRefreshMethod::Type
+None	./src/HashFunc.h	/^        None,$/;"	e	enum:Hash::Type
+None	./src/Reply.h	/^        None,$/;"	e	enum:Reply::Type
+None	./src/Socket.h	/^        None,$/;"	e	enum:Socket::StatusCode
+Normal	./src/RequestParser.h	/^        Normal,$/;"	e	enum:RequestParser::Status
+Normal	./src/ResponseParser.h	/^        Normal,$/;"	e	enum:ResponseParser::Status
+Normal	./src/Socket.h	/^        Normal = 0,$/;"	e	enum:Socket::StatusCode
+Notice	./src/Logger.h	/^        Notice,$/;"	e	enum:LogLevel::Type
+Ok	./src/Response.h	/^        Ok,$/;"	e	enum:Response::GenericCode
+Ok	./src/SentinelServerPool.cpp	/^        Ok,$/;"	e	enum:AddrParser::Status	file:
+Ok	./src/StandaloneServerPool.cpp	/^        Ok,$/;"	e	enum:AddrParser::Status	file:
+P	./src/Deque.h	/^    typedef typename Node::Ptr P;$/;"	t	class:Deque
+P	./src/List.h	/^    typedef typename Node::Ptr P;$/;"	t	class:List
+Pairs	./src/Distribution.cpp	/^static TypeName Pairs[] = {$/;"	v	file:
+ParseError	./src/Connection.h	/^        ParseError = Socket::CustomStatus,$/;"	e	enum:Connection::StatusEnum
+ParseError	./src/RequestParser.h	/^        ParseError$/;"	e	enum:RequestParser::Status
+ParseError	./src/ResponseParser.h	/^        ParseError$/;"	e	enum:ResponseParser::Status
+Partial	./src/RequestParser.h	/^        Partial,$/;"	e	enum:RequestParser::Status
+Partial	./src/ResponseParser.h	/^        Partial,$/;"	e	enum:ResponseParser::Status
+PermissionDeny	./src/Response.h	/^        PermissionDeny,$/;"	e	enum:Response::GenericCode
+Persist	./src/Command.h	/^        Persist,$/;"	e	enum:Command::Type
+Pexpire	./src/Command.h	/^        Pexpire,$/;"	e	enum:Command::Type
+Pexpireat	./src/Command.h	/^        Pexpireat,$/;"	e	enum:Command::Type
+Pfadd	./src/Command.h	/^        Pfadd,$/;"	e	enum:Command::Type
+Pfcount	./src/Command.h	/^        Pfcount,$/;"	e	enum:Command::Type
+Pfmerge	./src/Command.h	/^        Pfmerge,$/;"	e	enum:Command::Type
+Ping	./src/Command.h	/^        Ping,$/;"	e	enum:Command::Type
+Ping	./src/Request.h	/^        Ping,$/;"	e	enum:Request::GenericCode
+PingSent	./src/ClusterNodesParser.h	/^        PingSent,$/;"	e	enum:ClusterNodesParser::FieldType
+PingServ	./src/Command.h	/^        PingServ,$/;"	e	enum:Command::Type
+PingServ	./src/Request.h	/^        PingServ,$/;"	e	enum:Request::GenericCode
+Pmessage	./src/Subscribe.h	/^        Pmessage,$/;"	e	enum:SubscribeParser::Status
+PointCnt	./src/Timer.cpp	/^int TimerPoint::PointCnt = 0;$/;"	m	class:TimerPoint	file:
+PointCnt	./src/Timer.h	/^    static int PointCnt;$/;"	m	class:TimerPoint
+PollMultiplexor	./src/PollMultiplexor.cpp	/^PollMultiplexor::PollMultiplexor(int maxFdSize):$/;"	f	class:PollMultiplexor
+PollMultiplexor	./src/PollMultiplexor.h	/^class PollMultiplexor : public MultiplexorBase$/;"	c
+Pong	./src/Response.h	/^        Pong,$/;"	e	enum:Response::GenericCode
+PongRecv	./src/ClusterNodesParser.h	/^        PongRecv,$/;"	e	enum:ClusterNodesParser::FieldType
+Private	./src/Command.h	/^        Private     = 1<<3,   \/\/require private connection$/;"	e	enum:Command::Mode
+Proxy	./src/Proxy.cpp	/^Proxy::Proxy():$/;"	f	class:Proxy
+Proxy	./src/Proxy.h	/^class Proxy$/;"	c
+Psetex	./src/Command.h	/^        Psetex,$/;"	e	enum:Command::Type
+Psubscribe	./src/Command.h	/^        Psubscribe,$/;"	e	enum:Command::Type
+Psubscribe	./src/Subscribe.h	/^        Psubscribe,$/;"	e	enum:SubscribeParser::Status
+PsubscribeHead	./src/Request.h	/^        PsubscribeHead,$/;"	e	enum:Request::GenericCode
+Ptr	./src/Deque.h	/^    typedef P Ptr;$/;"	t	class:DequeNode
+Ptr	./src/List.h	/^    typedef P Ptr;$/;"	t	class:ListNode
+PtrObjCmp	./src/Util.h	/^class PtrObjCmp$/;"	c
+Pttl	./src/Command.h	/^        Pttl,$/;"	e	enum:Command::Type
+Publish	./src/Command.h	/^        Publish,$/;"	e	enum:Command::Type
+Pubsub	./src/Command.h	/^        Pubsub,$/;"	e	enum:Command::Type
+Punsubscribe	./src/Command.h	/^        Punsubscribe,$/;"	e	enum:Command::Type
+Punsubscribe	./src/Subscribe.h	/^        Punsubscribe,$/;"	e	enum:SubscribeParser::Status
+PunsubscribeHead	./src/Request.h	/^        PunsubscribeHead,$/;"	e	enum:Request::GenericCode
+Quit	./src/Command.h	/^        Quit,$/;"	e	enum:Command::Type
+Random	./src/Distribution.h	/^        Random$/;"	e	enum:Distribution::Type
+Randomkey	./src/Command.h	/^        Randomkey,$/;"	e	enum:Command::Type
+RawType	./src/Socket.h	/^        RawType,$/;"	e	enum:Socket::ClassType
+Read	./src/Command.h	/^        Read        = 1<<0,$/;"	e	enum:Command::Mode
+ReadEvent	./src/Multiplexor.h	/^        ReadEvent = 0x1,$/;"	e	enum:MultiplexorBase::EventEnum
+ReadPolicyConf	./src/Conf.h	/^struct ReadPolicyConf$/;"	s
+Readonly	./src/Command.h	/^        Readonly,$/;"	e	enum:Command::Type
+Readonly	./src/Request.h	/^        Readonly,$/;"	e	enum:Request::GenericCode
+Recv	./src/Request.h	/^    Recv = 0,$/;"	e	enum:RequestListIndex
+RecvRequestList	./src/Request.h	/^typedef List<Request, RequestListIndex::Recv> RecvRequestList;$/;"	t
+RedisClusterSlots	./src/Common.h	/^    static const int RedisClusterSlots = 16384;$/;"	m	namespace:Const
+RedisClusterSlotsMask	./src/Common.h	/^    static const int RedisClusterSlotsMask = 16383;$/;"	m	namespace:Const
+RefCntObj	./src/Alloc.h	/^    RefCntObj():$/;"	f	class:RefCntObj
+RefCntObj	./src/Alloc.h	/^class RefCntObj$/;"	c
+RefreshRequestFunc	./src/ServerPool.h	/^    typedef void (*RefreshRequestFunc)(ServerPool* p, Handler* h);$/;"	t	class:ServerPool
+Rename	./src/Command.h	/^        Rename,$/;"	e	enum:Command::Type
+Renamenx	./src/Command.h	/^        Renamenx,$/;"	e	enum:Command::Type
+Reply	./src/Reply.h	/^class Reply$/;"	c
+Request	./src/Request.cpp	/^Request::Request():$/;"	f	class:Request
+Request	./src/Request.cpp	/^Request::Request(AcceptConnection* c):$/;"	f	class:Request
+Request	./src/Request.cpp	/^Request::Request(GenericCode code):$/;"	f	class:Request
+Request	./src/Request.h	/^class Request :$/;"	c
+RequestAlloc	./src/Request.h	/^typedef Request::Allocator RequestAlloc;$/;"	t
+RequestAllocCacheSize	./src/Common.h	/^    static const int RequestAllocCacheSize = 128;$/;"	m	namespace:Const
+RequestListIndex	./src/Request.h	/^enum RequestListIndex$/;"	g
+RequestParser	./src/RequestParser.cpp	/^RequestParser::RequestParser()$/;"	f	class:RequestParser
+RequestParser	./src/RequestParser.h	/^class RequestParser$/;"	c
+RequestPtr	./src/Predixy.h	/^typedef SharePtr<Request> RequestPtr;$/;"	t
+Response	./src/Response.cpp	/^Response::Response():$/;"	f	class:Response
+Response	./src/Response.cpp	/^Response::Response(GenericCode code):$/;"	f	class:Response
+Response	./src/Response.h	/^class Response :$/;"	c
+ResponseAlloc	./src/Response.h	/^typedef Response::Allocator ResponseAlloc;$/;"	t
+ResponseAllocCacheSize	./src/Common.h	/^    static const int ResponseAllocCacheSize = 128;$/;"	m	namespace:Const
+ResponseList	./src/Response.h	/^typedef List<Response> ResponseList;$/;"	t
+ResponseParser	./src/ResponseParser.cpp	/^ResponseParser::ResponseParser()$/;"	f	class:ResponseParser
+ResponseParser	./src/ResponseParser.h	/^class ResponseParser$/;"	c
+ResponsePtr	./src/Predixy.h	/^typedef SharePtr<Response> ResponsePtr;$/;"	t
+Restore	./src/Command.h	/^        Restore,$/;"	e	enum:Command::Type
+Role	./src/Server.h	/^    enum Role$/;"	g	class:Server
+RoleStr	./src/Server.cpp	/^const char* Server::RoleStr[] = {$/;"	m	class:Server	file:
+RoleStr	./src/Server.h	/^    static const char* RoleStr[];$/;"	m	class:Server
+Rpop	./src/Command.h	/^        Rpop,$/;"	e	enum:Command::Type
+Rpoplpush	./src/Command.h	/^        Rpoplpush,$/;"	e	enum:Command::Type
+Rpush	./src/Command.h	/^        Rpush,$/;"	e	enum:Command::Type
+Rpushx	./src/Command.h	/^        Rpushx,$/;"	e	enum:Command::Type
+Running	./src/Proxy.cpp	/^static bool Running = false;$/;"	v	file:
+SArgBody	./src/RequestParser.h	/^        SArgBody,$/;"	e	enum:RequestParser::State
+SArgBodyLF	./src/RequestParser.h	/^        SArgBodyLF,$/;"	e	enum:RequestParser::State
+SArgLen	./src/RequestParser.h	/^        SArgLen,$/;"	e	enum:RequestParser::State
+SArgLenLF	./src/RequestParser.h	/^        SArgLenLF,$/;"	e	enum:RequestParser::State
+SArgTag	./src/RequestParser.h	/^        SArgTag,$/;"	e	enum:RequestParser::State
+SMultiKey	./src/Command.h	/^        SMultiKey   = 1<<6,$/;"	e	enum:Command::Mode
+SString	./src/String.h	/^    SString():$/;"	f	class:SString
+SString	./src/String.h	/^    SString(const SString& str)$/;"	f	class:SString
+SString	./src/String.h	/^    SString(const T& str)$/;"	f	class:SString
+SString	./src/String.h	/^    SString(const char* dat, int len):$/;"	f	class:SString
+SString	./src/String.h	/^    SString(const char* str):$/;"	f	class:SString
+SString	./src/String.h	/^    SString(const std::string& str)$/;"	f	class:SString
+SString	./src/String.h	/^class SString : public String$/;"	c
+SValBody	./src/ConfParser.h	/^        SValBody,$/;"	e	enum:ConfParser::State
+Sadd	./src/Command.h	/^        Sadd,$/;"	e	enum:Command::Type
+Scan	./src/Command.h	/^        Scan,$/;"	e	enum:Command::Type
+ScanEnd	./src/Response.h	/^        ScanEnd,$/;"	e	enum:Response::GenericCode
+Scard	./src/Command.h	/^        Scard,$/;"	e	enum:Command::Type
+Scope	./src/Handler.cpp	936;"	d	file:
+ScopeBody	./src/ConfParser.h	/^        ScopeBody$/;"	e	enum:ConfParser::State
+ScopeReady	./src/ConfParser.h	/^        ScopeReady,$/;"	e	enum:ConfParser::State
+Script	./src/Command.h	/^        Script,$/;"	e	enum:Command::Type
+ScriptLoad	./src/Command.h	/^        ScriptLoad,$/;"	e	enum:Command::Type
+Sdiff	./src/Command.h	/^        Sdiff,$/;"	e	enum:Command::Type
+Sdiffstore	./src/Command.h	/^        Sdiffstore,$/;"	e	enum:Command::Type
+Segment	./src/Buffer.cpp	/^Segment::Segment()$/;"	f	class:Segment
+Segment	./src/Buffer.cpp	/^Segment::Segment(BufferPtr beginBuf, int beginPos, BufferPtr endBuf, int endPos):$/;"	f	class:Segment
+Segment	./src/Buffer.cpp	/^Segment::Segment(Segment&& oth):$/;"	f	class:Segment
+Segment	./src/Buffer.cpp	/^Segment::Segment(const Segment& oth):$/;"	f	class:Segment
+Segment	./src/Buffer.h	/^class Segment$/;"	c
+SegmentList	./src/Buffer.h	/^typedef List<Segment> SegmentList;$/;"	t
+SegmentStr	./src/Buffer.h	/^    SegmentStr(const Segment& seg)$/;"	f	class:SegmentStr
+SegmentStr	./src/Buffer.h	/^class SegmentStr : public String$/;"	c
+Select	./src/Command.h	/^        Select,$/;"	e	enum:Command::Type
+SelectServ	./src/Command.h	/^        SelectServ,$/;"	e	enum:Command::Type
+Send	./src/Request.h	/^    Send,$/;"	e	enum:RequestListIndex
+SendRequestList	./src/Request.h	/^typedef List<Request, RequestListIndex::Send> SendRequestList;$/;"	t
+Sentinel	./src/Command.cpp	/^int Command::Sentinel = Command::MaxCommands;$/;"	m	class:Command	file:
+Sentinel	./src/Command.h	/^    static int Sentinel;$/;"	m	class:Command
+Sentinel	./src/Enums.h	/^        Sentinel$/;"	e	enum:ServerPoolRefreshMethod::Type
+Sentinel	./src/Logger.h	/^        Sentinel$/;"	e	enum:LogLevel::Type
+Sentinel	./src/Reply.h	/^        Sentinel$/;"	e	enum:Reply::Type
+Sentinel	./src/Server.h	/^        Sentinel$/;"	e	enum:Server::Role
+SentinelGetMaster	./src/Command.h	/^        SentinelGetMaster,$/;"	e	enum:Command::Type
+SentinelSentinels	./src/Command.h	/^        SentinelSentinels,$/;"	e	enum:Command::Type
+SentinelServerPool	./src/SentinelServerPool.cpp	/^SentinelServerPool::SentinelServerPool(Proxy* p):$/;"	f	class:SentinelServerPool
+SentinelServerPool	./src/SentinelServerPool.h	/^class SentinelServerPool : public ServerPoolTmpl<SentinelServerPool>$/;"	c
+SentinelSlaves	./src/Command.h	/^        SentinelSlaves,$/;"	e	enum:Command::Type
+ServCond	./src/ServerGroup.cpp	/^struct ServCond$/;"	s	file:
+ServGroupBits	./src/Common.h	/^    static const int ServGroupBits = 10;$/;"	m	namespace:Const
+ServGroupMask	./src/Common.h	/^    static const int ServGroupMask = ((1<<ServGroupBits) - 1);$/;"	m	namespace:Const
+Server	./src/Server.cpp	/^Server::Server(ServerPool* pool, const String& addr, bool isStatic):$/;"	f	class:Server
+Server	./src/Server.h	/^class Server : public ID<Server>$/;"	c
+ServerConf	./src/Conf.h	/^struct ServerConf$/;"	s
+ServerConnectionClose	./src/Response.h	/^        ServerConnectionClose,$/;"	e	enum:Response::GenericCode
+ServerGroup	./src/ServerGroup.cpp	/^ServerGroup::ServerGroup(ServerPool* pool, const String& name):$/;"	f	class:ServerGroup
+ServerGroup	./src/ServerGroup.h	/^class ServerGroup : public ID<ServerGroup>$/;"	c
+ServerGroupConf	./src/Conf.h	/^struct ServerGroupConf$/;"	s
+ServerPool	./src/ServerPool.h	/^    ServerPool(Proxy* p, int type, T* sub = nullptr):$/;"	f	class:ServerPool
+ServerPool	./src/ServerPool.h	/^class ServerPool$/;"	c
+ServerPoolConf	./src/Conf.h	/^struct ServerPoolConf$/;"	s
+ServerPoolRefreshMethod	./src/Enums.h	/^    ServerPoolRefreshMethod(Type t = None):$/;"	f	class:ServerPoolRefreshMethod
+ServerPoolRefreshMethod	./src/Enums.h	/^class ServerPoolRefreshMethod : public EnumBase<ServerPoolRefreshMethod>$/;"	c
+ServerPoolTmpl	./src/ServerPool.h	/^    ServerPoolTmpl(Proxy* p, int type):$/;"	f	class:ServerPoolTmpl
+ServerPoolTmpl	./src/ServerPool.h	/^class ServerPoolTmpl : public ServerPool$/;"	c
+ServerStats	./src/Stats.h	/^struct ServerStats$/;"	s
+Set	./src/Command.h	/^        Set,$/;"	e	enum:Command::Type
+Setbit	./src/Command.h	/^        Setbit,$/;"	e	enum:Command::Type
+Setex	./src/Command.h	/^        Setex,$/;"	e	enum:Command::Type
+Setnx	./src/Command.h	/^        Setnx,$/;"	e	enum:Command::Type
+Setrange	./src/Command.h	/^        Setrange,$/;"	e	enum:Command::Type
+SharePtr	./src/Alloc.h	/^    SharePtr():$/;"	f	class:SharePtr
+SharePtr	./src/Alloc.h	/^    SharePtr(SharePtr<T>&& sp):$/;"	f	class:SharePtr
+SharePtr	./src/Alloc.h	/^    SharePtr(T* obj):$/;"	f	class:SharePtr
+SharePtr	./src/Alloc.h	/^    SharePtr(const SharePtr<T>& sp):$/;"	f	class:SharePtr
+SharePtr	./src/Alloc.h	/^class SharePtr$/;"	c
+Sinter	./src/Command.h	/^        Sinter,$/;"	e	enum:Command::Type
+Sinterstore	./src/Command.h	/^        Sinterstore,$/;"	e	enum:Command::Type
+Sismember	./src/Command.h	/^        Sismember,$/;"	e	enum:Command::Type
+Size	./src/Alloc.h	/^    thread_local static int Size;$/;"	m	class:Alloc
+Size	./src/Alloc.h	/^thread_local int Alloc<T, CacheSize>::Size = 0;$/;"	m	class:Alloc
+Size	./src/Backtrace.h	17;"	d
+Size	./src/Buffer.cpp	/^int Buffer::Size = 4096 - sizeof(Buffer);$/;"	m	class:Buffer	file:
+Size	./src/Buffer.h	/^    static int Size;$/;"	m	class:Buffer
+Size	./src/Request.h	/^    Size$/;"	e	enum:RequestListIndex
+SktIdx	./src/PollMultiplexor.h	/^    struct SktIdx$/;"	s	class:PollMultiplexor
+Slave	./src/Server.h	/^        Slave,$/;"	e	enum:Server::Role
+Slot	./src/ClusterNodesParser.h	/^        Slot$/;"	e	enum:ClusterNodesParser::FieldType
+SlotBegin	./src/ClusterNodesParser.h	/^        SlotBegin,$/;"	e	enum:ClusterNodesParser::State
+SlotEnd	./src/ClusterNodesParser.h	/^        SlotEnd,$/;"	e	enum:ClusterNodesParser::State
+SlotMove	./src/ClusterNodesParser.h	/^        SlotMove,$/;"	e	enum:ClusterNodesParser::State
+Smembers	./src/Command.h	/^        Smembers,$/;"	e	enum:Command::Type
+Smove	./src/Command.h	/^        Smove,$/;"	e	enum:Command::Type
+Socket	./src/Socket.cpp	/^Socket::Socket(int domain, int type, int protocol):$/;"	f	class:Socket
+Socket	./src/Socket.cpp	/^Socket::Socket(int fd):$/;"	f	class:Socket
+Socket	./src/Socket.h	/^class Socket$/;"	c
+Sort	./src/Command.h	/^        Sort,$/;"	e	enum:Command::Type
+Spop	./src/Command.h	/^        Spop,$/;"	e	enum:Command::Type
+Srandmember	./src/Command.h	/^        Srandmember,$/;"	e	enum:Command::Type
+Srem	./src/Command.h	/^        Srem,$/;"	e	enum:Command::Type
+Sscan	./src/Command.h	/^        Sscan,$/;"	e	enum:Command::Type
+Standalone	./src/ServerPool.h	/^        Standalone$/;"	e	enum:ServerPool::Type
+StandaloneServerPool	./src/StandaloneServerPool.cpp	/^StandaloneServerPool::StandaloneServerPool(Proxy* p):$/;"	f	class:StandaloneServerPool
+StandaloneServerPool	./src/StandaloneServerPool.h	/^class StandaloneServerPool : public ServerPoolTmpl<StandaloneServerPool>$/;"	c
+StandaloneServerPoolConf	./src/Conf.h	/^struct StandaloneServerPoolConf : public ServerPoolConf$/;"	s
+State	./src/ClusterNodesParser.h	/^    enum State$/;"	g	class:ClusterNodesParser
+State	./src/ConfParser.h	/^    enum State$/;"	g	class:ConfParser
+State	./src/RequestParser.h	/^    enum State$/;"	g	class:RequestParser
+State	./src/ResponseParser.h	/^    enum State$/;"	g	class:ResponseParser
+State	./src/SentinelServerPool.cpp	/^    enum State {$/;"	g	class:AddrParser	file:
+State	./src/StandaloneServerPool.cpp	/^    enum State {$/;"	g	class:AddrParser	file:
+StaticPointLen	./src/Timer.cpp	33;"	d	file:
+Status	./src/ClusterNodesParser.h	/^    enum Status$/;"	g	class:ClusterNodesParser
+Status	./src/ConfParser.h	/^    enum Status$/;"	g	class:ConfParser
+Status	./src/Reply.h	/^        Status,$/;"	e	enum:Reply::Type
+Status	./src/RequestParser.h	/^    enum Status$/;"	g	class:RequestParser
+Status	./src/ResponseParser.h	/^    enum Status$/;"	g	class:ResponseParser
+Status	./src/SentinelServerPool.cpp	/^    enum Status {$/;"	g	class:AddrParser	file:
+Status	./src/StandaloneServerPool.cpp	/^    enum Status {$/;"	g	class:AddrParser	file:
+Status	./src/Subscribe.h	/^    enum Status$/;"	g	class:SubscribeParser
+StatusCode	./src/Socket.h	/^    enum StatusCode$/;"	g	class:Socket
+StatusEnum	./src/Connection.h	/^    enum StatusEnum$/;"	g	class:Connection
+StatusHead	./src/ResponseParser.h	/^        StatusHead,$/;"	e	enum:ResponseParser::State
+Stop	./src/Proxy.cpp	/^static bool Stop = false;$/;"	v	file:
+Str	./src/Logger.cpp	/^const char* LogLevel::Str[Sentinel] = {$/;"	m	class:LogLevel	file:
+Str	./src/Logger.h	/^    static const char* Str[Sentinel];$/;"	m	class:LogLevel
+StrError	./src/Util.h	55;"	d
+StrErrorImpl	./src/Util.h	/^    StrErrorImpl()$/;"	f	class:StrErrorImpl
+StrErrorImpl	./src/Util.h	/^    StrErrorImpl(int err)$/;"	f	class:StrErrorImpl
+StrErrorImpl	./src/Util.h	/^class StrErrorImpl$/;"	c
+String	./src/Reply.h	/^        String,$/;"	e	enum:Reply::Type
+String	./src/String.h	/^    String():$/;"	f	class:String
+String	./src/String.h	/^    String(String&& str):$/;"	f	class:String
+String	./src/String.h	/^    String(const String& str):$/;"	f	class:String
+String	./src/String.h	/^    String(const char* dat, int len):$/;"	f	class:String
+String	./src/String.h	/^    String(const char* str):$/;"	f	class:String
+String	./src/String.h	/^    String(const std::string& s):$/;"	f	class:String
+String	./src/String.h	/^class String$/;"	c
+String	./src/Subscribe.h	/^        String$/;"	e	enum:SubscribeParser::Status
+StringBody	./src/ResponseParser.h	/^        StringBody,$/;"	e	enum:ResponseParser::State
+StringBodyLF	./src/ResponseParser.h	/^        StringBodyLF,$/;"	e	enum:ResponseParser::State
+StringCaseCmp	./src/String.h	/^class StringCaseCmp$/;"	c
+StringHead	./src/ResponseParser.h	/^        StringHead,$/;"	e	enum:ResponseParser::State
+StringLen	./src/ResponseParser.h	/^        StringLen,$/;"	e	enum:ResponseParser::State
+Strlen	./src/Command.h	/^        Strlen,$/;"	e	enum:Command::Type
+SubArrayLen	./src/ResponseParser.h	/^        SubArrayLen,$/;"	e	enum:ResponseParser::State
+SubArrayLen	./src/SentinelServerPool.cpp	/^        SubArrayLen,$/;"	e	enum:AddrParser::State	file:
+SubArrayLen	./src/StandaloneServerPool.cpp	/^        SubArrayLen,$/;"	e	enum:AddrParser::State	file:
+SubArrayLenLF	./src/ResponseParser.h	/^        SubArrayLenLF,$/;"	e	enum:ResponseParser::State
+SubCmd	./src/Command.h	/^        SubCmd      = 1<<10,$/;"	e	enum:Command::Mode
+SubMsg	./src/Command.h	/^        SubMsg,$/;"	e	enum:Command::Type
+SubStringBody	./src/ResponseParser.h	/^        SubStringBody,$/;"	e	enum:ResponseParser::State
+SubStringBodyLF	./src/ResponseParser.h	/^        SubStringBodyLF,$/;"	e	enum:ResponseParser::State
+SubStringLen	./src/ResponseParser.h	/^        SubStringLen,$/;"	e	enum:ResponseParser::State
+SubStringLenLF	./src/ResponseParser.h	/^        SubStringLenLF,$/;"	e	enum:ResponseParser::State
+Subscribe	./src/Command.h	/^        Subscribe,$/;"	e	enum:Command::Type
+Subscribe	./src/Subscribe.cpp	/^Subscribe::Subscribe():$/;"	f	class:Subscribe
+Subscribe	./src/Subscribe.h	/^        Subscribe,$/;"	e	enum:SubscribeParser::Status
+Subscribe	./src/Subscribe.h	/^class Subscribe$/;"	c
+SubscribeHead	./src/Request.h	/^        SubscribeHead,$/;"	e	enum:Request::GenericCode
+SubscribeParser	./src/Subscribe.h	/^class SubscribeParser$/;"	c
+Sunion	./src/Command.h	/^        Sunion,$/;"	e	enum:Command::Type
+Sunionstore	./src/Command.h	/^        Sunionstore,$/;"	e	enum:Command::Type
+T	./src/Deque.h	/^    typedef typename N::Value T;$/;"	t	class:Deque
+T	./src/List.h	/^    typedef typename N::Value T;$/;"	t	class:List
+TID	./src/ID.h	/^    TID():$/;"	f	class:TID
+TID	./src/ID.h	/^class TID$/;"	c
+Tail	./src/Timer.cpp	/^TimerPoint* TimerPoint::Tail = nullptr;$/;"	m	class:TimerPoint	file:
+Tail	./src/Timer.h	/^    static TimerPoint* Tail;$/;"	m	class:TimerPoint
+Throw	./src/Exception.h	61;"	d
+TimeSpan	./src/LatencyMonitor.h	/^    struct TimeSpan$/;"	s	class:LatencyMonitor
+TimeoutError	./src/Connection.h	/^        TimeoutError$/;"	e	enum:Connection::StatusEnum
+Timer	./src/Timer.h	/^    Timer():$/;"	f	class:Timer
+Timer	./src/Timer.h	/^    Timer(TimerPoint* key):$/;"	f	class:Timer
+Timer	./src/Timer.h	/^class Timer$/;"	c
+TimerPoint	./src/Timer.cpp	/^TimerPoint::TimerPoint(const char* key):$/;"	f	class:TimerPoint
+TimerPoint	./src/Timer.h	/^class TimerPoint$/;"	c
+Touch	./src/Command.h	/^        Touch,$/;"	e	enum:Command::Type
+TouchHead	./src/Request.h	/^        TouchHead,$/;"	e	enum:Request::GenericCode
+Transaction	./src/Transaction.h	/^    Transaction():$/;"	f	class:Transaction
+Transaction	./src/Transaction.h	/^class Transaction$/;"	c
+TransactionCases	./test/basic.py	/^TransactionCases = [$/;"	v
+TryLockTag	./src/Sync.h	21;"	d
+TryLockTag	./src/Sync.h	29;"	d
+Ttl	./src/Command.h	/^        Ttl,$/;"	e	enum:Command::Type
+Type	./src/Command.h	/^    enum Type$/;"	g	class:Command
+Type	./src/Distribution.h	/^    enum Type$/;"	g	class:Distribution
+Type	./src/Enums.h	/^    enum Type$/;"	g	class:ServerPoolRefreshMethod
+Type	./src/HashFunc.h	/^    enum Type$/;"	g	class:Hash
+Type	./src/Logger.h	/^    enum Type$/;"	g	class:LogLevel
+Type	./src/Reply.h	/^    enum Type$/;"	g	class:Reply
+Type	./src/ServerPool.h	/^    enum Type$/;"	g	class:ServerPool
+TypeCmd	./src/Command.h	/^        TypeCmd,$/;"	e	enum:Command::Type
+TypeName	./src/Distribution.cpp	/^struct TypeName$/;"	s	file:
+TypeName	./src/Enums.h	/^    struct TypeName$/;"	s	class:EnumBase
+TypeStr	./src/Reply.cpp	/^const char* Reply::TypeStr[Sentinel] = {$/;"	m	class:Reply	file:
+TypeStr	./src/Reply.h	/^    static const char* TypeStr[Sentinel];$/;"	m	class:Reply
+Unauth	./src/Response.h	/^        Unauth,$/;"	e	enum:Response::GenericCode
+Unconnected	./src/ConnectSocket.h	/^        Unconnected,$/;"	e	enum:ConnectSocket::ConnectStatus
+UniqueLock	./src/Sync.h	/^    UniqueLock(A&&... args)$/;"	f	class:UniqueLock
+UniqueLock	./src/Sync.h	/^class UniqueLock$/;"	c
+UniqueLock	./src/Sync.h	20;"	d
+Unknown	./src/Command.h	/^        Unknown     = 0,$/;"	e	enum:Command::Mode
+Unknown	./src/Server.h	/^        Unknown,$/;"	e	enum:Server::Role
+Unknown	./src/ServerPool.h	/^        Unknown,$/;"	e	enum:ServerPool::Type
+Unknown	./src/Subscribe.h	/^        Unknown,$/;"	e	enum:SubscribeParser::Status
+UnknownCmd	./src/Response.h	/^        UnknownCmd,$/;"	e	enum:Response::GenericCode
+Unlink	./src/Command.h	/^        Unlink,$/;"	e	enum:Command::Type
+UnlinkHead	./src/Request.h	/^        UnlinkHead,$/;"	e	enum:Request::GenericCode
+Unsubscribe	./src/Command.h	/^        Unsubscribe,$/;"	e	enum:Command::Type
+Unsubscribe	./src/Subscribe.h	/^        Unsubscribe,$/;"	e	enum:SubscribeParser::Status
+UnsubscribeHead	./src/Request.h	/^        UnsubscribeHead,$/;"	e	enum:Request::GenericCode
+Unwatch	./src/Command.h	/^        Unwatch,$/;"	e	enum:Command::Type
+UnwatchServ	./src/Command.h	/^        UnwatchServ,$/;"	e	enum:Command::Type
+UnwatchServ	./src/Request.h	/^        UnwatchServ,$/;"	e	enum:Request::GenericCode
+UsedMemory	./src/Alloc.h	/^    static AtomicLong UsedMemory;$/;"	m	class:AllocBase
+Util	./src/Util.h	/^namespace Util$/;"	n
+VValBody	./src/ConfParser.h	/^        VValBody,$/;"	e	enum:ConfParser::State
+ValReady	./src/ConfParser.h	/^        ValReady,$/;"	e	enum:ConfParser::State
+Value	./src/AcceptConnection.h	/^    typedef AcceptConnection Value;$/;"	t	class:AcceptConnection
+Value	./src/ConnectConnection.h	/^    typedef ConnectConnection Value;$/;"	t	class:ConnectConnection
+Value	./src/Request.h	/^    typedef Request Value;$/;"	t	class:Request
+Value	./src/Response.h	/^    typedef Response Value;$/;"	t	class:Response
+Verb	./src/Logger.h	/^        Verb,$/;"	e	enum:LogLevel::Type
+Warn	./src/Logger.h	/^        Warn,$/;"	e	enum:LogLevel::Type
+Watch	./src/Command.h	/^        Watch,$/;"	e	enum:Command::Type
+Write	./src/Command.h	/^        Write       = 1<<1,$/;"	e	enum:Command::Mode
+WriteEvent	./src/Multiplexor.h	/^        WriteEvent = 0x2,$/;"	e	enum:MultiplexorBase::EventEnum
+Zadd	./src/Command.h	/^        Zadd,$/;"	e	enum:Command::Type
+Zcard	./src/Command.h	/^        Zcard,$/;"	e	enum:Command::Type
+Zcount	./src/Command.h	/^        Zcount,$/;"	e	enum:Command::Type
+Zincrby	./src/Command.h	/^        Zincrby,$/;"	e	enum:Command::Type
+Zinterstore	./src/Command.h	/^        Zinterstore,$/;"	e	enum:Command::Type
+Zlexcount	./src/Command.h	/^        Zlexcount,$/;"	e	enum:Command::Type
+Zrange	./src/Command.h	/^        Zrange,$/;"	e	enum:Command::Type
+Zrangebylex	./src/Command.h	/^        Zrangebylex,$/;"	e	enum:Command::Type
+Zrangebyscore	./src/Command.h	/^        Zrangebyscore,$/;"	e	enum:Command::Type
+Zrank	./src/Command.h	/^        Zrank,$/;"	e	enum:Command::Type
+Zrem	./src/Command.h	/^        Zrem,$/;"	e	enum:Command::Type
+Zremrangebylex	./src/Command.h	/^        Zremrangebylex,$/;"	e	enum:Command::Type
+Zremrangebyrank	./src/Command.h	/^        Zremrangebyrank,$/;"	e	enum:Command::Type
+Zremrangebyscore	./src/Command.h	/^        Zremrangebyscore,$/;"	e	enum:Command::Type
+Zrevrange	./src/Command.h	/^        Zrevrange,$/;"	e	enum:Command::Type
+Zrevrangebylex	./src/Command.h	/^        Zrevrangebylex,$/;"	e	enum:Command::Type
+Zrevrangebyscore	./src/Command.h	/^        Zrevrangebyscore,$/;"	e	enum:Command::Type
+Zrevrank	./src/Command.h	/^        Zrevrank,$/;"	e	enum:Command::Type
+Zscan	./src/Command.h	/^        Zscan,$/;"	e	enum:Command::Type
+Zscore	./src/Command.h	/^        Zscore,$/;"	e	enum:Command::Type
+Zunionstore	./src/Command.h	/^        Zunionstore,$/;"	e	enum:Command::Type
+_CLUSTER_NODES_PARSER_H_	./src/ClusterNodesParser.h	8;"	d
+_MULTIPLEXOR_ASYNC_ASSIGN_	./src/EpollMultiplexor.h	63;"	d
+_PREDIXY_ACCEPT_CONNECTION_H_	./src/AcceptConnection.h	8;"	d
+_PREDIXY_ACCEPT_SOCKET_H_	./src/AcceptSocket.h	8;"	d
+_PREDIXY_ALLOC_H_	./src/Alloc.h	8;"	d
+_PREDIXY_AUTH_H_	./src/Auth.h	8;"	d
+_PREDIXY_BACKTRACE_H_	./src/Backtrace.h	8;"	d
+_PREDIXY_BUFFER_H_	./src/Buffer.h	8;"	d
+_PREDIXY_CLUSTER_SERVER_POOL_H_	./src/ClusterServerPool.h	8;"	d
+_PREDIXY_COMMAND_H_	./src/Command.h	8;"	d
+_PREDIXY_COMMON_H_	./src/Common.h	8;"	d
+_PREDIXY_CONF_H_	./src/Conf.h	8;"	d
+_PREDIXY_CONF_PARSER_H_	./src/ConfParser.h	8;"	d
+_PREDIXY_CONNECTION_H_	./src/Connection.h	8;"	d
+_PREDIXY_CONNECT_CONNECTION_H_	./src/ConnectConnection.h	8;"	d
+_PREDIXY_CONNECT_CONNECTION_POOL_H_	./src/ConnectConnectionPool.h	8;"	d
+_PREDIXY_CONNECT_SOCKET_H_	./src/ConnectSocket.h	8;"	d
+_PREDIXY_DC_H_	./src/DC.h	8;"	d
+_PREDIXY_DEQUE_H_	./src/Deque.h	8;"	d
+_PREDIXY_DISTRIBUTION_H_	./src/Distribution.h	8;"	d
+_PREDIXY_ENUMS_H_	./src/Enums.h	8;"	d
+_PREDIXY_EPOLL_MULTIPLEXOR_H_	./src/EpollMultiplexor.h	8;"	d
+_PREDIXY_EXCEPTION_H_	./src/Exception.h	8;"	d
+_PREDIXY_HANDLER_H_	./src/Handler.h	8;"	d
+_PREDIXY_HASH_FUNC_H_	./src/HashFunc.h	8;"	d
+_PREDIXY_H_	./src/Predixy.h	8;"	d
+_PREDIXY_ID_H_	./src/ID.h	8;"	d
+_PREDIXY_IOVEC_H_	./src/IOVec.h	8;"	d
+_PREDIXY_KQUEUE_MULTIPLEXOR_H_	./src/KqueueMultiplexor.h	8;"	d
+_PREDIXY_LATENCY_MONITOR_H_	./src/LatencyMonitor.h	8;"	d
+_PREDIXY_LISTEN_SOCKET_H_	./src/ListenSocket.h	8;"	d
+_PREDIXY_LIST_H_	./src/List.h	8;"	d
+_PREDIXY_LOGGER_H_	./src/Logger.h	8;"	d
+_PREDIXY_LOG_FILE_SINK_H_	./src/LogFileSink.h	8;"	d
+_PREDIXY_MULTIPLEXOR_H_	./src/Multiplexor.h	8;"	d
+_PREDIXY_NAME_	./src/Common.h	12;"	d
+_PREDIXY_POLL_MULTIPLEXOR_H_	./src/PollMultiplexor.h	8;"	d
+_PREDIXY_PROXY_H_	./src/Proxy.h	8;"	d
+_PREDIXY_REPLY_H_	./src/Reply.h	8;"	d
+_PREDIXY_REQUEST_H_	./src/Request.h	8;"	d
+_PREDIXY_REQUEST_PARSER_H_	./src/RequestParser.h	8;"	d
+_PREDIXY_RESPONSE_H_	./src/Response.h	8;"	d
+_PREDIXY_RESPONSE_PARSER_H_	./src/ResponseParser.h	8;"	d
+_PREDIXY_SENTINEL_SERVER_POOL_H_	./src/SentinelServerPool.h	8;"	d
+_PREDIXY_SERVER_GROUP_H_	./src/ServerGroup.h	8;"	d
+_PREDIXY_SERVER_H_	./src/Server.h	8;"	d
+_PREDIXY_SERVER_POOL_H_	./src/ServerPool.h	8;"	d
+_PREDIXY_SOCKET_H_	./src/Socket.h	8;"	d
+_PREDIXY_STANDALONE_SERVER_POOL_H_	./src/StandaloneServerPool.h	8;"	d
+_PREDIXY_STATS_H_	./src/Stats.h	8;"	d
+_PREDIXY_STRING_h_	./src/String.h	8;"	d
+_PREDIXY_SUBSCRIBE_H_	./src/Subscribe.h	8;"	d
+_PREDIXY_SYNC_H_	./src/Sync.h	8;"	d
+_PREDIXY_TIMER_H_	./src/Timer.h	8;"	d
+_PREDIXY_TRANSACTION_H_	./src/Transaction.h	8;"	d
+_PREDIXY_UTIL_H_	./src/Util.h	8;"	d
+_PREDIXY_VERSION_	./src/Common.h	13;"	d
+a	./test/basic.py	/^        a = set(args.case)$/;"	v
+a	./test/basic.py	/^    a = set()$/;"	v
+abortHandler	./src/Proxy.cpp	/^static void abortHandler(int sig)$/;"	f	file:
+accept	./src/ListenSocket.cpp	/^int ListenSocket::accept(sockaddr* addr, socklen_t* len)$/;"	f	class:ListenSocket
+accept	./src/Stats.h	/^    long accept                 = 0;$/;"	m	struct:HandlerStats
+acceptConnection	./src/ConnectConnection.h	/^    AcceptConnection* acceptConnection() const$/;"	f	class:ConnectConnection
+across	./src/Buffer.h	/^    bool across() const$/;"	f	class:Segment
+activate	./src/Server.cpp	/^bool Server::activate()$/;"	f	class:Server
+add	./src/Auth.cpp	/^void Authority::add(const AuthConf& ac)$/;"	f	class:Authority
+add	./src/LatencyMonitor.h	/^    int add(long v)$/;"	f	class:LatencyMonitor
+add	./src/LatencyMonitor.h	/^    void add(long v, int idx)$/;"	f	class:LatencyMonitor
+add	./src/ServerGroup.cpp	/^void ServerGroup::add(Server* s)$/;"	f	class:ServerGroup
+add	./src/Timer.h	/^    void add(long v)$/;"	f	class:TimerPoint
+addAcceptSocket	./src/Handler.cpp	/^void Handler::addAcceptSocket(int fd, sockaddr* addr, socklen_t len)$/;"	f	class:Handler
+addCustomCommand	./src/Command.cpp	/^void Command::addCustomCommand(const CustomCommandConf& ccc) {$/;"	f	class:Command
+addEvent	./src/EpollMultiplexor.cpp	/^bool EpollMultiplexor::addEvent(Socket* s, int evts)$/;"	f	class:EpollMultiplexor
+addEvent	./src/KqueueMultiplexor.cpp	/^bool KqueueMultiplexor::addEvent(Socket* s, int evts)$/;"	f	class:KqueueMultiplexor
+addEvent	./src/PollMultiplexor.cpp	/^bool PollMultiplexor::addEvent(Socket* s, int evts)$/;"	f	class:PollMultiplexor
+addPostEvent	./src/Connection.h	/^    void addPostEvent(int evts)$/;"	f	class:Connection
+addPostEvent	./src/Handler.cpp	/^inline void Handler::addPostEvent(AcceptConnection* c, int evts)$/;"	f	class:Handler
+addPostEvent	./src/Handler.cpp	/^inline void Handler::addPostEvent(ConnectConnection* s, int evts)$/;"	f	class:Handler
+addServerReadStats	./src/Handler.h	/^    void addServerReadStats(Server* serv, int num)$/;"	f	class:Handler
+addServerWriteStats	./src/Handler.h	/^    void addServerWriteStats(Server* serv, int num)$/;"	f	class:Handler
+addSocket	./src/EpollMultiplexor.cpp	/^bool EpollMultiplexor::addSocket(Socket* s, int evts)$/;"	f	class:EpollMultiplexor
+addSocket	./src/KqueueMultiplexor.cpp	/^bool KqueueMultiplexor::addSocket(Socket* s, int evts)$/;"	f	class:KqueueMultiplexor
+addSocket	./src/PollMultiplexor.cpp	/^bool PollMultiplexor::addSocket(Socket* s, int evts)$/;"	f	class:PollMultiplexor
+addr	./src/ClusterNodesParser.h	/^    const String& addr() const$/;"	f	class:ClusterNodesParser
+addr	./src/Conf.h	/^    std::string addr;$/;"	m	struct:ServerConf
+addr	./src/ListenSocket.h	/^    const char* addr() const$/;"	f	class:ListenSocket
+addr	./src/Server.h	/^    const String& addr() const$/;"	f	class:Server
+addrPrefix	./src/Conf.h	/^    std::vector<std::string> addrPrefix;$/;"	m	struct:DCConf
+adjustForLeader	./src/Response.cpp	/^void Response::adjustForLeader(Request* req)$/;"	f	class:Response
+adjustScanCursor	./src/Request.cpp	/^void Request::adjustScanCursor(long cursor)$/;"	f	class:Request
+allocSize	./src/Alloc.h	/^inline int allocSize()$/;"	f
+allocSize	./src/Buffer.h	/^inline int allocSize<Buffer>()$/;"	f
+allowMissLog	./src/Conf.h	/^    bool allowMissLog() const$/;"	f	class:Conf
+allowMissLog	./src/Logger.h	/^    bool allowMissLog() const$/;"	f	class:Logger
+append	./src/AcceptConnection.h	/^    void append(Request* req)$/;"	f	class:AcceptConnection
+append	./src/Buffer.cpp	/^Buffer* Buffer::append(const char* dat, int len)$/;"	f	class:Buffer
+append	./src/Buffer.cpp	/^Buffer* Buffer::append(const char* str)$/;"	f	class:Buffer
+append	./src/String.h	/^    bool append(char c)$/;"	f	class:SString
+append	./src/String.h	/^    bool append(const char* dat, int len)$/;"	f	class:SString
+append	./src/String.h	/^    bool append(const char* str)$/;"	f	class:SString
+argNum	./src/RequestParser.h	/^    int argNum() const$/;"	f	class:RequestParser
+argparse	./test/basic.py	/^import argparse$/;"	i
+argparse	./test/pubsub.py	/^import argparse$/;"	i
+args	./test/basic.py	/^    args = parser.parse_args()$/;"	v
+atol	./src/HashFunc.cpp	/^long Hash::atol(const char* buf, int len)$/;"	f	class:Hash
+attach	./src/Socket.cpp	/^void Socket::attach(int fd)$/;"	f	class:Socket
+attachAcceptConnection	./src/ConnectConnection.h	/^    void attachAcceptConnection(AcceptConnection* c)$/;"	f	class:ConnectConnection
+attachConnectConnection	./src/AcceptConnection.h	/^    void attachConnectConnection(ConnectConnection* s)$/;"	f	class:AcceptConnection
+auth	./src/AcceptConnection.h	/^    const Auth* auth() const$/;"	f	class:AcceptConnection
+authConfs	./src/Conf.h	/^    const std::vector<AuthConf>& authConfs() const$/;"	f	class:Conf
+authority	./src/Proxy.h	/^    const Authority* authority() const$/;"	f	class:Proxy
+back	./src/Deque.h	/^    P back() const$/;"	f	class:Deque
+back	./src/List.h	/^    P back() const$/;"	f	class:List
+begin	./src/Buffer.h	/^    BufferPos& begin()$/;"	f	class:Segment
+begin	./src/Buffer.h	/^    const BufferPos& begin() const$/;"	f	class:Segment
+bind	./src/Conf.h	/^    const char* bind() const$/;"	f	class:Conf
+body	./src/Request.h	/^    const Segment& body() const$/;"	f	class:Request
+body	./src/Response.h	/^    Segment& body()$/;"	f	class:Response
+body	./src/Response.h	/^    const Segment& body() const$/;"	f	class:Response
+buf	./src/Buffer.h	/^    BufferPtr buf;$/;"	m	struct:BufferPos
+buf	./src/IOVec.h	/^    Buffer* buf;$/;"	m	struct:IOVec
+bufSize	./src/Conf.h	/^    int bufSize() const$/;"	f	class:Conf
+c	./test/basic.py	/^    c = redis.StrictRedis(host=host, port=port)$/;"	v
+c	./test/basic.py	/^c = None$/;"	v
+c1	./test/pubsub.py	/^c1 = None$/;"	v
+c2	./test/pubsub.py	/^c2 = None$/;"	v
+check	./src/Conf.cpp	/^void Conf::check()$/;"	f	class:Conf
+check	./src/ConnectConnectionPool.cpp	/^void ConnectConnectionPool::check()$/;"	f	class:ConnectConnectionPool
+check	./test/basic.py	/^def check(cmd, r):$/;"	f
+checkClientTimeout	./src/Handler.cpp	/^int Handler::checkClientTimeout(long timeout)$/;"	f	class:Handler
+checkConnectionPool	./src/Handler.cpp	/^void Handler::checkConnectionPool()$/;"	f	class:Handler
+checkRotate	./src/LogFileSink.cpp	/^void LogFileSink::checkRotate()$/;"	f	class:LogFileSink
+checkServerTimeout	./src/Handler.cpp	/^int Handler::checkServerTimeout(long timeout)$/;"	f	class:Handler
+classType	./src/Socket.h	/^    int classType() const$/;"	f	class:Socket
+clear	./src/Buffer.cpp	/^void Segment::clear()$/;"	f	class:Segment
+clear	./src/ConfParser.cpp	/^void ConfParser::clear()$/;"	f	class:ConfParser
+clear	./src/Request.cpp	/^void Request::clear()$/;"	f	class:Request
+clear	./src/String.h	/^    void clear()$/;"	f	class:SString
+clientConnections	./src/Stats.h	/^    long clientConnections      = 0;$/;"	m	struct:HandlerStats
+clientTimeout	./src/Conf.h	/^    long clientTimeout() const$/;"	f	class:Conf
+close	./src/AcceptConnection.cpp	/^void AcceptConnection::close()$/;"	f	class:AcceptConnection
+close	./src/ConnectConnection.cpp	/^void ConnectConnection::close(Handler* h)$/;"	f	class:ConnectConnection
+close	./src/ConnectSocket.cpp	/^void ConnectSocket::close()$/;"	f	class:ConnectSocket
+close	./src/Socket.cpp	/^void Socket::close()$/;"	f	class:Socket
+close	./src/Stats.h	/^    long close          = 0;$/;"	m	struct:ServerStats
+closeASAP	./src/Connection.h	/^    void closeASAP()$/;"	f	class:Connection
+clusterServerPool	./src/Conf.h	/^    const ClusterServerPoolConf& clusterServerPool() const$/;"	f	class:Conf
+cmd	./src/Request.h	/^    const char* cmd() const$/;"	f	class:Request
+cmd	./src/RequestParser.h	/^    const char* cmd() const$/;"	f	class:RequestParser
+cmdIndex	./src/LatencyMonitor.h	/^    const std::vector<int>& cmdIndex(Command::Type type) const$/;"	f	class:LatencyMonitorSet
+cmds	./src/Conf.h	/^    std::bitset<Command::AvailableCommands> cmds;$/;"	m	struct:LatencyMonitorConf
+code	./src/Request.cpp	/^    Request::GenericCode code;$/;"	m	struct:GenericRequest	file:
+code	./src/Response.cpp	/^    Response::GenericCode code;$/;"	m	struct:GenericResponse	file:
+command	./src/RequestParser.h	/^    const Command* command() const$/;"	f	class:RequestParser
+commonPrefix	./src/String.h	/^    String commonPrefix(const String& s) const$/;"	f	class:String
+complete	./src/Buffer.h	/^    bool complete() const$/;"	f	class:SegmentStr
+concat	./src/Deque.h	/^    void concat(T* obj, int idx)$/;"	f	class:DequeNode
+concat	./src/List.h	/^    void concat(T* obj, int idx = 0)$/;"	f	class:ListNode
+conf	./src/Proxy.h	/^    Conf* conf() const$/;"	f	class:Proxy
+configGetRequest	./src/Handler.cpp	/^void Handler::configGetRequest(Request* req)$/;"	f	class:Handler
+configRequest	./src/Handler.cpp	/^void Handler::configRequest(Request* req, const String& key)$/;"	f	class:Handler
+configSetRequest	./src/Handler.cpp	/^void Handler::configSetRequest(Request* req)$/;"	f	class:Handler
+connect	./src/ConnectSocket.cpp	/^bool ConnectSocket::connect()$/;"	f	class:ConnectSocket
+connect	./src/Stats.h	/^    long connect        = 0;$/;"	m	struct:ServerStats
+connectConnection	./src/AcceptConnection.h	/^    ConnectConnection* connectConnection() const$/;"	f	class:AcceptConnection
+connectStatus	./src/ConnectSocket.h	/^    ConnectStatus connectStatus() const$/;"	f	class:ConnectSocket
+connection	./src/Request.h	/^    AcceptConnection* connection() const$/;"	f	class:Request
+connections	./src/Stats.h	/^    int connections     = 0;$/;"	m	struct:ServerStats
+content	./src/Request.cpp	/^    const char* content;$/;"	m	struct:GenericRequest	file:
+content	./src/Response.cpp	/^    const char* content;$/;"	m	struct:GenericResponse	file:
+count	./src/Alloc.h	/^    int count() const$/;"	f	class:RefCntObj
+count	./src/LatencyMonitor.h	/^        long count;$/;"	m	struct:LatencyMonitor::TimeSpan
+count	./src/SentinelServerPool.cpp	/^    int count() const {return mCnt;}$/;"	f	class:AddrParser
+count	./src/StandaloneServerPool.cpp	/^    int count() const {return mCnt;}$/;"	f	class:AddrParser
+count	./src/Timer.h	/^    long count() const$/;"	f	class:TimerPoint
+crc16	./src/Crc16.cpp	/^uint16_t Hash::crc16(const char *buf, int len) {$/;"	f	class:Hash
+crc16	./src/Crc16.cpp	/^uint16_t Hash::crc16(uint16_t crc, char k)$/;"	f	class:Hash
+crc16tab	./src/Crc16.cpp	/^static const uint16_t crc16tab[256]= {$/;"	v	file:
+create	./src/Alloc.h	/^    static T* create(Targs&&... args)$/;"	f	class:Alloc
+createTime	./src/Request.h	/^    long createTime() const$/;"	f	class:Request
+cut	./src/Buffer.cpp	/^void Segment::cut(int cnt)$/;"	f	class:Segment
+dat	./src/IOVec.h	/^    char* dat;$/;"	m	struct:IOVec
+data	./src/Buffer.h	/^    char* data()$/;"	f	class:Buffer
+data	./src/Buffer.h	/^    const char* data() const$/;"	f	class:Buffer
+data	./src/Logger.h	/^    const char* data() const {return mBuf;}$/;"	f	class:LogUnit
+data	./src/Request.h	/^    void* data() const$/;"	f	class:Request
+data	./src/String.h	/^    const char* data() const$/;"	f	class:String
+dataCenter	./src/Proxy.h	/^    DataCenter* dataCenter() const$/;"	f	class:Proxy
+databases	./src/Conf.h	/^    int databases = 1;$/;"	m	struct:ServerPoolConf
+db	./src/Connection.h	/^    int db() const$/;"	f	class:Connection
+dbNum	./src/ServerPool.h	/^    int dbNum() const$/;"	f	class:ServerPool
+dc	./src/Server.h	/^    DC* dc() const$/;"	f	class:Server
+dcConfs	./src/Conf.h	/^    const std::vector<DCConf>& dcConfs() const$/;"	f	class:Conf
+dcName	./src/Server.h	/^    String dcName() const$/;"	f	class:Server
+decodeInlineArg	./src/RequestParser.h	/^bool RequestParser::decodeInlineArg(SString<Size>& dst, const String& src)$/;"	f	class:RequestParser
+decrMulti	./src/Transaction.h	/^    int decrMulti()$/;"	f	class:Transaction
+decrPendMulti	./src/Transaction.h	/^    int decrPendMulti()$/;"	f	class:Transaction
+decrPendRequests	./src/ConnectConnectionPool.h	/^    int decrPendRequests()$/;"	f	class:ConnectConnectionPool
+decrPendSub	./src/Subscribe.h	/^    int decrPendSub()$/;"	f	class:Subscribe
+decrPendWatch	./src/Transaction.h	/^    int decrPendWatch(int cnt = 1)$/;"	f	class:Transaction
+decrWatch	./src/Transaction.h	/^    int decrWatch()$/;"	f	class:Transaction
+delEvent	./src/EpollMultiplexor.cpp	/^bool EpollMultiplexor::delEvent(Socket* s, int evts)$/;"	f	class:EpollMultiplexor
+delEvent	./src/KqueueMultiplexor.cpp	/^bool KqueueMultiplexor::delEvent(Socket* s, int evts)$/;"	f	class:KqueueMultiplexor
+delEvent	./src/PollMultiplexor.cpp	/^bool PollMultiplexor::delEvent(Socket* s, int evts)$/;"	f	class:PollMultiplexor
+delSocket	./src/EpollMultiplexor.cpp	/^void EpollMultiplexor::delSocket(Socket* s)$/;"	f	class:EpollMultiplexor
+delSocket	./src/KqueueMultiplexor.cpp	/^void KqueueMultiplexor::delSocket(Socket* s)$/;"	f	class:KqueueMultiplexor
+delSocket	./src/PollMultiplexor.cpp	/^void PollMultiplexor::delSocket(Socket* s)$/;"	f	class:PollMultiplexor
+destroy	./src/Alloc.h	/^    static void destroy(T* obj)$/;"	f	class:Alloc
+detach	./src/Request.h	/^    void detach()$/;"	f	class:Request
+detach	./src/Socket.cpp	/^void Socket::detach()$/;"	f	class:Socket
+detachAcceptConnection	./src/ConnectConnection.h	/^    void detachAcceptConnection()$/;"	f	class:ConnectConnection
+detachConnectConnection	./src/AcceptConnection.h	/^    void detachConnectConnection()$/;"	f	class:AcceptConnection
+directResponse	./src/Handler.cpp	/^void Handler::directResponse(Request* req, Response::GenericCode code, ConnectConnection* s)$/;"	f	class:Handler
+dist	./src/Conf.h	/^    Distribution dist = Distribution::None;$/;"	m	struct:StandaloneServerPoolConf
+dump	./src/Buffer.cpp	/^int Segment::dump(char* dat, int len) const$/;"	f	class:Segment
+dynamicSlaveReadPriority	./src/Conf.h	/^    int dynamicSlaveReadPriority = 0;$/;"	m	struct:ServerPoolConf
+dynamicSlaveReadPriority	./src/ServerPool.h	/^    int dynamicSlaveReadPriority() const$/;"	f	class:ServerPool
+elapsed	./src/Timer.h	/^    long elapsed() const$/;"	f	class:Timer
+elapsed	./src/Timer.h	/^    long elapsed() const$/;"	f	class:TimerPoint
+elapsedMSec	./src/Util.h	/^    inline long elapsedMSec()$/;"	f	namespace:Util
+elapsedSec	./src/Util.h	/^    inline long elapsedSec()$/;"	f	namespace:Util
+elapsedUSec	./src/Util.h	/^    inline long elapsedUSec()$/;"	f	namespace:Util
+empty	./src/AcceptConnection.h	/^    bool empty() const$/;"	f	class:AcceptConnection
+empty	./src/Buffer.h	/^    bool empty() const$/;"	f	class:Buffer
+empty	./src/Buffer.h	/^    bool empty() const$/;"	f	class:Segment
+empty	./src/Deque.h	/^    bool empty() const$/;"	f	class:Deque
+empty	./src/List.h	/^    bool empty() const$/;"	f	class:List
+empty	./src/String.h	/^    bool empty() const$/;"	f	class:String
+end	./src/Buffer.h	/^    BufferPos& end()$/;"	f	class:Segment
+end	./src/Buffer.h	/^    const BufferPos& end () const$/;"	f	class:Segment
+equal	./src/String.h	/^    bool equal(const String& s, bool ignoreCase= false) const$/;"	f	class:String
+eventLoop	./src/Handler.h	/^    Multiplexor* eventLoop() const$/;"	f	class:Handler
+exist	./src/Deque.h	/^    bool exist(T* obj) const$/;"	f	class:Deque
+fail	./src/Server.h	/^    bool fail() const$/;"	f	class:Server
+fails	./test/basic.py	/^    fails = []$/;"	v
+fappend	./src/Buffer.cpp	/^Buffer* Buffer::fappend(const char* fmt, ...)$/;"	f	class:Buffer
+fd	./src/LogFileSink.h	/^    int fd() const$/;"	f	class:LogFileSink
+fd	./src/Socket.h	/^    int fd() const$/;"	f	class:Socket
+file	./src/ConfParser.h	/^        const char* file;$/;"	m	struct:ConfParser::Node
+fill	./src/AcceptConnection.cpp	/^int AcceptConnection::fill(Handler* h, IOVec* bufs, int len)$/;"	f	class:AcceptConnection
+fill	./src/Buffer.cpp	/^int Segment::fill(IOVec* vecs, int len, bool& all) const$/;"	f	class:Segment
+fill	./src/ConnectConnection.cpp	/^int ConnectConnection::fill(Handler* h, IOVec* bufs, int len)$/;"	f	class:ConnectConnection
+fill	./src/Request.cpp	/^int Request::fill(IOVec* vecs, int len)$/;"	f	class:Request
+fill	./src/Response.cpp	/^int Response::fill(IOVec* vecs, int len, Request* req) const$/;"	f	class:Response
+find	./src/Command.h	/^    static const Command* find(const String& cmd)$/;"	f	class:Command
+find	./src/LatencyMonitor.h	/^    int find(const String& name) const$/;"	f	class:LatencyMonitorSet
+flags	./src/ClusterNodesParser.h	/^    const String& flags() const$/;"	f	class:ClusterNodesParser
+follow	./src/Request.cpp	/^void Request::follow(Request* leader)$/;"	f	class:Request
+followers	./src/Request.h	/^    int followers() const$/;"	f	class:Request
+format	./src/Logger.cpp	/^void LogUnit::format(LogLevel::Type level, const char* file, int line, const char* fmt, ...)$/;"	f	class:LogUnit
+front	./src/Deque.h	/^    P front() const$/;"	f	class:Deque
+front	./src/List.h	/^    P front() const$/;"	f	class:List
+frontRequest	./src/ConnectConnection.h	/^    Request* frontRequest() const$/;"	f	class:ConnectConnection
+fset	./src/Buffer.cpp	/^Buffer* Segment::fset(Buffer* buf, const char* fmt, ...)$/;"	f	class:Segment
+full	./src/Buffer.h	/^    bool full() const$/;"	f	class:Buffer
+gInst	./src/Logger.cpp	/^Logger* Logger::gInst = NULL;$/;"	m	class:Logger	file:
+gInst	./src/Logger.h	/^    static Logger* gInst;$/;"	m	class:Logger
+get	./src/Auth.h	/^    Auth* get(const String& pd) const$/;"	f	class:Authority
+get	./src/Buffer.cpp	/^bool Segment::get(const char*& dat, int& len) const$/;"	f	class:Segment
+get	./src/Command.h	/^    static const Command& get(Type type)$/;"	f	class:Command
+getAddr	./src/Response.cpp	/^bool Response::getAddr(int& slot, SString<Const::MaxAddrLen>& addr, const char* token) const$/;"	f	class:Response
+getAsk	./src/Response.h	/^    bool getAsk(SString<Const::MaxAddrLen>& addr) const$/;"	f	class:Response
+getBuffer	./src/Connection.cpp	/^BufferPtr Connection::getBuffer(Handler* h, bool allowNew)$/;"	f	class:Connection
+getConnectConnection	./src/Handler.cpp	/^ConnectConnection* Handler::getConnectConnection(Request* req, Server* serv)$/;"	f	class:Handler
+getConnectConnectionPool	./src/Handler.h	/^    ConnectConnectionPool* getConnectConnectionPool(int id) const$/;"	f	class:Handler
+getDC	./src/DC.cpp	/^DC* DataCenter::getDC(const String& addr) const$/;"	f	class:DataCenter
+getDefault	./src/Auth.h	/^    Auth* getDefault() const$/;"	f	class:Authority
+getEvent	./src/Socket.h	/^    int getEvent() const$/;"	f	class:Socket
+getFile	./src/ConfParser.cpp	/^std::string* ConfParser::getFile(const std::string& name, const char* parent)$/;"	f	class:ConfParser
+getFirstAddr	./src/Socket.cpp	/^void Socket::getFirstAddr(const char* addr, int type, int protocol, sockaddr* res, socklen_t* len)$/;"	f	class:Socket
+getGroup	./src/ClusterServerPool.h	/^    ServerGroup* getGroup(const String& nodeid) const$/;"	f	class:ClusterServerPool
+getGroup	./src/ServerPool.h	/^    ServerGroup* getGroup(int idx)$/;"	f	class:ServerPool
+getLogUnit	./src/Logger.cpp	/^LogUnit* Logger::getLogUnit()$/;"	f	class:Logger
+getMaster	./src/ServerGroup.cpp	/^Server* ServerGroup::getMaster() const$/;"	f	class:ServerGroup
+getMaxMemory	./src/Alloc.h	/^    static long getMaxMemory()$/;"	f	class:AllocBase
+getMoved	./src/Response.h	/^    bool getMoved(int& slot, SString<Const::MaxAddrLen>& addr) const$/;"	f	class:Response
+getPendRequests	./src/Handler.h	/^    int getPendRequests(Server* serv) const$/;"	f	class:Handler
+getPostEvent	./src/Connection.h	/^    int getPostEvent() const$/;"	f	class:Connection
+getPrivateConnection	./src/ConnectConnectionPool.cpp	/^ConnectConnection* ConnectConnectionPool::getPrivateConnection(int db)$/;"	f	class:ConnectConnectionPool
+getReadPolicy	./src/DC.h	/^    const DCReadPolicy& getReadPolicy(DC* oth) const$/;"	f	class:DC
+getReadPriority	./src/DC.h	/^    int getReadPriority(DC* oth) const$/;"	f	class:DC
+getReadServer	./src/ServerGroup.cpp	/^Server* ServerGroup::getReadServer(Handler* h) const$/;"	f	class:ServerGroup
+getReadServer	./src/ServerGroup.cpp	/^Server* ServerGroup::getReadServer(Handler* h, DC* localDC) const$/;"	f	class:ServerGroup
+getReadWeight	./src/DC.h	/^    int getReadWeight(DC* oth) const$/;"	f	class:DC
+getResponse	./src/Request.h	/^    Response* getResponse() const$/;"	f	class:Request
+getServer	./src/ClusterServerPool.cpp	/^Server* ClusterServerPool::getServer(Handler* h, Request* req, const String& key) const$/;"	f	class:ClusterServerPool
+getServer	./src/SentinelServerPool.cpp	/^Server* SentinelServerPool::getServer(Handler* h, Request* req, const String& key) const$/;"	f	class:SentinelServerPool
+getServer	./src/ServerGroup.cpp	/^Server* ServerGroup::getServer(Handler* h, Request* req) const$/;"	f	class:ServerGroup
+getServer	./src/ServerPool.h	/^    Server* getServer(Handler* h, Request* req, const String& key) const$/;"	f	class:ServerPool
+getServer	./src/ServerPool.h	/^    Server* getServer(const String& addr)$/;"	f	class:ServerPool
+getServer	./src/ServerPool.h	/^    static Server* getServer(const ServerPool* p, Handler* h, Request* req, const String& key)$/;"	f	class:ServerPoolTmpl
+getServer	./src/StandaloneServerPool.cpp	/^Server* StandaloneServerPool::getServer(Handler* h, Request* req, const String& key) const$/;"	f	class:StandaloneServerPool
+getShareConnection	./src/ConnectConnectionPool.cpp	/^ConnectConnection* ConnectConnectionPool::getShareConnection(int db)$/;"	f	class:ConnectConnectionPool
+getSize	./src/Buffer.h	/^    static int getSize()$/;"	f	class:Buffer
+getSlot	./src/ClusterNodesParser.h	/^    bool getSlot(int& begin, int& end) const$/;"	f	class:ClusterNodesParser
+getUsedMemory	./src/Alloc.h	/^    static long getUsedMemory()$/;"	f	class:AllocBase
+good	./src/Socket.h	/^    bool good() const$/;"	f	class:Socket
+group	./src/Server.h	/^    ServerGroup* group() const$/;"	f	class:Server
+groups	./src/Conf.h	/^    std::vector<ServerGroupConf> groups;$/;"	m	struct:StandaloneServerPoolConf
+handleAcceptConnectionEvent	./src/Handler.cpp	/^void Handler::handleAcceptConnectionEvent(AcceptConnection* c, int evts)$/;"	f	class:Handler
+handleConnectConnectionEvent	./src/Handler.cpp	/^void Handler::handleConnectConnectionEvent(ConnectConnection* s, int evts)$/;"	f	class:Handler
+handleEvent	./src/Handler.cpp	/^void Handler::handleEvent(Socket* s, int evts)$/;"	f	class:Handler
+handleGetMaster	./src/SentinelServerPool.cpp	/^void SentinelServerPool::handleGetMaster(Handler* h, ConnectConnection* s, Request* req, Response* res)$/;"	f	class:SentinelServerPool
+handleGetMaster	./src/StandaloneServerPool.cpp	/^void StandaloneServerPool::handleGetMaster(Handler* h, ConnectConnection* s, Request* req, Response* res)$/;"	f	class:StandaloneServerPool
+handleListenEvent	./src/Handler.cpp	/^void Handler::handleListenEvent(ListenSocket* s, int evts)$/;"	f	class:Handler
+handleRequest	./src/Handler.cpp	/^void Handler::handleRequest(Request* req)$/;"	f	class:Handler
+handleRequest	./src/Handler.cpp	/^void Handler::handleRequest(Request* req, ConnectConnection* s)$/;"	f	class:Handler
+handleResponse	./src/ClusterServerPool.cpp	/^void ClusterServerPool::handleResponse(Handler* h, ConnectConnection* s, Request* req, Response* res)$/;"	f	class:ClusterServerPool
+handleResponse	./src/ConnectConnection.cpp	/^void ConnectConnection::handleResponse(Handler* h)$/;"	f	class:ConnectConnection
+handleResponse	./src/Handler.cpp	/^void Handler::handleResponse(ConnectConnection* s, Request* req, Response* res)$/;"	f	class:Handler
+handleResponse	./src/SentinelServerPool.cpp	/^void SentinelServerPool::handleResponse(Handler* h, ConnectConnection* s, Request* req, Response* res)$/;"	f	class:SentinelServerPool
+handleResponse	./src/ServerPool.cpp	/^void ServerPool::handleResponse(Handler* h, ConnectConnection* s, Request* req, Response* res)$/;"	f	class:ServerPool
+handleResponse	./src/ServerPool.h	/^    static void handleResponse(ServerPool* p, Handler* h, ConnectConnection* s, Request* req, Response* res)$/;"	f	class:ServerPoolTmpl
+handleResponse	./src/StandaloneServerPool.cpp	/^void StandaloneServerPool::handleResponse(Handler* h, ConnectConnection* s, Request* req, Response* res)$/;"	f	class:StandaloneServerPool
+handleSentinels	./src/SentinelServerPool.cpp	/^void SentinelServerPool::handleSentinels(Handler* h, ConnectConnection* s, Request* req, Response* res)$/;"	f	class:SentinelServerPool
+handleSentinels	./src/StandaloneServerPool.cpp	/^void StandaloneServerPool::handleSentinels(Handler* h, ConnectConnection* s, Request* req, Response* res)$/;"	f	class:StandaloneServerPool
+handleSlaves	./src/SentinelServerPool.cpp	/^void SentinelServerPool::handleSlaves(Handler* h, ConnectConnection* s, Request* req, Response* res)$/;"	f	class:SentinelServerPool
+handleSlaves	./src/StandaloneServerPool.cpp	/^void StandaloneServerPool::handleSlaves(Handler* h, ConnectConnection* s, Request* req, Response* res)$/;"	f	class:StandaloneServerPool
+handlers	./src/Proxy.h	/^    const std::vector<Handler*>& handlers() const$/;"	f	class:Proxy
+hasAuth	./src/Auth.h	/^    bool hasAuth() const$/;"	f	class:Authority
+hasPrefix	./src/Buffer.cpp	/^bool Segment::hasPrefix(const char* prefix) const$/;"	f	class:Segment
+hasPrefix	./src/String.h	/^    bool hasPrefix(const String& s) const$/;"	f	class:String
+hasValidPort	./src/SentinelServerPool.cpp	/^static bool hasValidPort(const String& addr)$/;"	f	file:
+hasValidPort	./src/StandaloneServerPool.cpp	/^static bool hasValidPort(const String& addr)$/;"	f	file:
+hash	./src/Conf.h	/^    Hash hash = Hash::None;$/;"	m	struct:StandaloneServerPoolConf
+hash	./src/HashFunc.h	/^    long hash(const char* buf, int len) const$/;"	f	class:Hash
+hash	./src/HashFunc.h	/^    long hash(const char* buf, int len, const char* tag) const$/;"	f	class:Hash
+hashTag	./src/Conf.h	/^    char hashTag[2];$/;"	m	struct:StandaloneServerPoolConf
+hashTagStr	./src/HashFunc.cpp	/^const char* Hash::hashTagStr(const char* buf, int& len, const char* tag)$/;"	f	class:Hash
+head	./src/Response.h	/^    Segment& head()$/;"	f	class:Response
+head	./src/Response.h	/^    const Segment& head() const$/;"	f	class:Response
+host	./test/basic.py	/^    host = '127.0.0.1' if not args.h else args.h$/;"	v
+id	./src/ID.h	/^    int id() const$/;"	f	class:ID
+id	./src/ID.h	/^    long id() const$/;"	f	class:TID
+idUnique	./src/Handler.h	/^    IDUnique& idUnique()$/;"	f	class:Handler
+idx	./src/PollMultiplexor.h	/^        int idx;$/;"	m	struct:PollMultiplexor::SktIdx
+inMulti	./src/Transaction.h	/^    bool inMulti() const$/;"	f	class:Transaction
+inPendMulti	./src/Transaction.h	/^    bool inPendMulti() const$/;"	f	class:Transaction
+inPendSub	./src/Subscribe.h	/^    bool inPendSub() const$/;"	f	class:Subscribe
+inPendWatch	./src/Transaction.h	/^    bool inPendWatch() const$/;"	f	class:Transaction
+inSub	./src/Subscribe.h	/^    bool inSub(bool includePend) const$/;"	f	class:Subscribe
+inTransaction	./src/Transaction.h	/^    bool inTransaction() const$/;"	f	class:Transaction
+inWatch	./src/Transaction.h	/^    bool inWatch() const$/;"	f	class:Transaction
+incrFail	./src/Server.cpp	/^void Server::incrFail()$/;"	f	class:Server
+incrMulti	./src/Transaction.h	/^    int incrMulti()$/;"	f	class:Transaction
+incrPendMulti	./src/Transaction.h	/^    int incrPendMulti()$/;"	f	class:Transaction
+incrPendRequests	./src/ConnectConnectionPool.h	/^    int incrPendRequests()$/;"	f	class:ConnectConnectionPool
+incrPendSub	./src/Subscribe.h	/^    int incrPendSub()$/;"	f	class:Subscribe
+incrPendWatch	./src/Transaction.h	/^    int incrPendWatch()$/;"	f	class:Transaction
+incrRedirectCnt	./src/Request.h	/^    int incrRedirectCnt()$/;"	f	class:Request
+incrStatsVer	./src/Proxy.h	/^    long incrStatsVer()$/;"	f	class:Proxy
+incrWatch	./src/Transaction.h	/^    int incrWatch()$/;"	f	class:Transaction
+infoLatencyRequest	./src/Handler.cpp	/^void Handler::infoLatencyRequest(Request* req)$/;"	f	class:Handler
+infoRequest	./src/Handler.cpp	/^void Handler::infoRequest(Request* req, const String& key)$/;"	f	class:Handler
+infoServerLatencyRequest	./src/Handler.cpp	/^void Handler::infoServerLatencyRequest(Request* req)$/;"	f	class:Handler
+init	./src/ClusterServerPool.cpp	/^void ClusterServerPool::init(const ClusterServerPoolConf& conf)$/;"	f	class:ClusterServerPool
+init	./src/Command.cpp	/^void Command::init()$/;"	f	class:Command
+init	./src/Conf.cpp	/^bool Conf::init(int argc, char* argv[])$/;"	f	class:Conf
+init	./src/Conf.cpp	/^void CustomCommandConf::init(CustomCommandConf&c, const char* name) {$/;"	f	class:CustomCommandConf
+init	./src/ConnectConnectionPool.cpp	/^bool ConnectConnectionPool::init(ConnectConnection* c)$/;"	f	class:ConnectConnectionPool
+init	./src/DC.cpp	/^void DataCenter::init(const Conf* conf)$/;"	f	class:DataCenter
+init	./src/Exception.h	/^    void init(const char* fmt, va_list ap)$/;"	f	class:ExceptionBase
+init	./src/LatencyMonitor.cpp	/^void LatencyMonitorSet::init(const std::vector<LatencyMonitorConf>& conf)$/;"	f	class:LatencyMonitorSet
+init	./src/LatencyMonitor.h	/^    void init(const LatencyMonitorConf& c)$/;"	f	class:LatencyMonitor
+init	./src/Proxy.cpp	/^bool Proxy::init(int argc, char* argv[])$/;"	f	class:Proxy
+init	./src/Request.cpp	/^void Request::init()$/;"	f	class:Request
+init	./src/Response.cpp	/^void Response::init()$/;"	f	class:Response
+init	./src/SentinelServerPool.cpp	/^void SentinelServerPool::init(const SentinelServerPoolConf& conf)$/;"	f	class:SentinelServerPool
+init	./src/ServerPool.cpp	/^void ServerPool::init(const ServerPoolConf& conf)$/;"	f	class:ServerPool
+init	./src/StandaloneServerPool.cpp	/^void StandaloneServerPool::init(const StandaloneServerPoolConf& conf)$/;"	f	class:StandaloneServerPool
+innerResponse	./src/Handler.cpp	/^void Handler::innerResponse(ConnectConnection* s, Request* req, Response* res)$/;"	f	class:Handler
+integer	./src/Response.h	/^    int64_t integer() const$/;"	f	class:Response
+integer	./src/ResponseParser.h	/^    int64_t integer() const$/;"	f	class:ResponseParser
+isAnyMulti	./src/Command.h	/^    bool isAnyMulti() const$/;"	f	class:Command
+isArray	./src/Response.h	/^    bool isArray() const$/;"	f	class:Response
+isAsk	./src/Response.h	/^    bool isAsk() const$/;"	f	class:Response
+isAuth	./src/ConnectConnection.h	/^    bool isAuth() const$/;"	f	class:ConnectConnection
+isBlockRequest	./src/AcceptConnection.h	/^    bool isBlockRequest() const$/;"	f	class:AcceptConnection
+isCloseASAP	./src/Connection.h	/^    bool isCloseASAP() const$/;"	f	class:Connection
+isConnecting	./src/ConnectSocket.h	/^    bool isConnecting() const$/;"	f	class:ConnectSocket
+isDelivered	./src/Request.h	/^    bool isDelivered() const$/;"	f	class:Request
+isDone	./src/Request.cpp	/^bool Request::isDone() const$/;"	f	class:Request
+isError	./src/Response.h	/^    bool isError() const$/;"	f	class:Response
+isIdle	./src/RequestParser.h	/^    bool isIdle() const$/;"	f	class:RequestParser
+isIdle	./src/ResponseParser.h	/^    bool isIdle() const$/;"	f	class:ResponseParser
+isInline	./src/Request.h	/^    bool isInline() const$/;"	f	class:Request
+isInline	./src/RequestParser.h	/^    bool isInline() const$/;"	f	class:RequestParser
+isInner	./src/Request.h	/^    bool isInner() const$/;"	f	class:Request
+isInteger	./src/Response.h	/^    bool isInteger() const$/;"	f	class:Response
+isKey	./src/RequestParser.cpp	/^inline bool RequestParser::isKey(bool split) const$/;"	f	class:RequestParser
+isLeader	./src/Request.h	/^    bool isLeader() const$/;"	f	class:Request
+isMaster	./src/Server.h	/^    bool isMaster() const$/;"	f	class:Server
+isMoved	./src/Response.h	/^    bool isMoved() const$/;"	f	class:Response
+isMultiKey	./src/Command.h	/^    bool isMultiKey() const$/;"	f	class:Command
+isMultiKeyVal	./src/Command.h	/^    bool isMultiKeyVal() const$/;"	f	class:Command
+isOk	./src/Response.h	/^    bool isOk() const$/;"	f	class:Response
+isPong	./src/Response.h	/^    bool isPong() const$/;"	f	class:Response
+isSMultiKey	./src/Command.h	/^    bool isSMultiKey() const$/;"	f	class:Command
+isShared	./src/ConnectConnection.h	/^    bool isShared() const$/;"	f	class:ConnectConnection
+isSlave	./src/Server.h	/^    bool isSlave() const$/;"	f	class:Server
+isSplit	./src/RequestParser.cpp	/^inline bool RequestParser::isSplit(bool split) const$/;"	f	class:RequestParser
+isSplitMultiKey	./src/Proxy.h	/^    bool isSplitMultiKey() const$/;"	f	class:Proxy
+isStatic	./src/Server.h	/^    bool isStatic() const$/;"	f	class:Server
+isString	./src/Response.h	/^    bool isString() const$/;"	f	class:Response
+iter	./src/ClusterServerPool.h	/^    Server* iter(int& cursor) const$/;"	f	class:ClusterServerPool
+iter	./src/Command.h	/^    static const Command* iter(int& cursor)$/;"	f	class:Command
+iter	./src/SentinelServerPool.h	/^    Server* iter(int& cursor) const$/;"	f	class:SentinelServerPool
+iter	./src/ServerPool.cpp	/^Server* ServerPool::iter(const std::vector<Server*>& servs, int& cursor)$/;"	f	class:ServerPool
+iter	./src/ServerPool.h	/^    Server* iter(int& cursor) const$/;"	f	class:ServerPool
+iter	./src/ServerPool.h	/^    static Server* iter(const ServerPool* p, int& cursor)$/;"	f	class:ServerPoolTmpl
+iter	./src/StandaloneServerPool.h	/^    Server* iter(int& cursor) const$/;"	f	class:StandaloneServerPool
+keepalive	./src/Conf.h	/^    int keepalive = 0; \/\/seconds$/;"	m	struct:ServerPoolConf
+keepalive	./src/ServerPool.h	/^    int keepalive() const$/;"	f	class:ServerPool
+key	./src/ConfParser.h	/^        std::string key;$/;"	m	struct:ConfParser::Node
+key	./src/Request.h	/^    const Segment& key() const$/;"	f	class:Request
+key	./src/RequestParser.h	/^    Segment& key()$/;"	f	class:RequestParser
+key	./src/RequestParser.h	/^    const Segment& key() const$/;"	f	class:RequestParser
+key	./src/Timer.h	/^    const char* key() const$/;"	f	class:TimerPoint
+keyPrefix	./src/Conf.h	/^    std::vector<std::string> keyPrefix;$/;"	m	struct:AuthConf
+lastActiveTime	./src/AcceptConnection.h	/^    long lastActiveTime() const$/;"	f	class:AcceptConnection
+latencyMonitorSet	./src/Proxy.h	/^    const LatencyMonitorSet& latencyMonitorSet() const$/;"	f	class:Proxy
+latencyMonitors	./src/Conf.h	/^    const std::vector<LatencyMonitorConf>& latencyMonitors() const$/;"	f	class:Conf
+latencyMonitors	./src/ConnectConnectionPool.h	/^    const std::vector<LatencyMonitor>& latencyMonitors() const$/;"	f	class:ConnectConnectionPool
+latencyMonitors	./src/ConnectConnectionPool.h	/^    std::vector<LatencyMonitor>& latencyMonitors()$/;"	f	class:ConnectConnectionPool
+latencyMonitors	./src/Handler.h	/^    const std::vector<LatencyMonitor>& latencyMonitors() const$/;"	f	class:Handler
+latencyMonitors	./src/LatencyMonitor.h	/^    const std::vector<LatencyMonitor>& latencyMonitors() const$/;"	f	class:LatencyMonitorSet
+leader	./src/Request.h	/^    Request* leader() const$/;"	f	class:Request
+len	./src/IOVec.h	/^    int len;$/;"	m	struct:IOVec
+length	./src/Buffer.cpp	/^int Segment::length() const$/;"	f	class:Segment
+length	./src/Buffer.h	/^    int length() const$/;"	f	class:Buffer
+length	./src/Logger.h	/^    int length() const {return mLen;}$/;"	f	class:LogUnit
+length	./src/String.h	/^    int length() const$/;"	f	class:String
+line	./src/ConfParser.cpp	/^    int line;$/;"	m	struct:File	file:
+line	./src/ConfParser.h	/^        int line;$/;"	m	struct:ConfParser::Node
+listen	./src/ListenSocket.cpp	/^void ListenSocket::listen(int backlog)$/;"	f	class:ListenSocket
+listener	./src/Proxy.h	/^    ListenSocket* listener() const$/;"	f	class:Proxy
+load	./src/ConfParser.cpp	/^ConfParser::Node* ConfParser::load(const char* file)$/;"	f	class:ConfParser
+localDC	./src/Conf.h	/^    const std::string& localDC() const$/;"	f	class:Conf
+localDC	./src/DC.h	/^    DC* localDC() const$/;"	f	class:DataCenter
+lock	./src/Sync.h	/^    void lock() const$/;"	f	class:Mutex
+log	./src/Conf.h	/^    const char* log() const$/;"	f	class:Conf
+log	./src/Logger.cpp	/^void Logger::log(LogLevel::Type lvl, const char* file, int line, const char* fmt, ...)$/;"	f	class:Logger
+log	./src/Logger.h	/^    LogUnit* log(LogLevel::Type lvl)$/;"	f	class:Logger
+logDebug	./src/Logger.h	133;"	d
+logError	./src/Logger.h	137;"	d
+logFileFd	./src/Logger.cpp	/^int Logger::logFileFd() const$/;"	f	class:Logger
+logInfo	./src/Logger.h	134;"	d
+logMacroImpl	./src/Logger.h	124;"	d
+logNotice	./src/Logger.h	135;"	d
+logRotateBytes	./src/Conf.h	/^    long logRotateBytes() const$/;"	f	class:Conf
+logRotateSecs	./src/Conf.h	/^    int logRotateSecs() const$/;"	f	class:Conf
+logSample	./src/Conf.h	/^    int logSample(LogLevel::Type lvl) const$/;"	f	class:Conf
+logSample	./src/Logger.h	/^    int logSample(LogLevel::Type lvl) const$/;"	f	class:Logger
+logVerb	./src/Logger.h	132;"	d
+logWarn	./src/Logger.h	136;"	d
+mAcceptConnection	./src/ConnectConnection.h	/^    AcceptConnection* mAcceptConnection;$/;"	m	class:ConnectConnection
+mAcceptConns	./src/Handler.h	/^    AcceptConnectionDeque mAcceptConns;$/;"	m	class:Handler
+mAddr	./src/ClusterNodesParser.h	/^    SString<AddrLen> mAddr;$/;"	m	class:ClusterNodesParser
+mAddr	./src/ListenSocket.h	/^    char mAddr[128];$/;"	m	class:ListenSocket
+mAddr	./src/Server.h	/^    SString<Const::MaxAddrLen> mAddr;$/;"	m	class:Server
+mAddrDC	./src/DC.h	/^    std::map<String, DC*> mAddrDC;$/;"	m	class:DataCenter
+mAllowMissLog	./src/Conf.h	/^    bool mAllowMissLog;$/;"	m	class:Conf
+mAllowMissLog	./src/Logger.h	/^    bool mAllowMissLog;$/;"	m	class:Logger
+mArgBodyCnt	./src/RequestParser.h	/^    int mArgBodyCnt;$/;"	m	class:RequestParser
+mArgCnt	./src/RequestParser.h	/^    int mArgCnt;$/;"	m	class:RequestParser
+mArgLen	./src/RequestParser.h	/^    int mArgLen;$/;"	m	class:RequestParser
+mArgLen	./src/SentinelServerPool.cpp	/^    int mArgLen;$/;"	m	class:AddrParser	file:
+mArgLen	./src/StandaloneServerPool.cpp	/^    int mArgLen;$/;"	m	class:AddrParser	file:
+mArgNum	./src/RequestParser.h	/^    int mArgNum;$/;"	m	class:RequestParser
+mArrayNum	./src/ResponseParser.h	/^    int mArrayNum[MaxArrayDepth];$/;"	m	class:ResponseParser
+mAuth	./src/AcceptConnection.h	/^    const Auth* mAuth;$/;"	m	class:AcceptConnection
+mAuthConfs	./src/Conf.h	/^    std::vector<AuthConf> mAuthConfs;$/;"	m	class:Conf
+mAuthMap	./src/Auth.h	/^    std::map<String, Auth*> mAuthMap;$/;"	m	class:Authority
+mAuthed	./src/ConnectConnection.h	/^    bool mAuthed;$/;"	m	class:ConnectConnection
+mAuthority	./src/Proxy.h	/^    Authority mAuthority;$/;"	m	class:Proxy
+mBegin	./src/Buffer.h	/^    BufferPos mBegin;$/;"	m	class:Segment
+mBind	./src/Conf.h	/^    std::string mBind;$/;"	m	class:Conf
+mBlockRequest	./src/AcceptConnection.h	/^    bool mBlockRequest;$/;"	m	class:AcceptConnection
+mBuf	./src/Buffer.h	/^    char mBuf[Size];$/;"	m	class:SegmentStr
+mBuf	./src/Connection.h	/^    BufferPtr mBuf;$/;"	m	class:Connection
+mBuf	./src/Logger.h	/^    char mBuf[MaxLogLen];$/;"	m	class:LogUnit
+mBuf	./src/String.h	/^    char mBuf[Size + 1];$/;"	m	class:SString
+mBuf	./src/Util.h	/^    char mBuf[256];$/;"	m	class:StrErrorImpl
+mBufCnt	./src/Connection.h	/^    int mBufCnt;$/;"	m	class:Connection
+mBufSize	./src/Conf.h	/^    int mBufSize;$/;"	m	class:Conf
+mByteCnt	./src/RequestParser.h	/^    int mByteCnt;$/;"	m	class:RequestParser
+mBytes	./src/LogFileSink.h	/^    long mBytes;$/;"	m	class:LogFileSink
+mClassType	./src/Socket.h	/^    int mClassType;$/;"	m	class:Socket
+mClientTimeout	./src/Conf.h	/^    long mClientTimeout; \/\/us$/;"	m	class:Conf
+mCloseASAP	./src/Connection.h	/^    bool mCloseASAP;$/;"	m	class:Connection
+mClusterServerPool	./src/Conf.h	/^    ClusterServerPoolConf mClusterServerPool;$/;"	m	class:Conf
+mCmd	./src/RequestParser.h	/^    char mCmd[Const::MaxCmdLen];$/;"	m	class:RequestParser
+mCmdIdx	./src/LatencyMonitor.h	/^    std::vector<std::vector<int>> mCmdIdx;$/;"	m	class:LatencyMonitorSet
+mCmds	./src/LatencyMonitor.h	/^    const std::bitset<Command::AvailableCommands>* mCmds;$/;"	m	class:LatencyMonitor
+mCnt	./src/Alloc.h	/^    CntType mCnt;$/;"	m	class:RefCntObj
+mCnt	./src/SentinelServerPool.cpp	/^    int mCnt;$/;"	m	class:AddrParser	file:
+mCnt	./src/StandaloneServerPool.cpp	/^    int mCnt;$/;"	m	class:AddrParser	file:
+mCommand	./src/RequestParser.h	/^    const Command* mCommand;$/;"	m	class:RequestParser
+mCond	./src/Logger.h	/^    std::condition_variable mCond;$/;"	m	class:Logger
+mConf	./src/Proxy.h	/^    Conf* mConf;$/;"	m	class:Proxy
+mConn	./src/Request.h	/^    AcceptConnection* mConn;$/;"	m	class:Request
+mConnPool	./src/Handler.h	/^    std::vector<ConnectConnectionPool*> mConnPool;$/;"	m	class:Handler
+mConnectConnection	./src/AcceptConnection.h	/^    ConnectConnection* mConnectConnection;$/;"	m	class:AcceptConnection
+mCount	./src/Timer.h	/^    AtomicLong mCount;$/;"	m	class:TimerPoint
+mCreateTime	./src/Request.h	/^    long mCreateTime; \/\/steady time point us$/;"	m	class:Request
+mCur	./src/Buffer.h	/^    BufferPos mCur;$/;"	m	class:Segment
+mCustomCommands	./src/Conf.h	/^    std::vector<CustomCommandConf> mCustomCommands;$/;"	m	class:Conf
+mDC	./src/Server.h	/^    DC* mDC;$/;"	m	class:Server
+mDCConfs	./src/Conf.h	/^    std::vector<DCConf> mDCConfs;$/;"	m	class:Conf
+mDCs	./src/DC.h	/^    std::map<String, DC*> mDCs;$/;"	m	class:DataCenter
+mDat	./src/Buffer.h	/^    char mDat[0];$/;"	m	class:Buffer
+mDat	./src/String.h	/^    const char* mDat;$/;"	m	class:String
+mData	./src/Request.h	/^    void* mData; \/\/user data for response$/;"	m	class:Request
+mDataCenter	./src/Proxy.h	/^    DataCenter* mDataCenter;$/;"	m	class:Proxy
+mDb	./src/Connection.h	/^    int mDb;$/;"	m	class:Connection
+mDbNum	./src/ServerPool.h	/^    int mDbNum;$/;"	m	class:ServerPool
+mDefault	./src/Auth.h	/^    Auth* mDefault;$/;"	m	class:Authority
+mDelivered	./src/Request.h	/^    bool mDelivered;$/;"	m	class:Request
+mDepth	./src/ResponseParser.h	/^    int mDepth;$/;"	m	class:ResponseParser
+mDist	./src/SentinelServerPool.h	/^    Distribution mDist;$/;"	m	class:SentinelServerPool
+mDist	./src/StandaloneServerPool.h	/^    Distribution mDist;$/;"	m	class:StandaloneServerPool
+mDone	./src/Request.h	/^    bool mDone;$/;"	m	class:Request
+mDynamicSlaveReadPriority	./src/ServerPool.h	/^    int mDynamicSlaveReadPriority;$/;"	m	class:ServerPool
+mElapsed	./src/Timer.h	/^    AtomicLong mElapsed;$/;"	m	class:TimerPoint
+mElementCnt	./src/ResponseParser.h	/^    int mElementCnt[MaxArrayDepth];$/;"	m	class:ResponseParser
+mEnd	./src/Buffer.h	/^    BufferPos mEnd;$/;"	m	class:Segment
+mError	./src/LogFileSink.h	/^    long mError;$/;"	m	class:LogFileSink
+mEscape	./src/RequestParser.h	/^    bool mEscape;$/;"	m	class:RequestParser
+mEventLoop	./src/Handler.h	/^    Multiplexor* mEventLoop;$/;"	m	class:Handler
+mEvents	./src/EpollMultiplexor.h	/^    epoll_event mEvents[MaxEvents];$/;"	m	class:EpollMultiplexor
+mEvents	./src/KqueueMultiplexor.h	/^    struct kevent mEvents[MaxEvents];$/;"	m	class:KqueueMultiplexor	typeref:struct:KqueueMultiplexor::kevent
+mEvts	./src/Socket.h	/^    int mEvts;$/;"	m	class:Socket
+mFail	./src/Server.h	/^    bool mFail;$/;"	m	class:Server
+mFailureCnt	./src/Server.h	/^    AtomicLong mFailureCnt;$/;"	m	class:Server
+mFd	./src/EpollMultiplexor.h	/^    int mFd;$/;"	m	class:EpollMultiplexor
+mFd	./src/KqueueMultiplexor.h	/^    int mFd;$/;"	m	class:KqueueMultiplexor
+mFd	./src/Socket.h	/^    int mFd;$/;"	m	class:Socket
+mFds	./src/PollMultiplexor.h	/^    std::vector<struct pollfd> mFds;$/;"	m	class:PollMultiplexor
+mFieldCnt	./src/ClusterNodesParser.h	/^    int mFieldCnt;$/;"	m	class:ClusterNodesParser
+mFile	./src/LogFileSink.h	/^    FILE* mFile;$/;"	m	class:LogFileSink
+mFileName	./src/LogFileSink.h	/^    std::string mFileName;$/;"	m	class:LogFileSink
+mFilePath	./src/LogFileSink.h	/^    char mFilePath[MaxPathLen];$/;"	m	class:LogFileSink
+mFilePathLen	./src/LogFileSink.h	/^    int mFilePathLen;$/;"	m	class:LogFileSink
+mFileSink	./src/Logger.cpp	/^    mFileSink(nullptr)$/;"	f
+mFileSink	./src/Logger.h	/^    LogFileSink* mFileSink;$/;"	m	class:Logger
+mFileSuffixFmt	./src/LogFileSink.h	/^    const char* mFileSuffixFmt;$/;"	m	class:LogFileSink
+mFlags	./src/ClusterNodesParser.h	/^    SString<FlagsLen> mFlags;$/;"	m	class:ClusterNodesParser
+mFollowers	./src/Request.h	/^    int mFollowers;$/;"	m	class:Request
+mFollowersDone	./src/Request.h	/^    int mFollowersDone;$/;"	m	class:Request
+mFree	./src/Logger.h	/^    std::vector<LogUnit*> mFree;$/;"	m	class:Logger
+mGetServerFunc	./src/ServerPool.h	/^    GetServerFunc mGetServerFunc;$/;"	m	class:ServerPool
+mGroup	./src/Server.h	/^    ServerGroup* mGroup;$/;"	m	class:Server
+mGroupPool	./src/ServerPool.h	/^    std::vector<ServerGroup*> mGroupPool;$/;"	m	class:ServerPool
+mGroups	./src/ClusterServerPool.h	/^    std::map<String, ServerGroup*> mGroups;$/;"	m	class:ClusterServerPool
+mHandleResponseFunc	./src/ServerPool.h	/^    HandleResponseFunc mHandleResponseFunc;$/;"	m	class:ServerPool
+mHandler	./src/ConnectConnectionPool.h	/^    Handler* mHandler;$/;"	m	class:ConnectConnectionPool
+mHandlers	./src/Proxy.h	/^    std::vector<Handler*> mHandlers;$/;"	m	class:Proxy
+mHash	./src/ClusterServerPool.h	/^    Hash mHash;$/;"	m	class:ClusterServerPool
+mHash	./src/SentinelServerPool.h	/^    Hash mHash;$/;"	m	class:SentinelServerPool
+mHash	./src/StandaloneServerPool.h	/^    Hash mHash;$/;"	m	class:StandaloneServerPool
+mHashTag	./src/SentinelServerPool.h	/^    char mHashTag[2];$/;"	m	class:SentinelServerPool
+mHashTag	./src/StandaloneServerPool.h	/^    char mHashTag[2];$/;"	m	class:StandaloneServerPool
+mHead	./src/Deque.h	/^    P mHead;$/;"	m	class:Deque
+mHead	./src/List.h	/^    P mHead;$/;"	m	class:List
+mHead	./src/Request.h	/^    Segment mHead; \/\/for multi key command mget\/mset\/del...$/;"	m	class:Request
+mHead	./src/Response.h	/^    Segment mHead; \/\/for mget$/;"	m	class:Response
+mIDUnique	./src/Handler.h	/^    IDUnique mIDUnique;$/;"	m	class:Handler
+mId	./src/ID.h	/^    int mId;$/;"	m	class:ID
+mId	./src/ID.h	/^    long mId;$/;"	m	class:TID
+mInline	./src/Request.h	/^    bool mInline;$/;"	m	class:Request
+mInline	./src/RequestParser.h	/^    bool mInline;$/;"	m	class:RequestParser
+mInteger	./src/Response.h	/^    int64_t mInteger;$/;"	m	class:Response
+mInteger	./src/ResponseParser.h	/^    int64_t mInteger;$/;"	m	class:ResponseParser
+mIp	./src/SentinelServerPool.cpp	/^    bool mIp;$/;"	m	class:AddrParser	file:
+mIp	./src/StandaloneServerPool.cpp	/^    bool mIp;$/;"	m	class:AddrParser	file:
+mIterFunc	./src/ServerPool.h	/^    IterFunc mIterFunc;$/;"	m	class:ServerPool
+mKeepAlive	./src/ServerPool.h	/^    int mKeepAlive;$/;"	m	class:ServerPool
+mKey	./src/Request.h	/^    Segment mKey;$/;"	m	class:Request
+mKey	./src/RequestParser.h	/^    Segment mKey;$/;"	m	class:RequestParser
+mKey	./src/SentinelServerPool.cpp	/^    SString<4> mKey;$/;"	m	class:AddrParser	file:
+mKey	./src/StandaloneServerPool.cpp	/^    SString<4> mKey;$/;"	m	class:AddrParser	file:
+mKey	./src/Timer.h	/^    TimerPoint* mKey;$/;"	m	class:Timer
+mKey	./src/Timer.h	/^    const char* mKey;$/;"	m	class:TimerPoint
+mLast	./src/LatencyMonitor.h	/^    TimeSpan mLast;$/;"	m	class:LatencyMonitor
+mLastActiveTime	./src/AcceptConnection.h	/^    long mLastActiveTime; \/\/steady us$/;"	m	class:AcceptConnection
+mLastRefreshTime	./src/ServerPool.h	/^    AtomicLong mLastRefreshTime;$/;"	m	class:ServerPool
+mLastReopenTime	./src/LogFileSink.h	/^    time_t mLastReopenTime;$/;"	m	class:LogFileSink
+mLatencyMonitorSet	./src/Proxy.h	/^    LatencyMonitorSet mLatencyMonitorSet;$/;"	m	class:Proxy
+mLatencyMonitors	./src/Conf.h	/^    std::vector<LatencyMonitorConf> mLatencyMonitors;$/;"	m	class:Conf
+mLatencyMonitors	./src/ConnectConnectionPool.h	/^    std::vector<LatencyMonitor> mLatencyMonitors;$/;"	m	class:ConnectConnectionPool
+mLatencyMonitors	./src/Handler.h	/^    std::vector<LatencyMonitor> mLatencyMonitors;$/;"	m	class:Handler
+mLeader	./src/Request.h	/^    RequestPtr mLeader;$/;"	m	class:Request
+mLen	./src/Buffer.h	/^    int mLen;$/;"	m	class:Buffer
+mLen	./src/ClusterNodesParser.h	/^    int mLen;$/;"	m	class:ClusterNodesParser
+mLen	./src/Logger.h	/^    int mLen;$/;"	m	class:LogUnit
+mLen	./src/String.h	/^    int mLen;$/;"	m	class:String
+mListener	./src/Proxy.h	/^    ListenSocket* mListener;$/;"	m	class:Proxy
+mLocalDC	./src/Conf.h	/^    std::string mLocalDC;$/;"	m	class:Conf
+mLocalDC	./src/DC.h	/^    DC* mLocalDC;$/;"	m	class:DataCenter
+mLog	./src/Conf.h	/^    std::string mLog;$/;"	m	class:Conf
+mLogRotateBytes	./src/Conf.h	/^    long mLogRotateBytes;$/;"	m	class:Conf
+mLogRotateSecs	./src/Conf.h	/^    int mLogRotateSecs;$/;"	m	class:Conf
+mLogSample	./src/Conf.h	/^    int mLogSample[LogLevel::Sentinel];$/;"	m	class:Conf
+mLogSample	./src/Logger.h	/^    int mLogSample[LogLevel::Sentinel];$/;"	m	class:Logger
+mLogUnitCnt	./src/Logger.h	/^    unsigned mLogUnitCnt;$/;"	m	class:Logger
+mLogs	./src/Logger.h	/^    std::vector<LogUnit*> mLogs;$/;"	m	class:Logger
+mMarker	./src/ID.h	/^    std::vector<bool> mMarker;$/;"	m	class:IDUnique
+mMaster	./src/ClusterNodesParser.h	/^    SString<NodeIdLen> mMaster;$/;"	m	class:ClusterNodesParser
+mMasterName	./src/Server.h	/^    SString<Const::MaxServNameLen> mMasterName;$/;"	m	class:Server
+mMasterReadPriority	./src/ServerPool.h	/^    int mMasterReadPriority;$/;"	m	class:ServerPool
+mMaxMemory	./src/Conf.h	/^    long mMaxMemory;$/;"	m	class:Conf
+mMaxNodeDepth	./src/ConfParser.h	/^    int mMaxNodeDepth;$/;"	m	class:ConfParser
+mMissLogs	./src/Logger.h	/^    long mMissLogs;$/;"	m	class:Logger
+mMode	./src/Auth.h	/^    int mMode;$/;"	m	class:Auth
+mMsg	./src/Exception.h	/^    char mMsg[MaxMsgLen];$/;"	m	class:ExceptionBase
+mMtx	./src/Logger.h	/^    std::mutex mMtx;$/;"	m	class:Logger
+mMtx	./src/ServerPool.h	/^    Mutex mMtx;$/;"	m	class:ServerPool
+mMulti	./src/Transaction.h	/^    int16_t mMulti;$/;"	m	class:Transaction
+mName	./src/Conf.h	/^    std::string mName;$/;"	m	class:Conf
+mName	./src/DC.h	/^    String mName;$/;"	m	class:DC
+mName	./src/LatencyMonitor.h	/^    String mName;$/;"	m	class:LatencyMonitor
+mName	./src/Server.h	/^    SString<Const::MaxServNameLen> mName;$/;"	m	class:Server
+mName	./src/ServerGroup.h	/^    SString<Const::MaxServNameLen> mName;$/;"	m	class:ServerGroup
+mNameIdx	./src/LatencyMonitor.h	/^    std::map<String, int> mNameIdx;$/;"	m	class:LatencyMonitorSet
+mNext	./src/Deque.h	/^    P mNext[Size];$/;"	m	class:DequeNode
+mNext	./src/List.h	/^    P mNext[Size];$/;"	m	class:ListNode
+mNext	./src/Timer.h	/^    TimerPoint* mNext;$/;"	m	class:TimerPoint
+mNextActivateTime	./src/Server.h	/^    AtomicLong mNextActivateTime; \/\/us$/;"	m	class:Server
+mNodeId	./src/ClusterNodesParser.h	/^    SString<NodeIdLen> mNodeId;$/;"	m	class:ClusterNodesParser
+mNodes	./src/ClusterNodesParser.h	/^    Segment mNodes;$/;"	m	class:ClusterNodesParser
+mObj	./src/Alloc.h	/^    T* mObj;$/;"	m	class:SharePtr
+mOnline	./src/Server.h	/^    bool mOnline;$/;"	m	class:Server
+mParser	./src/AcceptConnection.h	/^    RequestParser mParser;$/;"	m	class:AcceptConnection
+mParser	./src/ConnectConnection.h	/^    ResponseParser mParser;$/;"	m	class:ConnectConnection
+mPassword	./src/Auth.h	/^    String mPassword;$/;"	m	class:Auth
+mPassword	./src/Server.h	/^    String mPassword;$/;"	m	class:Server
+mPassword	./src/ServerPool.h	/^    String mPassword;$/;"	m	class:ServerPool
+mPeer	./src/AcceptSocket.h	/^    char mPeer[32];$/;"	m	class:AcceptSocket
+mPeer	./src/ConnectSocket.h	/^    std::string mPeer;$/;"	m	class:ConnectSocket
+mPeerAddr	./src/ConnectSocket.h	/^    sockaddr_storage mPeerAddr;$/;"	m	class:ConnectSocket
+mPeerAddrLen	./src/ConnectSocket.h	/^    socklen_t mPeerAddrLen;$/;"	m	class:ConnectSocket
+mPendMulti	./src/Transaction.h	/^    int16_t mPendMulti;$/;"	m	class:Transaction
+mPendRequests	./src/ConnectConnectionPool.h	/^    int mPendRequests;$/;"	m	class:ConnectConnectionPool
+mPendSub	./src/Subscribe.h	/^    int16_t mPendSub;$/;"	m	class:Subscribe
+mPendWatch	./src/Transaction.h	/^    int16_t mPendWatch;$/;"	m	class:Transaction
+mPool	./src/LatencyMonitor.h	/^    std::vector<LatencyMonitor> mPool;$/;"	m	class:LatencyMonitorSet
+mPool	./src/Server.h	/^    ServerPool* mPool;$/;"	m	class:Server
+mPool	./src/ServerGroup.h	/^    ServerPool* mPool;$/;"	m	class:ServerGroup
+mPort	./src/SentinelServerPool.cpp	/^    bool mPort;$/;"	m	class:AddrParser	file:
+mPort	./src/StandaloneServerPool.cpp	/^    bool mPort;$/;"	m	class:AddrParser	file:
+mPostAcceptConns	./src/Handler.h	/^    AcceptConnectionList mPostAcceptConns;$/;"	m	class:Handler
+mPostConnectConns	./src/Handler.h	/^    ConnectConnectionList mPostConnectConns;$/;"	m	class:Handler
+mPostEvts	./src/Connection.h	/^    int mPostEvts;$/;"	m	class:Connection
+mPrev	./src/Deque.h	/^    P mPrev[Size];$/;"	m	class:DequeNode
+mPrivateConns	./src/ConnectConnectionPool.h	/^    std::vector<ConnectConnectionList> mPrivateConns;$/;"	m	class:ConnectConnectionPool
+mProtocol	./src/ConnectSocket.h	/^    int mProtocol;$/;"	m	class:ConnectSocket
+mProxy	./src/Handler.h	/^    Proxy* mProxy;$/;"	m	class:Handler
+mProxy	./src/ServerPool.h	/^    Proxy* mProxy;$/;"	m	class:ServerPool
+mQuote	./src/RequestParser.h	/^    char mQuote;$/;"	m	class:RequestParser
+mRandSeed	./src/Handler.h	/^    unsigned int mRandSeed;$/;"	m	class:Handler
+mReadKeyPrefix	./src/Auth.h	/^    KeyPrefixSet* mReadKeyPrefix;$/;"	m	class:Auth
+mReadPolicy	./src/DC.h	/^    std::vector<DCReadPolicy> mReadPolicy;$/;"	m	class:DC
+mReadonly	./src/ConnectConnection.h	/^    bool mReadonly;$/;"	m	class:ConnectConnection
+mRedirectCnt	./src/Request.h	/^    int mRedirectCnt;$/;"	m	class:Request
+mRefreshInterval	./src/ServerPool.h	/^    long mRefreshInterval;$/;"	m	class:ServerPool
+mRefreshMethod	./src/StandaloneServerPool.h	/^    ServerPoolRefreshMethod mRefreshMethod;$/;"	m	class:StandaloneServerPool
+mRefreshRequestFunc	./src/ServerPool.h	/^    RefreshRequestFunc mRefreshRequestFunc;$/;"	m	class:ServerPool
+mReq	./src/Request.h	/^    Segment mReq;$/;"	m	class:Request
+mReq	./src/RequestParser.h	/^    Segment mReq;$/;"	m	class:RequestParser
+mReqLeader	./src/AcceptConnection.h	/^    RequestPtr mReqLeader;$/;"	m	class:AcceptConnection
+mRequests	./src/AcceptConnection.h	/^    RecvRequestList mRequests;$/;"	m	class:AcceptConnection
+mRes	./src/Request.h	/^    ResponsePtr mRes;$/;"	m	class:Request
+mRes	./src/Response.h	/^    Segment mRes;$/;"	m	class:Response
+mRes	./src/ResponseParser.h	/^    Segment mRes;$/;"	m	class:ResponseParser
+mRes	./src/SentinelServerPool.cpp	/^    Segment mRes;$/;"	m	class:AddrParser	file:
+mRes	./src/StandaloneServerPool.cpp	/^    Segment mRes;$/;"	m	class:AddrParser	file:
+mResponses	./src/AcceptConnection.h	/^    ResponseList mResponses;$/;"	m	class:AcceptConnection
+mRole	./src/ClusterNodesParser.h	/^    Server::Role mRole;$/;"	m	class:ClusterNodesParser
+mRole	./src/Server.h	/^    Role mRole;$/;"	m	class:Server
+mRoot	./src/ConfParser.h	/^    Node mRoot;$/;"	m	class:ConfParser
+mRotateBytes	./src/LogFileSink.h	/^    long mRotateBytes;$/;"	m	class:LogFileSink
+mRotateSecs	./src/LogFileSink.h	/^    int mRotateSecs;$/;"	m	class:LogFileSink
+mSendRequests	./src/ConnectConnection.h	/^    SendRequestList mSendRequests;$/;"	m	class:ConnectConnection
+mSentRequests	./src/ConnectConnection.h	/^    SendRequestList mSentRequests;$/;"	m	class:ConnectConnection
+mSentinels	./src/SentinelServerPool.h	/^    std::vector<Server*> mSentinels;$/;"	m	class:SentinelServerPool
+mSentinels	./src/StandaloneServerPool.h	/^    std::vector<Server*> mSentinels;$/;"	m	class:StandaloneServerPool
+mServ	./src/ConnectConnection.h	/^    Server* mServ;$/;"	m	class:ConnectConnection
+mServ	./src/ConnectConnectionPool.h	/^    Server* mServ;$/;"	m	class:ConnectConnectionPool
+mServPool	./src/ClusterServerPool.h	/^    std::vector<Server*> mServPool;$/;"	m	class:ClusterServerPool
+mServPool	./src/Proxy.h	/^    ServerPool* mServPool;$/;"	m	class:Proxy
+mServPool	./src/SentinelServerPool.h	/^    std::vector<Server*> mServPool;$/;"	m	class:SentinelServerPool
+mServPool	./src/StandaloneServerPool.h	/^    std::vector<Server*> mServPool;$/;"	m	class:StandaloneServerPool
+mServerFailureLimit	./src/ServerPool.h	/^    int mServerFailureLimit;$/;"	m	class:ServerPool
+mServerPoolType	./src/Conf.h	/^    int mServerPoolType;$/;"	m	class:Conf
+mServerRetryTimeout	./src/ServerPool.h	/^    long mServerRetryTimeout;$/;"	m	class:ServerPool
+mServerTimeout	./src/ServerPool.h	/^    long mServerTimeout;$/;"	m	class:ServerPool
+mServs	./src/ServerGroup.h	/^    std::vector<Server*> mServs;$/;"	m	class:ServerGroup
+mServs	./src/ServerPool.h	/^    std::map<String, Server*> mServs;$/;"	m	class:ServerPool
+mShareConns	./src/ConnectConnectionPool.h	/^    std::vector<ConnectConnection*> mShareConns;$/;"	m	class:ConnectConnectionPool
+mShared	./src/ConnectConnection.h	/^    bool mShared;$/;"	m	class:ConnectConnection
+mSign	./src/ResponseParser.h	/^    bool mSign;$/;"	m	class:ResponseParser
+mSize	./src/Deque.h	/^    int mSize;$/;"	m	class:Deque
+mSize	./src/List.h	/^    int mSize;$/;"	m	class:List
+mSkts	./src/PollMultiplexor.h	/^    std::vector<SktIdx> mSkts;$/;"	m	class:PollMultiplexor
+mSlotBegin	./src/ClusterNodesParser.h	/^    int mSlotBegin;$/;"	m	class:ClusterNodesParser
+mSlotEnd	./src/ClusterNodesParser.h	/^    int mSlotEnd;$/;"	m	class:ClusterNodesParser
+mSlots	./src/ClusterServerPool.h	/^    ServerGroup* mSlots[Const::RedisClusterSlots];$/;"	m	class:ClusterServerPool
+mStandaloneServerPool	./src/Conf.h	/^    StandaloneServerPoolConf mStandaloneServerPool;$/;"	m	class:Conf
+mStart	./src/Timer.h	/^    long mStart;$/;"	m	class:Timer
+mStartTime	./src/Proxy.h	/^    time_t mStartTime;$/;"	m	class:Proxy
+mState	./src/ClusterNodesParser.h	/^    State mState;$/;"	m	class:ClusterNodesParser
+mState	./src/RequestParser.h	/^    State mState;$/;"	m	class:RequestParser
+mState	./src/ResponseParser.h	/^    State mState;$/;"	m	class:ResponseParser
+mState	./src/SentinelServerPool.cpp	/^    State mState;$/;"	m	class:AddrParser	file:
+mState	./src/StandaloneServerPool.cpp	/^    State mState;$/;"	m	class:AddrParser	file:
+mStatic	./src/Server.h	/^    bool mStatic;$/;"	m	class:Server
+mStaticSlaveReadPriority	./src/ServerPool.h	/^    int mStaticSlaveReadPriority;$/;"	m	class:ServerPool
+mStats	./src/ConnectConnectionPool.h	/^    ServerStats mStats;$/;"	m	class:ConnectConnectionPool
+mStats	./src/Handler.h	/^    HandlerStats mStats;$/;"	m	class:Handler
+mStatsVer	./src/Handler.h	/^    long mStatsVer;$/;"	m	class:Handler
+mStatsVer	./src/Proxy.h	/^    AtomicLong mStatsVer;$/;"	m	class:Proxy
+mStatus	./src/ConnectSocket.h	/^    ConnectStatus mStatus;$/;"	m	class:ConnectSocket
+mStatus	./src/RequestParser.h	/^    Status mStatus;$/;"	m	class:RequestParser
+mStatus	./src/Socket.h	/^    int mStatus;$/;"	m	class:Socket
+mStop	./src/Handler.h	/^    bool mStop;$/;"	m	class:Handler
+mStop	./src/Logger.h	/^    bool mStop;$/;"	m	class:Logger
+mStr	./src/Util.h	/^    char* mStr;$/;"	m	class:StrErrorImpl
+mStringCnt	./src/ResponseParser.h	/^    int mStringCnt;$/;"	m	class:ResponseParser
+mStringLen	./src/ResponseParser.h	/^    int mStringLen;$/;"	m	class:ResponseParser
+mStrings	./src/ConfParser.h	/^    std::vector<std::string*> mStrings;$/;"	m	class:ConfParser
+mSub	./src/Subscribe.h	/^    int16_t mSub;$/;"	m	class:Subscribe
+mTail	./src/Deque.h	/^    P mTail;$/;"	m	class:Deque
+mTail	./src/List.h	/^    P mTail;$/;"	m	class:List
+mThread	./src/Logger.h	/^    std::thread* mThread;$/;"	m	class:Logger
+mTimeSpan	./src/LatencyMonitor.h	/^    std::vector<TimeSpan> mTimeSpan;$/;"	m	class:LatencyMonitor
+mType	./src/ConnectSocket.h	/^    int mType;$/;"	m	class:ConnectSocket
+mType	./src/Distribution.h	/^    Type mType;$/;"	m	class:Distribution
+mType	./src/Enums.h	/^    int mType;$/;"	m	class:EnumBase
+mType	./src/HashFunc.h	/^    Type mType;$/;"	m	class:Hash
+mType	./src/Request.h	/^    Command::Type mType;$/;"	m	class:Request
+mType	./src/RequestParser.h	/^    Command::Type mType;$/;"	m	class:RequestParser
+mType	./src/Response.h	/^    Reply::Type mType;$/;"	m	class:Response
+mType	./src/ResponseParser.h	/^    Reply::Type mType;$/;"	m	class:ResponseParser
+mType	./src/ServerPool.h	/^    int mType;$/;"	m	class:ServerPool
+mUpdating	./src/Server.h	/^    bool mUpdating;$/;"	m	class:Server
+mWaitConnectConns	./src/Handler.h	/^    ConnectConnectionDeque mWaitConnectConns;$/;"	m	class:Handler
+mWatch	./src/Transaction.h	/^    int16_t mWatch;$/;"	m	class:Transaction
+mWorkerThreads	./src/Conf.h	/^    int mWorkerThreads;$/;"	m	class:Conf
+mWriteKeyPrefix	./src/Auth.h	/^    KeyPrefixSet* mWriteKeyPrefix;$/;"	m	class:Auth
+main	./src/main.cpp	/^int main(int argc, char* argv[])$/;"	f
+make	./Makefile	/^	make = gmake$/;"	m
+make	./Makefile	/^make = make$/;"	m
+master	./src/ClusterNodesParser.h	/^    const String& master() const$/;"	f	class:ClusterNodesParser
+masterName	./src/Server.h	/^    const String& masterName() const$/;"	f	class:Server
+masterReadPriority	./src/Conf.h	/^    int masterReadPriority = 50;$/;"	m	struct:ServerPoolConf
+masterReadPriority	./src/ServerPool.h	/^    int masterReadPriority() const$/;"	f	class:ServerPool
+maxArgs	./src/Command.h	/^    int maxArgs;$/;"	m	class:Command
+maxArgs	./src/Conf.h	/^    int maxArgs;$/;"	m	struct:CustomCommandConf
+maxId	./src/ID.h	/^    static int maxId()$/;"	f	class:ID
+maxLogUnitNum	./src/Logger.cpp	/^    mLogs(maxLogUnitNum),$/;"	v
+maxMemory	./src/Conf.h	/^    long maxMemory() const$/;"	f	class:Conf
+minArgs	./src/Command.h	/^    int minArgs;$/;"	m	class:Command
+minArgs	./src/Conf.h	/^    int minArgs;$/;"	m	struct:CustomCommandConf
+mode	./src/Command.h	/^    int mode;$/;"	m	class:Command
+mode	./src/Conf.h	/^    int mode; \/\/Command::Mode$/;"	m	struct:AuthConf
+mode	./src/Conf.h	/^    int mode;$/;"	m	struct:CustomCommandConf
+move_back	./src/Deque.h	/^    void move_back(T* obj)$/;"	f	class:Deque
+multiplexor	./src/Makefile	/^	multiplexor = EpollMultiplexor$/;"	m
+multiplexor	./src/Makefile	/^	multiplexor = KqueueMultiplexor$/;"	m
+multiplexor	./src/Makefile	/^	multiplexor = PollMultiplexor$/;"	m
+name	./src/Command.h	/^    const char* name;$/;"	m	class:Command
+name	./src/Conf.h	/^    const char* name() const$/;"	f	class:Conf
+name	./src/Conf.h	/^    std::string name;$/;"	m	struct:CustomCommandConf
+name	./src/Conf.h	/^    std::string name;$/;"	m	struct:DCConf
+name	./src/Conf.h	/^    std::string name;$/;"	m	struct:LatencyMonitorConf
+name	./src/Conf.h	/^    std::string name;$/;"	m	struct:ReadPolicyConf
+name	./src/Conf.h	/^    std::string name;$/;"	m	struct:ServerGroupConf
+name	./src/ConfParser.cpp	/^    const char* name;$/;"	m	struct:File	file:
+name	./src/DC.h	/^    const String& name() const$/;"	f	class:DC
+name	./src/Distribution.cpp	/^    const char* name;$/;"	m	struct:TypeName	file:
+name	./src/Distribution.cpp	/^const char* Distribution::name() const$/;"	f	class:Distribution
+name	./src/Enums.h	/^        const char* name;$/;"	m	struct:EnumBase::TypeName
+name	./src/Enums.h	/^    const char* name() const$/;"	f	class:EnumBase
+name	./src/LatencyMonitor.h	/^    const String& name() const$/;"	f	class:LatencyMonitor
+name	./src/Server.h	/^    const String& name() const$/;"	f	class:Server
+name	./src/ServerGroup.h	/^    String name() const {return mName;}$/;"	f	class:ServerGroup
+next	./src/ConfParser.h	/^        Node* next;$/;"	m	struct:ConfParser::Node
+next	./src/Deque.h	/^    P next(T* obj)$/;"	f	class:Deque
+next	./src/Deque.h	/^    P next(int idx) const$/;"	f	class:DequeNode
+next	./src/List.h	/^    P next(T* obj)$/;"	f	class:List
+next	./src/List.h	/^    P next(int idx = 0) const$/;"	f	class:ListNode
+node	./src/Deque.h	/^    static Node* node(T* obj)$/;"	f	class:Deque
+node	./src/List.h	/^    static Node* node(T* obj)$/;"	f	class:List
+nodeId	./src/ClusterNodesParser.h	/^    const String& nodeId() const$/;"	f	class:ClusterNodesParser
+now	./src/Timer.h	/^    static long now()$/;"	f	class:Timer
+nowMSec	./src/Util.h	/^    inline long nowMSec()$/;"	f	namespace:Util
+nowSec	./src/Util.h	/^    inline long nowSec()$/;"	f	namespace:Util
+nowUSec	./src/Util.h	/^    inline long nowUSec()$/;"	f	namespace:Util
+objs	./src/Makefile	/^objs = \\$/;"	m
+online	./src/Server.h	/^    bool online() const$/;"	f	class:Server
+operator !	./src/Alloc.h	/^    bool operator!() const$/;"	f	class:SharePtr
+operator !=	./src/Alloc.h	/^    bool operator!=(const SharePtr& sp) const$/;"	f	class:SharePtr
+operator !=	./src/Buffer.h	/^    bool operator!=(const BufferPos& oth) const$/;"	f	struct:BufferPos
+operator !=	./src/Enums.h	/^    bool operator!=(const T& t) const$/;"	f	class:EnumBase
+operator !=	./src/String.h	/^    bool operator!=(const String& s) const$/;"	f	class:String
+operator ()	./src/Command.h	/^        size_t operator()(const String& s) const$/;"	f	class:Command::H
+operator ()	./src/String.h	/^    bool operator()(const String& s1, const String& s2) const$/;"	f	class:StringCaseCmp
+operator ()	./src/Util.h	/^    bool operator()(const T* p1, const T* p2) const$/;"	f	class:PtrObjCmp
+operator *	./src/Alloc.h	/^    T& operator*()$/;"	f	class:SharePtr
+operator *	./src/Alloc.h	/^    const T& operator*() const$/;"	f	class:SharePtr
+operator +=	./src/LatencyMonitor.h	/^        TimeSpan& operator+=(const TimeSpan& s)$/;"	f	struct:LatencyMonitor::TimeSpan
+operator +=	./src/LatencyMonitor.h	/^    LatencyMonitor& operator+=(const LatencyMonitor& m)$/;"	f	class:LatencyMonitor
+operator +=	./src/Stats.h	/^    HandlerStats& operator+=(const HandlerStats& oth)$/;"	f	struct:HandlerStats
+operator +=	./src/Stats.h	/^    ServerStats& operator+=(const ServerStats& oth)$/;"	f	struct:ServerStats
+operator ->	./src/Alloc.h	/^    T* operator->()$/;"	f	class:SharePtr
+operator ->	./src/Alloc.h	/^    const T* operator->() const$/;"	f	class:SharePtr
+operator <	./src/LatencyMonitor.h	/^        bool operator<(const TimeSpan& oth) const$/;"	f	struct:LatencyMonitor::TimeSpan
+operator <	./src/String.h	/^    bool operator<(const String& s) const$/;"	f	class:String
+operator =	./src/Alloc.h	/^    SharePtr& operator=(const SharePtr& sp)$/;"	f	class:SharePtr
+operator =	./src/Buffer.cpp	/^Buffer& Buffer::operator=(const Buffer& oth)$/;"	f	class:Buffer
+operator =	./src/Buffer.cpp	/^Segment& Segment::operator=(const Segment& oth)$/;"	f	class:Segment
+operator =	./src/Buffer.h	/^    BufferPos& operator=(const BufferPos& oth)$/;"	f	struct:BufferPos
+operator =	./src/String.h	/^    SString& operator=(const SString& str)$/;"	f	class:SString
+operator =	./src/String.h	/^    SString& operator=(const T& str)$/;"	f	class:SString
+operator =	./src/String.h	/^    String& operator=(const String& str)$/;"	f	class:String
+operator =	./src/String.h	/^    String& operator=(const char* str)$/;"	f	class:String
+operator =	./src/String.h	/^    String& operator=(const std::string& str)$/;"	f	class:String
+operator ==	./src/Alloc.h	/^    bool operator==(const SharePtr& sp) const$/;"	f	class:SharePtr
+operator ==	./src/Buffer.h	/^    bool operator==(const BufferPos& oth) const$/;"	f	struct:BufferPos
+operator ==	./src/Enums.h	/^    bool operator==(const T& t) const$/;"	f	class:EnumBase
+operator ==	./src/String.h	/^    bool operator==(const String& s) const$/;"	f	class:String
+operator ==	./src/String.h	/^    bool operator==(const char* s) const$/;"	f	class:String
+operator T*	./src/Alloc.h	/^    operator T*() const$/;"	f	class:SharePtr
+operator Type	./src/Distribution.h	/^    operator Type() const$/;"	f	class:Distribution
+operator Type	./src/HashFunc.h	/^    operator Type() const$/;"	f	class:Hash
+operator bool	./src/Alloc.h	/^    operator bool() const$/;"	f	class:SharePtr
+operator bool	./src/Sync.h	/^    operator bool() const$/;"	f	class:UniqueLock
+operator const char*	./src/String.h	/^    operator const char*() const$/;"	f	class:String
+output	./src/LatencyMonitor.cpp	/^Buffer* LatencyMonitor::output(Buffer* buf) const$/;"	f	class:LatencyMonitor
+parse	./src/AcceptConnection.cpp	/^void AcceptConnection::parse(Handler* h, Buffer* buf, int pos)$/;"	f	class:AcceptConnection
+parse	./src/ClusterNodesParser.cpp	/^ClusterNodesParser::Status ClusterNodesParser::parse()$/;"	f	class:ClusterNodesParser
+parse	./src/Conf.cpp	/^bool ServerConf::parse(ServerConf& s, const char* str)$/;"	f	class:ServerConf
+parse	./src/ConfParser.cpp	/^ConfParser::Status ConfParser::parse(std::string& line, std::string& key, std::string& val)$/;"	f	class:ConfParser
+parse	./src/ConnectConnection.cpp	/^void ConnectConnection::parse(Handler* h, Buffer* buf, int pos)$/;"	f	class:ConnectConnection
+parse	./src/Distribution.cpp	/^Distribution Distribution::parse(const char* str)$/;"	f	class:Distribution
+parse	./src/Enums.h	/^    static T parse(const char* str)$/;"	f	class:EnumBase
+parse	./src/HashFunc.cpp	/^Hash Hash::parse(const char* str)$/;"	f	class:Hash
+parse	./src/RequestParser.cpp	/^RequestParser::Status RequestParser::parse(Buffer* buf, int& pos, bool split)$/;"	f	class:RequestParser
+parse	./src/ResponseParser.cpp	/^ResponseParser::Status ResponseParser::parse(Buffer* buf, int& pos)$/;"	f	class:ResponseParser
+parse	./src/SentinelServerPool.cpp	/^AddrParser::Status AddrParser::parse(SString<Const::MaxAddrLen>& addr)$/;"	f	class:AddrParser
+parse	./src/StandaloneServerPool.cpp	/^AddrParser::Status AddrParser::parse(SString<Const::MaxAddrLen>& addr)$/;"	f	class:AddrParser
+parse	./src/Subscribe.cpp	/^SubscribeParser::Status SubscribeParser::parse(const Segment& body, int& chs)$/;"	f	class:SubscribeParser
+parseCmd	./src/RequestParser.cpp	/^void RequestParser::parseCmd()$/;"	f	class:RequestParser
+parseDuration	./src/Conf.cpp	/^bool Conf::parseDuration(long& v, const char* str)$/;"	f	class:Conf
+parseMemory	./src/Conf.cpp	/^bool Conf::parseMemory(long& m, const char* str)$/;"	f	class:Conf
+parseRotate	./src/LogFileSink.cpp	/^bool LogFileSink::parseRotate(const char* rotate, int& secs, long& bytes)$/;"	f	class:LogFileSink
+parser	./test/basic.py	/^    parser = argparse.ArgumentParser(conflict_handler='resolve')$/;"	v
+password	./src/Auth.h	/^    const String& password() const$/;"	f	class:Auth
+password	./src/Conf.h	/^    std::string password;$/;"	m	struct:AuthConf
+password	./src/Conf.h	/^    std::string password;$/;"	m	struct:ServerConf
+password	./src/Conf.h	/^    std::string password;$/;"	m	struct:ServerPoolConf
+password	./src/Server.h	/^    const String& password() const$/;"	f	class:Server
+password	./src/ServerPool.h	/^    const String& password() const$/;"	f	class:ServerPool
+peer	./src/AcceptSocket.h	/^    const char* peer() const$/;"	f	class:AcceptSocket
+peer	./src/ConnectSocket.h	/^    const char* peer() const$/;"	f	class:ConnectSocket
+pendRequestCount	./src/ConnectConnection.h	/^    int pendRequestCount() const$/;"	f	class:ConnectConnection
+pendRequests	./src/ConnectConnectionPool.h	/^    int pendRequests()$/;"	f	class:ConnectConnectionPool
+permission	./src/Auth.cpp	/^bool Auth::permission(Request* req, const String& key) const$/;"	f	class:Auth
+permission	./src/Handler.cpp	/^bool Handler::permission(Request* req, const String& key, Response::GenericCode& code)$/;"	f	class:Handler
+pipelineTestCase	./test/basic.py	/^def pipelineTestCase(name, cmds):$/;"	f
+plt	./Makefile	/^plt = $(shell uname)$/;"	m
+plt	./src/Makefile	/^	plt = $(shell uname)$/;"	m
+pool	./src/Server.h	/^    ServerPool* pool() const$/;"	f	class:Server
+pool	./src/ServerGroup.h	/^    ServerPool* pool() const {return mPool;}$/;"	f	class:ServerGroup
+pop_back	./src/Deque.h	/^    P pop_back()$/;"	f	class:Deque
+pop_front	./src/Deque.h	/^    P pop_front()$/;"	f	class:Deque
+pop_front	./src/List.h	/^    P pop_front()$/;"	f	class:List
+port	./test/basic.py	/^    port = 7617 if not args.p else args.p$/;"	v
+pos	./src/Buffer.h	/^    int pos;$/;"	m	struct:BufferPos
+pos	./src/IOVec.h	/^    int pos;$/;"	m	struct:IOVec
+postAcceptConnectionEvent	./src/Handler.cpp	/^void Handler::postAcceptConnectionEvent()$/;"	f	class:Handler
+postConnectConnectionEvent	./src/Handler.cpp	/^void Handler::postConnectConnectionEvent()$/;"	f	class:Handler
+postEvent	./src/Handler.cpp	/^void Handler::postEvent()$/;"	f	class:Handler
+postHandleRequest	./src/Handler.cpp	/^void Handler::postHandleRequest(Request* req, ConnectConnection* s)$/;"	f	class:Handler
+preHandleRequest	./src/Handler.cpp	/^bool Handler::preHandleRequest(Request* req, const String& key)$/;"	f	class:Handler
+prev	./src/Deque.h	/^    P prev(T* obj)$/;"	f	class:Deque
+prev	./src/Deque.h	/^    P prev(int idx) const$/;"	f	class:DequeNode
+printHelp	./src/Conf.cpp	/^static void printHelp(const char* name)$/;"	f	file:
+printHex	./src/String.h	/^    bool printHex(const char* dat, int len)$/;"	f	class:SString
+printVersion	./src/Conf.cpp	/^static void printVersion(const char* name)$/;"	f	file:
+printf	./src/String.h	/^    bool printf(const char* fmt, ...)$/;"	f	class:SString
+priority	./src/Conf.h	/^    int priority;$/;"	m	struct:ReadPolicyConf
+priority	./src/DC.h	/^    int priority = 0;$/;"	m	struct:DCReadPolicy
+priority	./src/ServerGroup.cpp	/^    int priority = 0;$/;"	m	struct:ServCond	file:
+proxy	./src/Handler.h	/^    Proxy* proxy() const$/;"	f	class:Handler
+proxy	./src/ServerPool.h	/^    Proxy* proxy() const$/;"	f	class:ServerPool
+push_back	./src/Deque.h	/^    void push_back(T* obj)$/;"	f	class:Deque
+push_back	./src/List.h	/^    void push_back(T* obj)$/;"	f	class:List
+push_front	./src/Deque.h	/^    void push_front(T* obj)$/;"	f	class:Deque
+push_front	./src/List.h	/^    void push_front(T* obj)$/;"	f	class:List
+put	./src/Logger.h	/^    void put(LogUnit* u)$/;"	f	class:Logger
+putPrivateConnection	./src/ConnectConnectionPool.cpp	/^void ConnectConnectionPool::putPrivateConnection(ConnectConnection* s)$/;"	f	class:ConnectConnectionPool
+rand	./src/Handler.h	/^    int rand()$/;"	f	class:Handler
+randServer	./src/ServerPool.cpp	/^Server* ServerPool::randServer(Handler* h, const std::vector<Server*>& servs)$/;"	f	class:ServerPool
+read	./src/Socket.cpp	/^int Socket::read(void* buf, int cnt)$/;"	f	class:Socket
+readEvent	./src/AcceptConnection.cpp	/^void AcceptConnection::readEvent(Handler* h)$/;"	f	class:AcceptConnection
+readEvent	./src/ConnectConnection.cpp	/^void ConnectConnection::readEvent(Handler* h)$/;"	f	class:ConnectConnection
+readKeyPrefix	./src/Conf.h	/^    std::vector<std::string> readKeyPrefix;$/;"	m	struct:AuthConf
+readPolicy	./src/Conf.h	/^    std::vector<ReadPolicyConf> readPolicy;$/;"	m	struct:DCConf
+readonly	./src/ConnectConnection.h	/^    bool readonly() const$/;"	f	class:ConnectConnection
+recvBytes	./src/Stats.h	/^    long recvBytes      = 0;$/;"	m	struct:ServerStats
+recvClientBytes	./src/Stats.h	/^    long recvClientBytes        = 0;$/;"	m	struct:HandlerStats
+recvServerBytes	./src/Stats.h	/^    long recvServerBytes        = 0;$/;"	m	struct:HandlerStats
+redirect	./src/ClusterServerPool.cpp	/^Server* ClusterServerPool::redirect(const String& addr, Server* old) const$/;"	f	class:ClusterServerPool
+redirect	./src/Handler.cpp	/^bool Handler::redirect(ConnectConnection* c, Request* req, Response* res, bool moveOrAsk)$/;"	f	class:Handler
+redirectCnt	./src/Request.h	/^    int redirectCnt() const$/;"	f	class:Request
+redis	./test/basic.py	/^import redis$/;"	i
+redis	./test/pubsub.py	/^import redis$/;"	i
+ref	./src/Alloc.h	/^    void ref()$/;"	f	class:RefCntObj
+refresh	./src/ServerPool.cpp	/^bool ServerPool::refresh()$/;"	f	class:ServerPool
+refreshInterval	./src/Conf.h	/^    long refreshInterval = 1000000;    \/\/us$/;"	m	struct:ServerPoolConf
+refreshInterval	./src/ServerPool.h	/^    long refreshInterval() const$/;"	f	class:ServerPool
+refreshMethod	./src/Conf.h	/^    ServerPoolRefreshMethod refreshMethod = ServerPoolRefreshMethod::None;$/;"	m	struct:StandaloneServerPoolConf
+refreshRequest	./src/ClusterServerPool.cpp	/^void ClusterServerPool::refreshRequest(Handler* h)$/;"	f	class:ClusterServerPool
+refreshRequest	./src/SentinelServerPool.cpp	/^void SentinelServerPool::refreshRequest(Handler* h)$/;"	f	class:SentinelServerPool
+refreshRequest	./src/ServerPool.h	/^    static void refreshRequest(ServerPool* p, Handler* h)$/;"	f	class:ServerPoolTmpl
+refreshRequest	./src/ServerPool.h	/^    void refreshRequest(Handler* h)$/;"	f	class:ServerPool
+refreshRequest	./src/StandaloneServerPool.cpp	/^void StandaloneServerPool::refreshRequest(Handler* h)$/;"	f	class:StandaloneServerPool
+refreshServerPool	./src/Handler.cpp	/^void Handler::refreshServerPool()$/;"	f	class:Handler
+remove	./src/Deque.h	/^    void remove(T* obj)$/;"	f	class:Deque
+remove	./src/ServerGroup.cpp	/^void ServerGroup::remove(Server* s)$/;"	f	class:ServerGroup
+reopen	./src/ConnectSocket.cpp	/^void ConnectSocket::reopen()$/;"	f	class:ConnectSocket
+reopen	./src/LogFileSink.cpp	/^bool LogFileSink::reopen(time_t t)$/;"	f	class:LogFileSink
+report	./src/Timer.cpp	/^void TimerPoint::report()$/;"	f	class:TimerPoint
+req	./src/IOVec.h	/^    Request* req;$/;"	m	struct:IOVec
+request	./src/RequestParser.h	/^    Segment& request()$/;"	f	class:RequestParser
+request	./src/RequestParser.h	/^    const Segment& request() const$/;"	f	class:RequestParser
+requests	./src/Stats.h	/^    long requests               = 0;$/;"	m	struct:HandlerStats
+requests	./src/Stats.h	/^    long requests       = 0;$/;"	m	struct:ServerStats
+requirePrivateConnection	./src/Request.h	/^    bool requirePrivateConnection() const$/;"	f	class:Request
+requireWrite	./src/Request.h	/^    bool requireWrite() const$/;"	f	class:Request
+reset	./src/Buffer.h	/^    void reset()$/;"	f	class:Buffer
+reset	./src/Deque.h	/^    void reset(int idx)$/;"	f	class:DequeNode
+reset	./src/LatencyMonitor.h	/^    void reset()$/;"	f	class:LatencyMonitor
+reset	./src/List.h	/^    void reset(int idx = 0)$/;"	f	class:ListNode
+reset	./src/RequestParser.cpp	/^void RequestParser::reset()$/;"	f	class:RequestParser
+reset	./src/ResponseParser.cpp	/^void ResponseParser::reset()$/;"	f	class:ResponseParser
+reset	./src/Stats.h	/^    void reset()$/;"	f	struct:HandlerStats
+reset	./src/Stats.h	/^    void reset()$/;"	f	struct:ServerStats
+resetNext	./src/Deque.h	/^    void resetNext(int idx)$/;"	f	class:DequeNode
+resetPrev	./src/Deque.h	/^    void resetPrev(int idx)$/;"	f	class:DequeNode
+resetStats	./src/ConnectConnectionPool.h	/^    void resetStats()$/;"	f	class:ConnectConnectionPool
+resetStats	./src/Handler.cpp	/^void Handler::resetStats()$/;"	f	class:Handler
+resize	./src/ID.h	/^    void resize(int sz)$/;"	f	class:IDUnique
+response	./src/ResponseParser.h	/^    Segment& response()$/;"	f	class:ResponseParser
+response	./src/ResponseParser.h	/^    const Segment& response() const$/;"	f	class:ResponseParser
+responses	./src/Stats.h	/^    long responses              = 0;$/;"	m	struct:HandlerStats
+responses	./src/Stats.h	/^    long responses      = 0;$/;"	m	struct:ServerStats
+restart	./src/Timer.h	/^    void restart()$/;"	f	class:Timer
+rewind	./src/Buffer.h	/^    void rewind()$/;"	f	class:Segment
+rewind	./src/ClusterNodesParser.h	/^    void rewind()$/;"	f	class:ClusterNodesParser
+rewind	./src/Request.h	/^    void rewind()$/;"	f	class:Request
+role	./src/ClusterNodesParser.h	/^    Server::Role role() const$/;"	f	class:ClusterNodesParser
+role	./src/Server.h	/^    Role role() const$/;"	f	class:Server
+roleStr	./src/Server.h	/^    const char* roleStr() const$/;"	f	class:Server
+room	./src/Buffer.h	/^    int room() const$/;"	f	class:Buffer
+roundTime	./src/LogFileSink.cpp	/^time_t LogFileSink::roundTime(time_t t)$/;"	f	class:LogFileSink
+run	./src/Handler.cpp	/^void Handler::run()$/;"	f	class:Handler
+run	./src/Logger.cpp	/^void Logger::run()$/;"	f	class:Logger
+run	./src/Proxy.cpp	/^int Proxy::run()$/;"	f	class:Proxy
+run	./test/pubsub.py	/^    def run(stat):$/;"	f	function:test
+sPairs	./src/Enums.cpp	/^ServerPoolRefreshMethod::sPairs[3] = {$/;"	m	class:ServerPoolRefreshMethod	file:
+sPairs	./src/Enums.h	/^    static const TypeName sPairs[3];$/;"	m	class:ServerPoolRefreshMethod
+seek	./src/Buffer.cpp	/^void Segment::seek(Buffer* buf, int pos, int cnt)$/;"	f	class:Segment
+seg	./src/IOVec.h	/^    Segment* seg;$/;"	m	struct:IOVec
+send	./src/AcceptConnection.cpp	/^bool AcceptConnection::send(Handler* h, Request* req, Response* res)$/;"	f	class:AcceptConnection
+send	./src/ConnectConnection.h	/^    void send(Handler* h, Request* req)$/;"	f	class:ConnectConnection
+send	./src/Request.cpp	/^bool Request::send(Socket* s)$/;"	f	class:Request
+send	./src/Response.cpp	/^bool Response::send(Socket* s)$/;"	f	class:Response
+sendBytes	./src/Stats.h	/^    long sendBytes      = 0;$/;"	m	struct:ServerStats
+sendClientBytes	./src/Stats.h	/^    long sendClientBytes        = 0;$/;"	m	struct:HandlerStats
+sendServerBytes	./src/Stats.h	/^    long sendServerBytes        = 0;$/;"	m	struct:HandlerStats
+sentinelPassword	./src/Conf.h	/^    std::string sentinelPassword;$/;"	m	struct:StandaloneServerPoolConf
+sentinels	./src/Conf.h	/^    std::vector<ServerConf> sentinels;$/;"	m	struct:StandaloneServerPoolConf
+serv	./src/ServerGroup.cpp	/^    Server* serv = nullptr;$/;"	m	struct:ServCond	file:
+server	./src/ConnectConnection.h	/^    Server* server() const$/;"	f	class:ConnectConnection
+server	./src/ConnectConnectionPool.h	/^    Server* server() const$/;"	f	class:ConnectConnectionPool
+serverFailureLimit	./src/Conf.h	/^    int serverFailureLimit = 10;$/;"	m	struct:ServerPoolConf
+serverFailureLimit	./src/ServerPool.h	/^    int serverFailureLimit() const$/;"	f	class:ServerPool
+serverPool	./src/Proxy.h	/^    ServerPool* serverPool() const$/;"	f	class:Proxy
+serverPoolType	./src/Conf.h	/^    int serverPoolType() const$/;"	f	class:Conf
+serverRetryTimeout	./src/Conf.h	/^    long serverRetryTimeout = 1000000; \/\/us$/;"	m	struct:ServerPoolConf
+serverRetryTimeout	./src/ServerPool.h	/^    long serverRetryTimeout() const$/;"	f	class:ServerPool
+serverTimeout	./src/Conf.h	/^    long serverTimeout = 0; \/\/us$/;"	m	struct:ServerPoolConf
+serverTimeout	./src/ServerPool.h	/^    long serverTimeout() const$/;"	f	class:ServerPool
+servers	./src/ClusterServerPool.h	/^    const std::vector<Server*>& servers() const$/;"	f	class:ClusterServerPool
+servers	./src/Conf.h	/^    std::vector<ServerConf> servers;$/;"	m	struct:ClusterServerPoolConf
+servers	./src/Conf.h	/^    std::vector<ServerConf> servers;$/;"	m	struct:ServerGroupConf
+set	./src/Buffer.cpp	/^Buffer* Segment::set(Buffer* buf, const char* dat, int len)$/;"	f	class:Segment
+set	./src/Buffer.h	/^    Buffer* set(Buffer* buf, const char* str)$/;"	f	class:Segment
+set	./src/Buffer.h	/^    void set(const Segment& seg)$/;"	f	class:SegmentStr
+set	./src/ClusterNodesParser.cpp	/^void ClusterNodesParser::set(const Segment& s)$/;"	f	class:ClusterNodesParser
+set	./src/DC.h	/^    void set(DC* oth, const ReadPolicyConf& c)$/;"	f	class:DC
+set	./src/Request.cpp	/^void Request::set(const RequestParser& p, Request* leader)$/;"	f	class:Request
+set	./src/Response.cpp	/^void Response::set(const ResponseParser& p)$/;"	f	class:Response
+set	./src/Response.cpp	/^void Response::set(int64_t num)$/;"	f	class:Response
+set	./src/String.h	/^    bool set(const char* dat, int len)$/;"	f	class:SString
+set	./src/String.h	/^    bool set(const char* str)$/;"	f	class:SString
+set	./src/Util.h	/^    void set(int err)$/;"	f	class:StrErrorImpl
+setAcceptConnectionActiveTime	./src/Handler.h	/^    void setAcceptConnectionActiveTime(AcceptConnection* c)$/;"	f	class:Handler
+setAllowMissLog	./src/Logger.h	/^    void setAllowMissLog(bool v)$/;"	f	class:Logger
+setAuth	./src/AcceptConnection.h	/^    void setAuth(const Auth* auth)$/;"	f	class:AcceptConnection
+setAuth	./src/ConnectConnection.h	/^    void setAuth(bool v)$/;"	f	class:ConnectConnection
+setAuth	./src/Request.cpp	/^void Request::setAuth(const String& password)$/;"	f	class:Request
+setAuthority	./src/Conf.cpp	/^void Conf::setAuthority(const ConfParser::Node* node)$/;"	f	class:Conf
+setBlockRequest	./src/AcceptConnection.h	/^    void setBlockRequest(bool v)$/;"	f	class:AcceptConnection
+setBool	./src/Conf.cpp	/^bool Conf::setBool(bool& attr, const char* name, const ConfParser::Node* n)$/;"	f	class:Conf
+setClientTimeout	./src/Conf.h	/^    void setClientTimeout(long v)$/;"	f	class:Conf
+setClusterServerPool	./src/Conf.cpp	/^void Conf::setClusterServerPool(const ConfParser::Node* node)$/;"	f	class:Conf
+setCommandMode	./src/Conf.cpp	/^bool Conf::setCommandMode(int& mode, const char* name, const ConfParser::Node* n, const int defaultMode)$/;"	f	class:Conf
+setConnectStatus	./src/ConnectSocket.h	/^    void setConnectStatus(ConnectStatus st)$/;"	f	class:ConnectSocket
+setConnected	./src/ConnectSocket.h	/^    void setConnected()$/;"	f	class:ConnectSocket
+setCustomCommand	./src/Conf.cpp	/^void Conf::setCustomCommand(const ConfParser::Node* node)$/;"	f	class:Conf
+setDC	./src/Conf.cpp	/^void Conf::setDC(DCConf& dc, const ConfParser::Node* node)$/;"	f	class:Conf
+setData	./src/Request.h	/^    void setData(void* dat)$/;"	f	class:Request
+setDataCenter	./src/Conf.cpp	/^void Conf::setDataCenter(const ConfParser::Node* node)$/;"	f	class:Conf
+setDb	./src/Connection.h	/^    void setDb(int db)$/;"	f	class:Connection
+setDelivered	./src/Request.h	/^    void setDelivered()$/;"	f	class:Request
+setDuration	./src/Conf.cpp	/^bool Conf::setDuration(long& v, const char* name, const ConfParser::Node* n)$/;"	f	class:Conf
+setErr	./src/Response.cpp	/^void Response::setErr(const char* str, int len)$/;"	f	class:Response
+setEvent	./src/Socket.h	/^    void setEvent(int evts)$/;"	f	class:Socket
+setFail	./src/Server.h	/^    void setFail(bool v)$/;"	f	class:Server
+setFile	./src/LogFileSink.cpp	/^bool LogFileSink::setFile(const char* path, int rotateSecs, long rotateBytes)$/;"	f	class:LogFileSink
+setGlobal	./src/Conf.cpp	/^void Conf::setGlobal(const ConfParser::Node* node)$/;"	f	class:Conf
+setGroup	./src/Server.h	/^    void setGroup(ServerGroup* g)$/;"	f	class:Server
+setInt	./src/Conf.cpp	/^bool Conf::setInt(int& attr, const char* name, const ConfParser::Node* n, int lower, int upper)$/;"	f	class:Conf
+setKeyPrefix	./src/Conf.cpp	/^static void setKeyPrefix(std::vector<std::string>& dat, const std::string& v)$/;"	f	file:
+setLastActiveTime	./src/AcceptConnection.h	/^    void setLastActiveTime(long v)$/;"	f	class:AcceptConnection
+setLatencyMonitor	./src/Conf.cpp	/^void Conf::setLatencyMonitor(LatencyMonitorConf& m, const ConfParser::Node* node)$/;"	f	class:Conf
+setLogFile	./src/Logger.cpp	/^void Logger::setLogFile(const char* file, int rotateSecs, long rotateBytes)$/;"	f	class:Logger
+setLogSample	./src/Logger.h	/^    void setLogSample(LogLevel::Type lvl, int val)$/;"	f	class:Logger
+setLong	./src/Conf.cpp	/^bool Conf::setLong(long& attr, const char* name, const ConfParser::Node* n, long lower, long upper)$/;"	f	class:Conf
+setMasterName	./src/Server.h	/^    void setMasterName(const String& str)$/;"	f	class:Server
+setMaxMemory	./src/Alloc.h	/^    static void setMaxMemory(long m)$/;"	f	class:AllocBase
+setMemory	./src/Conf.cpp	/^bool Conf::setMemory(long& m, const char* name, const ConfParser::Node* n)$/;"	f	class:Conf
+setName	./src/Server.h	/^    void setName(const String& str)$/;"	f	class:Server
+setNonBlock	./src/Socket.cpp	/^bool Socket::setNonBlock(bool val)$/;"	f	class:Socket
+setOnline	./src/Server.h	/^    void setOnline(bool v)$/;"	f	class:Server
+setPassword	./src/Server.h	/^    void setPassword(const String& pw)$/;"	f	class:Server
+setPostEvent	./src/Connection.h	/^    void setPostEvent(int evts)$/;"	f	class:Connection
+setReadPolicy	./src/Conf.cpp	/^void Conf::setReadPolicy(ReadPolicyConf& c, const ConfParser::Node* n)$/;"	f	class:Conf
+setReadonly	./src/ConnectConnection.h	/^    void setReadonly(bool v)$/;"	f	class:ConnectConnection
+setResponse	./src/Request.cpp	/^void Request::setResponse(Response* res)$/;"	f	class:Request
+setRole	./src/Server.h	/^    void setRole(Role role)$/;"	f	class:Server
+setSelect	./src/Request.cpp	/^void Request::setSelect(int db)$/;"	f	class:Request
+setSentinelGetMaster	./src/Request.cpp	/^void Request::setSentinelGetMaster(const String& master)$/;"	f	class:Request
+setSentinelSlaves	./src/Request.cpp	/^void Request::setSentinelSlaves(const String& master)$/;"	f	class:Request
+setSentinels	./src/Request.cpp	/^void Request::setSentinels(const String& master)$/;"	f	class:Request
+setServerPool	./src/Conf.cpp	/^bool Conf::setServerPool(ServerPoolConf& sp, const ConfParser::Node* p)$/;"	f	class:Conf
+setServers	./src/Conf.cpp	/^bool Conf::setServers(std::vector<ServerConf>& servs, const char* name, const ConfParser::Node* p)$/;"	f	class:Conf
+setSize	./src/Buffer.h	/^    static void setSize(int sz)$/;"	f	class:Buffer
+setStandaloneServerPool	./src/Conf.cpp	/^void Conf::setStandaloneServerPool(const ConfParser::Node* node)$/;"	f	class:Conf
+setStatus	./src/Socket.h	/^    void setStatus(int st)$/;"	f	class:Socket
+setStr	./src/Conf.cpp	/^bool Conf::setStr(std::string& attr, const char* name, const ConfParser::Node* n)$/;"	f	class:Conf
+setStr	./src/Response.cpp	/^void Response::setStr(const char* str, int len)$/;"	f	class:Response
+setSub	./src/Subscribe.h	/^    void setSub(int chs)$/;"	f	class:Subscribe
+setTcpKeepAlive	./src/Socket.cpp	/^bool Socket::setTcpKeepAlive(int interval)$/;"	f	class:Socket
+setTcpNoDelay	./src/Socket.cpp	/^bool Socket::setTcpNoDelay(bool val)$/;"	f	class:Socket
+setType	./src/Request.h	/^    void setType(Command::Type t)$/;"	f	class:Request
+setType	./src/Response.h	/^    void setType(Reply::Type t)$/;"	f	class:Response
+setUpdating	./src/Server.h	/^    void setUpdating(bool v)$/;"	f	class:Server
+size	./src/Deque.h	/^    int size() const$/;"	f	class:Deque
+size	./src/List.h	/^    int size() const$/;"	f	class:List
+size	./src/String.h	/^    int size() const$/;"	f	class:SString
+skt	./src/PollMultiplexor.h	/^        Socket* skt;$/;"	m	struct:PollMultiplexor::SktIdx
+socket	./src/Socket.cpp	/^int Socket::socket(int domain, int type, int protocol)$/;"	f	class:Socket
+span	./src/LatencyMonitor.h	/^        long span;$/;"	m	struct:LatencyMonitor::TimeSpan
+standaloneServerPool	./src/Conf.h	/^    const StandaloneServerPoolConf& standaloneServerPool() const$/;"	f	class:Conf
+start	./src/Logger.cpp	/^void Logger::start()$/;"	f	class:Logger
+startTime	./src/Proxy.h	/^    time_t startTime() const$/;"	f	class:Proxy
+staticSlaveReadPriority	./src/Conf.h	/^    int staticSlaveReadPriority = 0;$/;"	m	struct:ServerPoolConf
+staticSlaveReadPriority	./src/ServerPool.h	/^    int staticSlaveReadPriority() const$/;"	f	class:ServerPool
+stats	./src/ConnectConnectionPool.h	/^    ServerStats& stats()$/;"	f	class:ConnectConnectionPool
+stats	./src/ConnectConnectionPool.h	/^    const ServerStats& stats() const$/;"	f	class:ConnectConnectionPool
+stats	./src/Handler.h	/^    HandlerStats& stats()$/;"	f	class:Handler
+stats	./src/Handler.h	/^    const HandlerStats& stats() const$/;"	f	class:Handler
+statsVer	./src/Proxy.h	/^    long statsVer() const$/;"	f	class:Proxy
+status	./src/Socket.h	/^    int status() const$/;"	f	class:Socket
+statusStr	./src/Socket.cpp	/^const char* Socket::statusStr() const$/;"	f	class:Socket
+stop	./src/Handler.cpp	/^void Handler::stop()$/;"	f	class:Handler
+stop	./src/Logger.cpp	/^void Logger::stop()$/;"	f	class:Logger
+stop	./src/Timer.h	/^    long stop()$/;"	f	class:Timer
+stopHandler	./src/Proxy.cpp	/^static void stopHandler(int sig)$/;"	f	file:
+str	./src/Util.h	/^    const char* str() const$/;"	f	class:StrErrorImpl
+stream	./src/ConfParser.cpp	/^    std::shared_ptr<std::ifstream> stream;$/;"	m	struct:File	file:
+strftime	./src/String.h	/^    bool strftime(const char* fmt, time_t t)$/;"	f	class:SString
+sub	./src/ConfParser.h	/^        Node* sub;$/;"	m	struct:ConfParser::Node
+succ	./test/basic.py	/^                succ = False$/;"	v
+succ	./test/basic.py	/^        succ = True$/;"	v
+supportSubscribe	./src/Proxy.h	/^    bool supportSubscribe() const$/;"	f	class:Proxy
+supportTransaction	./src/Proxy.h	/^    bool supportTransaction() const$/;"	f	class:Proxy
+sys	./test/basic.py	/^import sys$/;"	i
+sys	./test/pubsub.py	/^import sys$/;"	i
+tail	./src/Buffer.h	/^    char* tail()$/;"	f	class:Buffer
+tail	./src/Buffer.h	/^    const char* tail() const$/;"	f	class:Buffer
+target	./src/Makefile	/^target = predixy$/;"	m
+test	./test/pubsub.py	/^def test():$/;"	f
+testCase	./test/basic.py	/^def testCase(name, cmds):$/;"	f
+time	./test/basic.py	/^import time$/;"	i
+time	./test/pubsub.py	/^import time$/;"	i
+timeSpan	./src/Conf.h	/^    std::vector<long> timeSpan;\/\/us$/;"	m	struct:LatencyMonitorConf
+toInt	./src/String.h	/^    bool toInt(int& v) const$/;"	f	class:String
+total	./src/LatencyMonitor.h	/^        long total;$/;"	m	struct:LatencyMonitor::TimeSpan
+traceInfo	./src/Backtrace.h	/^inline void traceInfo(int sig)$/;"	f
+type	./src/Command.h	/^    Type type;$/;"	m	class:Command
+type	./src/Distribution.cpp	/^    Distribution::Type type;$/;"	m	struct:TypeName	file:
+type	./src/Enums.h	/^        int type;$/;"	m	struct:EnumBase::TypeName
+type	./src/Request.cpp	/^    Command::Type type;$/;"	m	struct:GenericRequest	file:
+type	./src/Request.h	/^    Command::Type type() const$/;"	f	class:Request
+type	./src/RequestParser.h	/^    Command::Type type() const$/;"	f	class:RequestParser
+type	./src/Response.cpp	/^    Reply::Type type;$/;"	m	struct:GenericResponse	file:
+type	./src/Response.h	/^    Reply::Type type() const$/;"	f	class:Response
+type	./src/ResponseParser.h	/^    Reply::Type type() const$/;"	f	class:ResponseParser
+type	./src/ServerPool.h	/^    int type() const$/;"	f	class:ServerPool
+typeStr	./src/Response.h	/^    const char* typeStr() const$/;"	f	class:Response
+unique	./src/ID.h	/^    int unique(C d, int num)$/;"	f	class:IDUnique
+unlock	./src/Sync.h	/^    void unlock() const$/;"	f	class:Mutex
+unref	./src/Alloc.h	/^    void unref()$/;"	f	class:RefCntObj
+unwatch	./src/Transaction.h	/^    void unwatch()$/;"	f	class:Transaction
+updating	./src/Server.h	/^    bool updating() const$/;"	f	class:Server
+use	./src/Buffer.cpp	/^void Segment::use(int cnt)$/;"	f	class:Segment
+use	./src/Buffer.h	/^    void use(int cnt)$/;"	f	class:Buffer
+val	./src/ConfParser.h	/^        std::string val;$/;"	m	struct:ConfParser::Node
+value	./src/Enums.h	/^    int value() const$/;"	f	class:EnumBase
+vfappend	./src/Buffer.cpp	/^Buffer* Buffer::vfappend(const char* fmt, va_list ap)$/;"	f	class:Buffer
+vformat	./src/Logger.cpp	/^void LogUnit::vformat(LogLevel::Type level, const char* file, int line, const char* fmt, va_list ap)$/;"	f	class:LogUnit
+vfset	./src/Buffer.cpp	/^Buffer* Segment::vfset(Buffer* buf, const char* fmt, va_list ap)$/;"	f	class:Segment
+vprintf	./src/String.h	/^    bool vprintf(const char* fmt, va_list ap)$/;"	f	class:SString
+wait	./src/EpollMultiplexor.h	/^int EpollMultiplexor::wait(long usec, T* handler)$/;"	f	class:EpollMultiplexor
+wait	./src/KqueueMultiplexor.h	/^int KqueueMultiplexor::wait(long usec, T* handler)$/;"	f	class:KqueueMultiplexor
+wait	./src/PollMultiplexor.h	/^int PollMultiplexor::wait(long usec, T* handler)$/;"	f	class:PollMultiplexor
+weight	./src/Conf.h	/^    int weight;$/;"	m	struct:ReadPolicyConf
+weight	./src/DC.h	/^    int weight = 0;$/;"	m	struct:DCReadPolicy
+workerThreads	./src/Conf.h	/^    int workerThreads() const$/;"	f	class:Conf
+write	./src/AcceptConnection.cpp	/^bool AcceptConnection::write(Handler* h, IOVec* bufs, int len)$/;"	f	class:AcceptConnection
+write	./src/ConnectConnection.cpp	/^bool ConnectConnection::write(Handler* h, IOVec* bufs, int len)$/;"	f	class:ConnectConnection
+write	./src/LogFileSink.cpp	/^void LogFileSink::write(const LogUnit* log)$/;"	f	class:LogFileSink
+write	./src/Socket.cpp	/^int Socket::write(const void* buf, int cnt)$/;"	f	class:Socket
+writeEvent	./src/AcceptConnection.cpp	/^bool AcceptConnection::writeEvent(Handler* h)$/;"	f	class:AcceptConnection
+writeEvent	./src/ConnectConnection.cpp	/^bool ConnectConnection::writeEvent(Handler* h)$/;"	f	class:ConnectConnection
+writeKeyPrefix	./src/Conf.h	/^    std::vector<std::string> writeKeyPrefix;$/;"	m	struct:AuthConf
+writev	./src/Socket.cpp	/^int Socket::writev(const struct iovec* vecs, int cnt)$/;"	f	class:Socket
+~AcceptConnection	./src/AcceptConnection.cpp	/^AcceptConnection::~AcceptConnection()$/;"	f	class:AcceptConnection
+~Auth	./src/Auth.cpp	/^Auth::~Auth()$/;"	f	class:Auth
+~Authority	./src/Auth.cpp	/^Authority::~Authority()$/;"	f	class:Authority
+~Buffer	./src/Buffer.cpp	/^Buffer::~Buffer()$/;"	f	class:Buffer
+~ClusterNodesParser	./src/ClusterNodesParser.cpp	/^ClusterNodesParser::~ClusterNodesParser()$/;"	f	class:ClusterNodesParser
+~ClusterServerPool	./src/ClusterServerPool.cpp	/^ClusterServerPool::~ClusterServerPool()$/;"	f	class:ClusterServerPool
+~Conf	./src/Conf.cpp	/^Conf::~Conf()$/;"	f	class:Conf
+~ConfParser	./src/ConfParser.cpp	/^ConfParser::~ConfParser()$/;"	f	class:ConfParser
+~ConnectConnection	./src/ConnectConnection.cpp	/^ConnectConnection::~ConnectConnection()$/;"	f	class:ConnectConnection
+~ConnectConnectionPool	./src/ConnectConnectionPool.cpp	/^ConnectConnectionPool::~ConnectConnectionPool()$/;"	f	class:ConnectConnectionPool
+~DC	./src/DC.cpp	/^DC::~DC()$/;"	f	class:DC
+~DataCenter	./src/DC.cpp	/^DataCenter::~DataCenter()$/;"	f	class:DataCenter
+~Deque	./src/Deque.h	/^    ~Deque()$/;"	f	class:Deque
+~DequeNode	./src/Deque.h	/^    ~DequeNode()$/;"	f	class:DequeNode
+~EpollMultiplexor	./src/EpollMultiplexor.cpp	/^EpollMultiplexor::~EpollMultiplexor()$/;"	f	class:EpollMultiplexor
+~ExceptionBase	./src/Exception.h	/^    ~ExceptionBase()$/;"	f	class:ExceptionBase
+~Handler	./src/Handler.cpp	/^Handler::~Handler()$/;"	f	class:Handler
+~ID	./src/ID.h	/^    ~ID()$/;"	f	class:ID
+~KqueueMultiplexor	./src/KqueueMultiplexor.cpp	/^KqueueMultiplexor::~KqueueMultiplexor()$/;"	f	class:KqueueMultiplexor
+~List	./src/List.h	/^    ~List()$/;"	f	class:List
+~ListNode	./src/List.h	/^    ~ListNode()$/;"	f	class:ListNode
+~LogFileSink	./src/LogFileSink.cpp	/^LogFileSink::~LogFileSink()$/;"	f	class:LogFileSink
+~LogUnit	./src/Logger.cpp	/^LogUnit::~LogUnit()$/;"	f	class:LogUnit
+~Logger	./src/Logger.cpp	/^Logger::~Logger()$/;"	f	class:Logger
+~MultiplexorBase	./src/Multiplexor.h	/^    virtual ~MultiplexorBase() {}$/;"	f	class:MultiplexorBase
+~Node	./src/ConfParser.h	/^        ~Node()$/;"	f	struct:ConfParser::Node
+~PollMultiplexor	./src/PollMultiplexor.cpp	/^PollMultiplexor::~PollMultiplexor()$/;"	f	class:PollMultiplexor
+~Proxy	./src/Proxy.cpp	/^Proxy::~Proxy()$/;"	f	class:Proxy
+~RefCntObj	./src/Alloc.h	/^    ~RefCntObj()$/;"	f	class:RefCntObj
+~Request	./src/Request.cpp	/^Request::~Request()$/;"	f	class:Request
+~RequestParser	./src/RequestParser.cpp	/^RequestParser::~RequestParser()$/;"	f	class:RequestParser
+~Response	./src/Response.cpp	/^Response::~Response()$/;"	f	class:Response
+~ResponseParser	./src/ResponseParser.cpp	/^ResponseParser::~ResponseParser()$/;"	f	class:ResponseParser
+~Segment	./src/Buffer.cpp	/^Segment::~Segment()$/;"	f	class:Segment
+~SentinelServerPool	./src/SentinelServerPool.cpp	/^SentinelServerPool::~SentinelServerPool()$/;"	f	class:SentinelServerPool
+~Server	./src/Server.cpp	/^Server::~Server()$/;"	f	class:Server
+~ServerGroup	./src/ServerGroup.cpp	/^ServerGroup::~ServerGroup()$/;"	f	class:ServerGroup
+~ServerPool	./src/ServerPool.cpp	/^ServerPool::~ServerPool()$/;"	f	class:ServerPool
+~SharePtr	./src/Alloc.h	/^    ~SharePtr()$/;"	f	class:SharePtr
+~Socket	./src/Socket.cpp	/^Socket::~Socket()$/;"	f	class:Socket
+~StandaloneServerPool	./src/StandaloneServerPool.cpp	/^StandaloneServerPool::~StandaloneServerPool()$/;"	f	class:StandaloneServerPool
+~Timer	./src/Timer.h	/^    ~Timer()$/;"	f	class:Timer

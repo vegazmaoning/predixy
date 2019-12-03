@@ -268,7 +268,7 @@ bool Conf::setServerPool(ServerPoolConf& sp, const ConfParser::Node* p)
     } else if (setInt(sp.serverFailureLimit, "ServerFailureLimit", p, 1)) {
     } else if (setDuration(sp.serverRetryTimeout, "ServerRetryTimeout", p)) {
     } else if (setInt(sp.keepalive, "KeepAlive", p, 0)) {
-    } else if (setInt(sp.databases, "Databases", p, 1, 128)) {
+    } else if (setInt(sp.databases, "Databases", p, 1, 256)) {
     } else {
         ret = false;
     }

@@ -599,14 +599,8 @@ bool Handler::preHandleRequest(Request* req, const String& key)
     case Command::Cmd:
         directResponse(req, Response::Cmd);
         return true;
-    case Command::Info:
-        infoRequest(req, key);
-        return true;
-    case Command::Config:
-        configRequest(req, key);
-        return true;
     case Command::Script:
-        if (key.length() == 4 && strncasecmp(key.data(), "load", 4) == 0) {
+        if ((key.length() == 4 || key.length() == 5) && (strncasecmp(key.data(), "load", 4) == 0 || strncasecmp(key.data(), "kill", 4) == 0 || strncasecmp(key.data(), "flush", 5) == 0)) {
             int cursor = 0;
             auto sp = mProxy->serverPool();
             Server* leaderServ = sp->iter(cursor);
@@ -614,7 +608,13 @@ bool Handler::preHandleRequest(Request* req, const String& key)
                 directResponse(req, Response::NoServer);
                 return true;
             }
-            req->setType(Command::ScriptLoad);
+            if (strncasecmp(key.data(), "load", 4) == 0){
+                req->setType(Command::ScriptLoad);
+            } else if (strncasecmp(key.data(), "kill", 4) == 0) {
+                req->setType(Command::ScriptKill);
+            } else {
+                req->setType(Command::ScriptFlush);
+            }
             req->follow(req);
             while (Server* serv = sp->iter(cursor)) {
                 RequestPtr r = RequestAlloc::create();
@@ -633,6 +633,34 @@ bool Handler::preHandleRequest(Request* req, const String& key)
                 return true;
             }
             handleRequest(req, s);
+        } 
+        else if (key.length() == 6 && strncasecmp(key.data(), "exists", 6) == 0){
+            int cursor = 0;
+            auto sp = mProxy->serverPool();
+            Server* leaderServ = sp->iter(cursor);
+            if (!leaderServ) {
+                directResponse(req, Response::NoServer);
+                return true;
+            }
+            req->setType(Command::ScriptExists);
+            req->follow(req);
+            while (Server* serv = sp->iter(cursor)) {
+                RequestPtr r = RequestAlloc::create();
+                r->follow(req);
+                ConnectConnection* s = getConnectConnection(r, serv);
+                if (!s) {
+                    directResponse(r, Response::NoServerConnection);
+                    break;
+                }
+                handleRequest(r, s);
+            }
+            //req must be handle in the last, avoid directResponse this req
+            ConnectConnection* s = getConnectConnection(req, leaderServ);
+            if (!s) {
+                directResponse(req, Response::NoServerConnection);
+                return true;
+            }
+            handleRequest(req, s); 
         } else {
             directResponse(req, Response::UnknownCmd);
         }

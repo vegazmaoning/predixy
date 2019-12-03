@@ -54,6 +54,9 @@ public:
         Evalsha,
         Script,
         ScriptLoad,
+        ScriptExists,
+        ScriptKill,
+        ScriptFlush,
 
         Del,
         Dump,
@@ -156,8 +159,6 @@ public:
         Zincrby,
         Zinterstore,
         Zlexcount,
-        Zpopmax,
-        Zpopmin,
         Zrange,
         Zrangebylex,
         Zrangebyscore,
