@@ -379,7 +379,7 @@ void Request::setResponse(Response* res)
         case Command::ScriptLoad:
         case Command::ScriptExists:
         case Command::ScriptKill:
-	case Command::ScriptFlush:
+	    case Command::ScriptFlush:
             if (Response* leaderRes = ld->getResponse()) {
                 if (leaderRes->isString() && !res->isString()) {
                     ld->mRes = res;
@@ -388,16 +388,14 @@ void Request::setResponse(Response* res)
                 ld->mRes = res;
             }
             break;
-        case Command::Info:
-                mRes = res;
-                break;
         default:
             //should never reach here
             mRes = res;
             break;
         }
-    } else 
+    } else {
         mRes = res;
+    }
 }
 
 bool Request::isDone() const
@@ -417,4 +415,5 @@ bool Request::isDone() const
     }
     return mDone;
 }
+
 

@@ -215,7 +215,6 @@ void Handler::postAcceptConnectionEvent()
                 auto cp = mConnPool[s->server()->id()];
                 s->setStatus(Connection::LogicError);
                 addPostEvent(s, Multiplexor::ErrorEvent);
-                cp->putPrivateConnection(s);
                 c->detachConnectConnection();
                 s->detachAcceptConnection();
             }
@@ -276,6 +275,9 @@ void Handler::postConnectConnectionEvent()
                     s->status(), s->statusStr());
             mEventLoop->delSocket(s);
             s->close(this);
+            if (!s->isShared()) {
+                mConnPool[s->server()->id()]->putPrivateConnection(s);
+            }
             if (c) {
                 addPostEvent(c, Multiplexor::ErrorEvent);
                 s->detachAcceptConnection();
@@ -599,8 +601,14 @@ bool Handler::preHandleRequest(Request* req, const String& key)
     case Command::Cmd:
         directResponse(req, Response::Cmd);
         return true;
+    case Command::Info:
+        infoRequest(req, key);
+        return true;
+    case Command::Config:
+        configRequest(req, key);
+        return true;
     case Command::Script:
-        if ((key.length() == 4 || key.length() == 5) && (strncasecmp(key.data(), "load", 4) == 0 || strncasecmp(key.data(), "kill", 4) == 0 || strncasecmp(key.data(), "flush", 5) == 0)) {
+        if (key.length() >= 4 && key.length() <=6) {
             int cursor = 0;
             auto sp = mProxy->serverPool();
             Server* leaderServ = sp->iter(cursor);
@@ -610,11 +618,16 @@ bool Handler::preHandleRequest(Request* req, const String& key)
             }
             if (strncasecmp(key.data(), "load", 4) == 0){
                 req->setType(Command::ScriptLoad);
-            } else if (strncasecmp(key.data(), "kill", 4) == 0) {
+            } else if (strncasecmp(key.data(), "kill", 4) == 0){
                 req->setType(Command::ScriptKill);
-            } else {
+            } else if (strncasecmp(key.data(), "flush", 5) == 0){
                 req->setType(Command::ScriptFlush);
+            } else if (strncasecmp(key.data(), "exists", 6) == 0) {
+                req->setType(Command::ScriptExists);
+            } else {
+                directResponse(req, Response::UnknownCmd);
             }
+            // req->setType(Command::ScriptLoad);
             req->follow(req);
             while (Server* serv = sp->iter(cursor)) {
                 RequestPtr r = RequestAlloc::create();
@@ -633,34 +646,6 @@ bool Handler::preHandleRequest(Request* req, const String& key)
                 return true;
             }
             handleRequest(req, s);
-        } 
-        else if (key.length() == 6 && strncasecmp(key.data(), "exists", 6) == 0){
-            int cursor = 0;
-            auto sp = mProxy->serverPool();
-            Server* leaderServ = sp->iter(cursor);
-            if (!leaderServ) {
-                directResponse(req, Response::NoServer);
-                return true;
-            }
-            req->setType(Command::ScriptExists);
-            req->follow(req);
-            while (Server* serv = sp->iter(cursor)) {
-                RequestPtr r = RequestAlloc::create();
-                r->follow(req);
-                ConnectConnection* s = getConnectConnection(r, serv);
-                if (!s) {
-                    directResponse(r, Response::NoServerConnection);
-                    break;
-                }
-                handleRequest(r, s);
-            }
-            //req must be handle in the last, avoid directResponse this req
-            ConnectConnection* s = getConnectConnection(req, leaderServ);
-            if (!s) {
-                directResponse(req, Response::NoServerConnection);
-                return true;
-            }
-            handleRequest(req, s); 
         } else {
             directResponse(req, Response::UnknownCmd);
         }
@@ -1236,7 +1221,7 @@ void Handler::configGetRequest(Request* req)
         directResponse(req, Response::ArgWrong);
         return;
     }
-    const char* p = d.data() + sizeof("*3\r\n$6\r\nconfig\r\n$3\r\nget\r\n");
+    const char* p = d.data() + sizeof("*3\r\n$7\r\npconfig\r\n$3\r\nget\r\n");
     int len = atoi(p);
     p = strchr(p, '\r');
     String key(p + 2, len);
@@ -1528,3 +1513,4 @@ bool Handler::permission(Request* req, const String& key, Response::GenericCode&
     }
     return true;
 }
+

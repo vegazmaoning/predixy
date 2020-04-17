@@ -159,6 +159,8 @@ public:
         Zincrby,
         Zinterstore,
         Zlexcount,
+        Zpopmax,
+        Zpopmin,
         Zrange,
         Zrangebylex,
         Zrangebyscore,
@@ -274,3 +276,4 @@ private:
 };
 
 #endif
+

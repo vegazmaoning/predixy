@@ -26,7 +26,7 @@ Command Command::CmdPool[AvailableCommands] = {
     {SentinelSlaves,    "sentinel slaves",  3,  3,         Inner},
     {Cmd,               "command",          1,  1,         Read},
     {Info,              "info",             1,  4,         Read},
-    {Config,            "config",           2,  4,         Unknown},
+    {Config,            "pconfig",           2,  4,         Admin},
     {Cluster,           "cluster",          2,  2,         Inner},
     {ClusterNodes,      "cluster nodes",    2,  2,         SubCmd|Inner},
     {Asking,            "asking",           1,  1,         Inner},
@@ -100,7 +100,7 @@ Command Command::CmdPool[AvailableCommands] = {
     {Hmget,             "hmget",            3,  MaxArgs,   Read},
     {Hmset,             "hmset",            4,  MaxArgs,   Write},
     {Hscan,             "hscan",            3,  7,         Read},
-    {Hset,              "hset",             4,  4,         Write},
+    {Hset,              "hset",             4,  MaxArgs,   Write},
     {Hsetnx,            "hsetnx",           4,  4,         Write},
     {Hstrlen,           "hstrlen",          3,  3,         Read},
     {Hvals,             "hvals",            2,  2,         Read},
@@ -142,6 +142,8 @@ Command Command::CmdPool[AvailableCommands] = {
     {Zincrby,           "zincrby",          4,  4,         Write},
     {Zinterstore,       "zinterstore",      4,  MaxArgs,   Write},
     {Zlexcount,         "zlexcount",        4,  4,         Read},
+    {Zpopmax,           "zpopmax",          2,  3,         Write},
+    {Zpopmin,           "zpopmin",          2,  3,         Write},
     {Zrange,            "zrange",           4,  5,         Read},
     {Zrangebylex,       "zrangebylex",      4,  7,         Read},
     {Zrangebyscore,     "zrangebyscore",    4,  8,         Read},
@@ -209,4 +211,5 @@ void Command::addCustomCommand(const CustomCommandConf& ccc) {
     p->type = (Command::Type)Sentinel++;
     CmdMap[ccc.name] = p;
 }
+
 
